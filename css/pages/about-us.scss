@@ -1,0 +1,110 @@
+._about{
+	.map-dot-image, .dot1, .dot2, .dot3, .dot4{
+		display: none;
+	}
+
+	.aboutusB1 {
+		h1 {
+			color: $lightest;
+			font-family: $font_hairline;
+			font-size: $font_largest;
+			padding: 10.5rem 0 4rem 0;
+			text-transform: uppercase;
+			@media screen and (max-width: 700px) {
+ 				font-family: $font_light;
+ 				padding: 10.5rem 0 1rem 0;  
+         	}
+		}
+
+		.about-f-block {
+			text-align: center;
+			img {
+				width: 4em;
+				margin-top: 3%;
+				@media screen and (max-width: 635px) {
+ 					margin-top: 7%;    
+         		}
+			}
+
+			h4 {
+				color: $lightest;
+				font-size: $font_large;
+				padding: 5% 0;
+			}
+
+			p {
+				color: $lightest;
+				@media screen and (max-width: 600px) {
+		          font-size: $font_small;       
+		        }
+			}
+		}
+	}
+
+	.second-block {
+		h1 {
+			font-family: $font_hairline;
+			text-align: center;
+			@extend .highlight;
+			@media screen and (max-width: 700px) {
+ 				font-family: $font_light;
+         	}
+		}
+		
+		p {			
+			color: $darkest;
+			padding: 1rem 0 1rem 0;
+			font-size: 0.9rem;
+		}
+		.details{
+			
+			.co-founder1-details, .co-founder2-details{
+				h3{
+					font-weight: bold;
+				}
+				h4{
+					color: $highlight;
+				}
+			}
+		}
+	}
+
+	.noPadding{
+		padding-bottom: 0 !important;
+	}
+	.office-images{
+		border-top: 1px solid $medium;
+		.secondRow{
+			img.WC_img1{
+			}
+		}
+	}
+	@media screen and (min-width: 640px) and (max-width: 800px){
+		.second-block .details p{
+			font-size: 0.8rem;
+		}
+		.hyderabad-location {
+			@include dots;
+			left: 67%;
+			top: 52%;
+			display: block;
+		}
+	}
+	@media screen and (max-width: 640px){
+		.details{
+			text-align: center;
+			.co-founder1{
+				margin-bottom: 20px;
+
+			}
+		}
+		.office-images{
+			img{
+				padding-bottom: 20px;
+			}
+			.noPadding{
+				padding-bottom: 0 !important;
+			}
+		}
+	}
+}

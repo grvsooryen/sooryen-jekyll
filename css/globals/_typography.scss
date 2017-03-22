@@ -1,0 +1,53 @@
+body {
+	font-family: $font_light;
+	font-size: $font_base; 
+	color: $medium 
+}
+
+
+p, li {
+	font-family: $font_light;
+	font-size: $font_base;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
+	font-family: $font_light;
+	margin: 0;
+}
+
+h1, .h1 {font-size: $font_largest;}
+
+h2, .h2 {font-size: $font_larger;}
+
+h3, .h3 {font-size: $font_large;}
+
+h4, .h4 {font-size: $font_small;}
+
+h5, .h5 {font-size: $font_smaller;}
+
+h6, .h6 {font-size: $font_smallest;}
+
+
+.line-height-1x{line-height: $line_height_normal;}
+
+.line-height-2x{line-height: $line_height_double;}
+
+
+.lightest {color:$lightest;}
+
+.light {color:$light;}
+
+.medium {color:$medium;}
+
+.medium-transparency {color:$medium_transparency;}
+
+.dark {color:$dark;}
+
+.darkest {color:$darkest;}
+
+.highlight {color:$highlight;}
+
+.lowlight {color:$lowlight;}
+
+.text-transform-upper {text-transform: $upper;}

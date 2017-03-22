@@ -1,0 +1,41 @@
+// Framework
+@import "framework/foundation.min.css";
+@import "framework/normalize.css";
+
+// Globals
+@import "globals/fontface";
+@import "globals/variables";
+@import "globals/colors";
+@import "globals/mixins";
+@import "globals/core";
+@import "globals/typography";
+@import "globals/buttons";
+@import "globals/helpers";
+@import "globals/foundation-topbar-overwrites";
+@import "globals/header";
+@import "globals/fintech-header";
+@import "globals/apple-header";
+@import "globals/footer";
+@import "globals/flexslider";
+@import "globals/featherlight";
+
+//Pages
+@import "pages/index";
+@import "pages/contact";
+@import "pages/careers";
+@import "pages/services";
+@import "pages/services-new";
+@import "pages/about-us";
+@import "pages/works";
+@import "pages/case-study";
+@import "pages/work-examples";
+@import "pages/fintech";
+@import "pages/fintech-case-study";
+@import "pages/apple-pay";
+@import "pages/performanceoptimization";
+@import "pages/europe-meet";
+@import "pages/about-us-new";
+@import "pages/mobile-apps";
+@import "pages/open-source";
+@import "pages/kyc";
+

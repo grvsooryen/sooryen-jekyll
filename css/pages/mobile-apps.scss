@@ -1,0 +1,486 @@
+._mobile-apps {
+
+  .img-header {
+    height: 480px;
+    background-attachment: fixed;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    position: relative;
+    background-image: url("https://d283pee6upvkfl.cloudfront.net/img/mobile-dev/hero-image.jpg");
+    background-size: cover;
+  }
+
+  .app-title {
+
+    color: #fff;
+    padding-left: 11%;
+    font-size: 2.7em;
+  }
+
+
+  .app-text {
+    /*font-weight: bold;*/
+    color: #000;
+    font-family: "latoregular";
+    font-size: 0.875em;
+  }
+
+
+  .app-about-text-layout {
+    padding-left: 11%;
+    padding-right: 8%;
+  }
+
+  .app-dev-text-layout {
+    padding-left: 13%;
+    padding-right: 13%;
+    margin: 0 auto;
+  }
+
+
+  .text-below-D-top {
+    padding-top: 220px;
+  }
+
+  #app-about {
+    padding-top: 4.5%;
+    padding-bottom: 25%;
+  }
+
+  .app-left {
+    display: inline-block;
+    float: left;
+    width: 60%;
+
+  }
+
+  .app-right {
+    display: inline-block;
+    float: left;
+    width: 40%;
+    border-left: 1px solid #B4B4B4;
+
+  }
+
+
+  .test {
+    padding-top: 74px;
+  }
+
+  .app-title1 {
+    color: #000;
+    font-weight: bold;
+    /* padding-top: 75px; */
+    text-align: center;
+  }
+
+  .app-div {
+    /*background-color: blue;
+    */
+  }
+
+  .dev-subtitle {
+    color: #D64213;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 40px;
+  }
+
+
+  label {
+      color: #DB4006;
+      font-weight: bold;
+      font-size: 0.75em;
+      font-family: "latoregular";
+  }
+
+  input {
+      box-shadow: none !important;
+      border: none !important;
+      border-bottom: 1px solid #4A4A4A !important;
+      padding: 0 !important;
+      height: 1.5em;
+      font-family: "latoregular";
+      font-size: 1.1rem;
+      color: #4A4A4A;
+      background: #f7f7f7;
+  }
+
+
+  .profile_pass-wrap input, .text-wrap.label-above input, .text-wrap.label-below input, .text-wrap.label-inside input, .textarea-wrap.label-above textarea, .textarea-wrap.label-below textarea, .textarea-wrap.label-inside textarea, .list-dropdown-wrap.label-above select, .list-dropdown-wrap.label-below select {
+    width: 90% !important;
+  }
+
+  .service-blocks {
+    height: 331px;
+    margin-top: 30px;
+    background-color: #ececec;
+  }
+
+  .section-left {
+    height: 331px;
+    width: 40%;
+    display: inline;
+    img {
+      height: 331px;
+      float: left;
+      width: auto;
+    }
+  }
+
+  .section-right {
+    float: left;
+    width: calc(100% - 508px);
+    display: inline;
+  }
+
+  .section-right-2 img {
+      height: 331px;
+      float: right;
+      width: auto;
+  }
+
+  .section-left-2 {
+      float: left;
+      width: calc(100% - 508px);
+      display: inline;
+  }
+
+  /*#section-left-img1 {
+      background-attachment: fixed;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: relative;
+      background-image: url(" https://fscl01.fonpit.de/userfiles/6727621/image/2016/Samsung-galaxy-Note-7/AndroidPIT-Samsung-Galaxy-Note7-event-5187-w782.jpg");
+   }*/
+
+   input {
+        background: white !important;
+    }
+
+    div#ninja_forms_form_5_all_fields_wrap {
+        width: 82%;
+        padding-left: 23.5%;
+    }
+
+    input#ninja_forms_field_10 {
+        margin: auto;
+        display: block;
+        border: none !important;
+        background: #FF5722 !important;
+        color: white;
+        padding: 12px 19px !important;
+    }
+
+
+    .case-studies-list {
+      .a500BC {
+        background-image: url("https://d283pee6upvkfl.cloudfront.net/img/mobile-dev/case1-bw.png");
+        background-size: cover;
+        -webkit-transition: 0.4s ease-in-out;
+        -moz-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+        transition: 0.4s ease-in-out;
+
+      }
+      @media screen and (min-width: 768px) {
+      .a500BC:hover {
+        background-image: url("https://d283pee6upvkfl.cloudfront.net/img/mobile-dev/case1.png");
+      }
+      .flowers:hover {
+        background-image: url("https://d283pee6upvkfl.cloudfront.net/img/mobile-dev/case2.png");
+      }
+      .mindware:hover {
+        background-image: url("https://d283pee6upvkfl.cloudfront.net/img/mobile-dev/case3.png");
+      }
+      .orientaltrading:hover {
+        background-image: url("https://d283pee6upvkfl.cloudfront.net/img/mobile-dev/case4.png");
+      }
+      }
+      .flowers {
+        background-image: url("https://d283pee6upvkfl.cloudfront.net/img/mobile-dev/case2-bw.png");
+        background-size: cover;
+        -webkit-transition: 0.4s ease-in-out;
+        -moz-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+        transition: 0.4s ease-in-out;
+      }
+
+      .mindware {
+        background-image: url("https://d283pee6upvkfl.cloudfront.net/img/mobile-dev/case3-bw.png");
+        background-size: cover;
+        -webkit-transition: 0.4s ease-in-out;
+        -moz-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+        transition: 0.4s ease-in-out;
+      }
+
+      .orientaltrading {
+        background-image: url("https://d283pee6upvkfl.cloudfront.net/img/mobile-dev/case4-bw.png");
+        background-size: cover;
+        -webkit-transition: 0.4s ease-in-out;
+        -moz-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+        transition: 0.4s ease-in-out;
+      }
+
+      margin: 0;
+      width: 100vw;
+
+    }
+
+    .case-study img {
+      width: 21vw;
+    }
+
+    li.case-study {
+      display: inline;
+      padding: 30px 6%;
+      text-align: center;
+    }
+
+    .case-studies {
+      margin: 80px 0px 120px;
+    }
+
+    h1.case-studies-h1 {
+      color: #de521e;
+      text-align: center;
+      margin-top: 40px;
+  }
+
+
+
+   /*iris' styles*/
+
+  @media only screen and (max-width: 1462px) {
+    #app-about {
+      padding-bottom: calc(-13vw + 650px);
+    }
+  }
+
+  /*@media only screen and (max-width: 822px) {
+    .app-left {
+      width: 70%;
+    }
+    .app-right {
+      width: 30%;
+    }
+  }
+
+  @media only screen and (max-width: 760px) {
+    .app-left {
+      width: 100%;
+    }
+    .app-right {
+      padding-top: 10%;
+      // width: 100%
+    }
+    #app-about {
+      padding-bottom: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 745px) {
+    .app-left {
+      width: 100%;
+    }
+    .app-right {
+      padding-top: 12%;
+      width: 100%
+    }
+    #app-about {
+      padding-bottom: 120%;
+    }
+  }*/
+
+  @media only screen and (max-width: 986px) {
+    .app-dev-text-layout {
+      padding-left: 3%;
+      padding-right: 3%;
+    }
+    .section-left img {
+      width: 50%;
+    }
+
+    .section-right-2 img {
+      width: 50%;
+    }
+
+    .section-right img {
+      width: 50%;
+    }
+    .section-right{
+      width: 60%;
+    }
+    .section-left-2 {
+      width: 50%;
+    }
+  }
+
+/*  @media only screen and (max-width: 673px) {
+    #app-about {
+      padding-bottom: 145%;
+    }
+
+    .app-right {
+      padding-top: 15%;
+      width: 100%
+    }
+  }
+  @media only screen and (max-width: 649px) {
+    #app-about {
+      padding-bottom: 165%;
+    }
+    .dev-subtitle {
+      padding-top: 10px;
+    }
+    h1.case-studies-h1 {
+      padding-top: 0px;
+    }
+  }*/
+
+    /*ben's styles*/
+  @media only screen and (max-width: 800px) {
+    #ios-phone, #html5-img{
+      display: block;
+      width: 100%;
+      /*padding: 10vw 0;*/
+    }
+
+    .img-header{
+      height: 85vh;
+      background-size: 191vh;
+      background-position: -435px 0px;
+      text-align: center;
+      width: 100%;
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .app-title-2{
+      padding-left: 0px;
+      font-size: 32px;
+      width: 262px;
+      display: block !important;
+    }
+
+    .app-title.text-below-D-top{
+      padding-top: 0px;
+    }
+
+    .app-left{
+      width: 100%;
+      margin-top: 31px;
+    }
+
+    .about-us-hide-after, .dev-subtitle, #android-phone, .section-left, .app-title{
+      display: none;
+    }
+
+    .service-blocks{
+      background: #FFFFFF;
+    }
+
+    .about-us-bottom-p{
+      margin-bottom: 10px;
+    }
+
+    .section-left-2, .section-right{
+      width: 100%;
+    }
+
+    .app-text{
+      padding: 0 10%;
+    }
+
+    #app-about{
+      padding: 0px;
+    }
+
+    .app-right{
+      width: 100%;
+      padding-top: 72px;
+    }
+
+    #app-about, .app-text{
+      font-size: 16px;
+    }
+
+    .about-us-android-pic, .about-us-ios-pic, .about-us-html5-pic{
+      /*height: 90%;
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      text-align: center;*/
+      width: 100%;
+      display: inline-block !important;
+    }
+
+    .about-us-android-pic img{
+      width: 100%;
+    }
+
+    .about-us-android-text{
+      width: 210px;
+    }
+
+    .about-us-html5-text{
+      width: 260px;
+    }
+
+    .about-us-ios-text{
+      width: 220px;
+    }
+
+    .about-us-android-text, .about-us-ios-text, .about-us-html5-text{
+      color: #FFFFFF;
+      font-size: 32px;
+      top: calc(25.5vw + 44px);
+      position: relative;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+  @media only screen and (orientation : landscape){
+    .img-header{
+      background-position: -28px 0px;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .about-us-case-study{
+      position: relative;
+      padding-left: 0.9375em;
+      padding-right: 0.9375em;
+      float: left;
+      width: 50%
+    }
+  }
+
+  @media only screen and (max-width: 640px) {
+    .case-study img {
+	    width: 200px;
+	}
+	li.case-study {
+	    padding: 0;
+	}
+	.a500BC img {
+	    width: 100px;
+	    margin: 40px;
+	}
+  }
+
+  .button {
+      background: #db4006;
+      margin: 0 auto;
+      display: block;
+  }
+
+  #mobile-apps {
+      width: 70%;
+      margin: 30px auto;
+  }
+}

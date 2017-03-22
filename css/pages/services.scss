@@ -1,0 +1,232 @@
+._services {
+
+	h1 {
+		color: $lightest;
+		font-size: $font_largest;
+		font-family: $font_light;
+		padding: 5% 0 2% 0;
+		text-transform: uppercase;
+		@media screen and (max-width: 850px) and (min-width: 500px) {
+			padding: 15% 0 5% 0;
+		}
+        @media screen and (max-width: 500px) {
+           padding: 30% 0 10% 0;        
+        }
+	}
+
+	.first-block {
+	    padding: 13% 0 2% 0;
+
+		.large-3 {
+			h2 {
+				color: $lightest;
+				text-align: center;
+				padding: 7% 0;
+			}
+			@media screen and (min-width: 1200px){
+				.imgcenter{
+					margin-right: 47%;
+				}
+				.centerHeader{
+					margin-right: 35px;
+				}
+			}
+			p {
+				font-family: $font_hairline;
+				font-size: $font_large;
+				font-style: italic;
+				padding: 3% 0;
+			}
+			p.heading{
+				min-height: 160px;
+			}
+			color: $lightest;
+			position: relative;
+			padding: 3% 2%;
+			img {
+			  width: 60px;
+			  display:block;				  
+			  left:0;
+			  right:0;
+			  bottom:0;
+			  margin:auto;
+			}
+
+			ul {
+				padding: 10% 0 1% 0;
+			}
+		}
+	}
+
+	.sm-content-head {
+
+		p {
+			color: $dark;
+		}
+
+		h2{
+			@media screen and (max-width: 600px) { 
+				padding: 14vmin 0 1vw 0;	
+			}
+			padding: 7vmin 0 1vw 0;
+			font-size: $font_largest;
+			color: $highlight;
+		}
+	}
+	
+	.clients {
+		background: rgba(248, 248, 248, 0.8);
+		position: relative;
+		top: 1vw;
+		z-index: 5;
+		margin: 0;
+
+		p {
+			text-align: center;
+			color: $dark;
+		}
+
+		.client-logo {
+			height: auto;
+			text-align: center;
+			img {				
+			  width: 140px;
+			  -webkit-filter: grayscale(100%); 
+        	  filter: grayscale(100%);
+        	  padding-bottom: 8%;
+        	  @media screen and (max-width: 480px) { 
+					 width: 150px;
+				}
+		  }
+		}
+		.client-logo-m {
+			height: auto;
+			text-align: center;
+		  img {
+		  	width: 160px;
+			-webkit-filter: grayscale(100%); 
+            filter: grayscale(100%);
+	  		@media screen and (max-width: 480px) { 
+				width: 200px;
+			}
+		  }
+		}
+	}
+
+	.servicesB4{
+		h2 {
+			color: $dark;
+		}
+	}
+
+	.servicesB5{
+		@media screen and (max-width: 894px) { 
+			background-position: 0 !important;
+		}
+	}
+
+	.dark-color {
+		color: $dark;
+	}
+
+	.quote-block {
+
+		p {	
+			font-size: $font_large;
+			font-family: $font_regular;
+		}
+
+		img {
+			max-width: 180px;
+		}
+	}
+
+	// controls the icon size of this page
+	.icon-size {
+		width: 88px;
+	}
+	
+	.partners-bg {
+		padding: 5% 0;
+		text-align: center;
+		h2 {
+			font-size: $font_largest;
+			padding: 4% 0 2% 0;
+			color: $darkest;
+			font-family: $font_hairline;
+		}
+		h3 {
+			font-size: $font_large;
+			font-style: italic;
+			padding: 3% 0 6% 0;
+		}
+		.dell-logo {
+			img {
+				width: 120px;
+			}
+		}
+		.amazon-logo {
+			img {
+				width: 175px;
+			}
+		}
+		.partners-logo {
+			img {
+				width: 200px;
+			}
+		}
+
+		.magento-logo {
+			img {
+				width: 150px;
+			}
+		}
+		.ibm-logo {
+			img {
+				width: 175px;
+			}
+		}
+	}
+
+	#twentyfive-bar, #thirteen-bar-two, #thirteen-bar, #seventy-bar  {
+	    background-color: $highlight;
+	    width: 0px;
+	    height: 13px;
+	    text-align: left;
+	}
+
+  .numbers-section {
+		
+		.arc {
+	    stroke-weight:0.1;
+	    fill: $highlight;
+		}
+
+		.dial1, .dial2 {
+			width: 100%;
+	      height: 250px;
+	      box-sizing: border-box;
+
+      .radial-svg {
+		    display: block;
+		    margin: 0 auto;
+		    width: 250px;
+		    height: 250px;
+
+		    .component {
+			    fill: #ccc;
+
+			    .background {
+				    fill: $lightest;
+				    fill-opacity: 0.01;
+					}
+				}
+				.percentage {
+			    text-anchor: middle;
+			    fill: $dark;
+					font-family: $font_light;
+				}
+			}
+    }	
+	}
+}

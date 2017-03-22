@@ -1,0 +1,104 @@
+._apple-pay {
+	-webkit-font-smoothing: antialiased;
+
+	.android{
+
+		h2{
+			font-family: $font_regular;
+			color: $lightest;
+			font-size: $font_largest;
+			@media screen and (max-width: 800px) {
+				margin-top: 50px;
+			}
+		}
+
+		p{
+			color: $lightest;
+			font-family: $font_regular;
+			margin: 30px auto;
+		}
+
+		.button{
+			font-family: $font_regular;
+			font-size: $font_base;
+		}
+	}
+
+	
+
+	#left-text{
+		padding-right: 40px;
+
+		@media screen and (max-width: 640px) {
+			padding-right: 0;
+		}
+
+		#apple-logo-wrap img {
+		    margin: 10px 6%;
+		}
+
+		p {
+			font-family: $font_regular;
+			color: $darkest;
+			font-size: $font_small;	
+			margin: 1.8em 0;			
+		}
+	}
+
+	#right-text{
+		border-left: 1px solid #ddd;
+		margin-bottom: 80px;
+		padding-left: 40px;
+
+		@media screen and (max-width: 640px) {
+			border-left: none;
+			padding-left: 20px;
+		}
+
+		#submit-message{
+			font-family: $font_regular;
+			color: $highlight;
+		}
+
+
+		label{
+			color: $highlight;
+			font-size: $font_smaller;
+			font-family: $font_regular;
+		}
+
+		input, select {
+		    box-shadow: none!important;
+		    border: none!important;
+		    border-bottom: 1px solid $dark!important;
+		    padding: 0!important;
+		    height: 1.5em;
+		    font-family: $font_regular;
+		    font-size: $font_base;
+		    color: $dark;
+		}
+
+		input[type="submit"] {
+			margin-top: 10%;
+    		width: 100%;
+		    color: white;
+		    border: none !important;
+		    background: #db4006;
+		}
+
+		select{
+			margin-bottom: 10px;
+		}
+
+		.row {
+		    margin-bottom: 1em!important;
+		}
+
+		p {
+		    margin: 1em 0;
+		    color: $dark;
+		    font-size: $font_base;
+		    font-family: $font_regular;
+		}
+	}
+}

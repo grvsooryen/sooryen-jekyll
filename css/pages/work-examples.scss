@@ -1,0 +1,152 @@
+._work-example{
+
+	.large-6{
+		h1 {
+			color: $highlight;
+			padding: 15vmin 0 6vmin 0;
+			text-transform: uppercase;
+		}
+
+		p{
+			color: $dark;
+		}
+	}
+
+	.frame {
+		background-image: url(http://d283pee6upvkfl.cloudfront.net/img/iPhone6_frame.png);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		z-index: 999;
+		position: relative;
+		
+	}
+
+	.slide-container {
+		position: relative;
+		max-width: 274px;
+		margin: 10% auto;
+		overflow: hidden !important;
+		padding-bottom: 12%;
+
+		.flex-control-nav {
+			bottom: -40px;
+			left: 0px;
+		}
+
+		.flex-control-paging li a.flex-active {
+			background-color: $highlight;
+			width: 15px;
+			height: 15px;
+			border: 1px solid $highlight;
+		}
+
+		.flex-control-paging li a {
+			width: 15px;
+			height: 15px;
+			border: 1px solid $dark;
+		}
+
+		.flexslider-works {
+			position: relative;
+			max-width: 280px;
+			margin-top: 26%;
+			padding: 0 6% 0 5.9%;
+		
+			.slides {
+				position: relative;
+				li {
+					img {
+						
+						margin-left: 0px;
+					}
+				}
+			}
+			
+		}
+
+		.border{
+			width: 110%;
+			height: 15px;
+			background-color: $lightest;
+			position: absolute;
+			bottom: -3%;
+			left: -6px;
+			z-index: 999; 
+		}
+	}
+	
+
+	
+
+	// .thumbnails{
+	// 	.large-4{
+	// 		position: relative;
+	// 		margin: 0;
+	// 		padding: 1%;
+
+	// 		.img-wrapper{
+	// 			@include transition;
+	// 			max-width: 380px;
+	// 			margin: 0px auto;
+	// 			position: relative;
+	// 			overflow: hidden;
+	// 			cursor: pointer;
+	// 			border: 1px solid $highlight_transparency;
+	// 			&:hover .view-more {
+	// 				opacity: 1;
+	// 			}
+
+	// 			.view-more  {
+	// 				@include transition;
+	// 				transition: .2s;
+	// 				opacity: 0;
+	// 				width: 100%;
+	// 				height: 100%;
+	// 				background-color: $highlight_transparency;
+	// 				position: absolute;
+
+	// 				img {
+	// 					margin-top: 22%;
+	// 					max-width: 48px;
+	// 				}			
+	// 			}
+	// 		}
+
+	// 	}	
+
+	// }
+
+	.clients-list {
+		h2 {
+			text-transform: uppercase;
+			color: $highlight;
+			font-family: $font_light;
+			
+		}
+		.client {
+			padding: 2% 1.4%;
+			color: $darkest;
+			font-size: $font_base;
+			@media screen and (max-width: 600px) {
+			    padding: 5% 4%;
+			}
+			&.partners {
+				span {
+				display: block;
+				font-size: $font_smallest;
+				font-family: $font_regular;
+				color: $medium;
+				}
+			}
+			
+			a{
+				color: $darkest;
+				display: block;
+				&:hover {
+					color: $highlight;
+				}
+			}
+		}
+	}
+
+}

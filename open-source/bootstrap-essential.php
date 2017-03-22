@@ -1,0 +1,29 @@
+<?php
+	$page_class = "_bootstrap-essential _assessment-tool wh-logo"; // Variable to add class to the body tag, must be added before including the header
+    include "../includes/header.html"; //including the header section
+?>
+<div class="row lg-content-head sm-content-head">	
+	  <div class="aeBanner" data-stellar-background-ratio="0.5">
+	  		<div class="large-10 small-centered small-10 columns text-center first-block">
+	  			<h1>Bootstrap Essential</h1>
+	  			<p>Open-source by Söoryen</p>					
+	  		</div>
+		</div>
+</div>
+<div class="border-container">
+	<div class="row">
+		<div class="sidebar large-2 columns">
+			<ul>
+        		<li class="main-nav-header" data-class="about_ae">About Bootstrap Essential</li>
+        	</ul>
+        </div>
+		<div class="large-10 large-centered columns">
+			<div class="content">
+				<p>This project is specifically designed as an extention for bootstrap to provide a comprehensive support for building interfaces. It contains essential and common classes for bootstrap for faster web development.</p>
+				<p>For more information   <a href="https://github.com/grvpanchal/bootstrap-essentials">Click here</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<?php include "../includes/footer.html"; ?>

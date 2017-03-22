@@ -1,0 +1,295 @@
+@mixin maps{	
+	@include transition;
+	cursor: pointer;
+	display: flex;
+	padding: 0;
+	a {
+		color: $dark;
+	}
+
+	@media screen and (max-width: 1024px) {
+	    display: block;
+	    height: 100%;
+	}
+	
+	.large-3{
+		@include transition;
+		height: 33vm;
+		padding-bottom: 3%;
+		background-color: rgba(247, 248, 248, 0.87);		
+		@media screen and (max-width: 1024px) {
+	    	@include transition;
+			height: 10%;			
+		}
+
+		@media screen and (max-width: 640px) {
+	    	@include transition;
+			height: 12%;
+			
+		}
+
+		&.darker-bg {
+			background-color: rgba(241, 240, 240, 0.87);
+		}
+
+		h3{
+			text-align: center;
+			padding: 5vmin 0 2vw 0;
+			color:$dark;
+			font-family: $font_regular;
+			text-transform: uppercase;
+		}
+
+		p {
+			text-align: center;
+			padding: 0 0 5% 0;
+		}
+
+		&:hover{
+			background-color: $highlight;
+			h3, p, a, {
+				color: $lightest !important;
+			}
+		}
+	}
+}
+
+@mixin border-bottom {
+	 position: relative;	 
+	 width: 100%;
+	 -ms-transform: rotate(0deg); /* IE 9 */
+	 -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+	 transform: rotate(0deg);
+	 -webkit-backface-visibility: hidden;
+	 &:after{
+	    -ms-transform: rotate(-2.5deg); /* IE 9 */
+	    -webkit-backface-visibility: hidden;
+	    -webkit-transform: rotate(-2.5deg); /* Chrome, Safari, Opera */
+	    /* Rotate div */
+	    background-color: $lightest;
+	    bottom: -70px;
+	    content: '';
+	    height: 5vw;
+	    left: -30px;    
+	    position: absolute;
+	    transform: rotate(-2.5deg);
+	    width: 130%;
+	    z-index: 1;
+	}
+}
+
+@mixin transition {
+	-webkit-transition: 0.4s ease-in-out;
+	  -moz-transition: 0.4s ease-in-out;
+	  -o-transition: 0.4s ease-in-out;
+	  transition: 0.4s ease-in-out;
+}
+
+@mixin border-top {
+	-webkit-backface-visibility: hidden;
+	 position: relative;	 
+	 width: 100%;
+	 -ms-transform: rotate(0deg); /* IE 9 */
+	 -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+	 transform: rotate(0deg);
+	 &:before{
+	    position: absolute;
+	    left: -30px;    
+	    top: -3.5vw;
+	    width: 110%;
+	    height: 6vw;
+	    background-color: $lightest;
+	    /* Rotate div */
+	    -webkit-backface-visibility: hidden;
+	    -ms-transform: rotate(-2.5deg); /* IE 9 */
+	    -webkit-transform: rotate(-2.5deg); /* Chrome, Safari, Opera */
+	    transform: rotate(-2.5deg);
+	    content: '';
+	    z-index: 1;
+	}
+}
+
+@mixin border-top-inverse {
+	-webkit-backface-visibility: hidden;
+	 position: relative;	 
+	 width: 100%;
+	 -ms-transform: rotate(0deg); /* IE 9 */
+	 -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+	 transform: rotate(0deg);
+	 &:before{
+	    position: absolute;
+	    left: -30px;    
+	    top: -3.5vw;
+	    width: 110%;
+	    height: 6vw;
+	    background-color: $lightest;
+	    /* Rotate div */
+	    -webkit-backface-visibility: hidden;
+	    -ms-transform: rotate(2.5deg); /* IE 9 */
+	    -webkit-transform: rotate(2.5deg); /* Chrome, Safari, Opera */
+	    transform: rotate(2.5deg);
+	    content: '';
+	    z-index: 1;
+	}
+}
+
+@mixin border-bottom-inverse {
+	-webkit-backface-visibility: hidden;
+	 position: relative;	 
+	 width: 100%;
+	 -ms-transform: rotate(0deg); /* IE 9 */
+	 -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+	 transform: rotate(0deg);
+	 &:after{
+	    position: absolute;
+	    left: -30px;    
+	    bottom: -3vw;
+	    width: 110%;
+	    height: 6vw;
+	    background-color: $lightest;
+	    /* Rotate div */
+	    -webkit-backface-visibility: hidden;
+	    -ms-transform: rotate(-2.5deg); /* IE 9 */
+	    -webkit-transform: rotate(-2.5deg); /* Chrome, Safari, Opera */
+	    transform: rotate(2.5deg);
+	    content: '';
+	    z-index: 1;
+	}
+}
+
+// Diagonal Container
+@mixin diagonal-container {
+	 	position: relative;
+		width: 120%;
+		 -webkit-backface-visibility: hidden;
+		  -moz-backface-visibility: hidden;
+		 -o-backface-visibility: hidden;
+		 backface-visibility: hidden;
+	    -ms-transform: rotate(-2.5deg); /* IE 9 */
+	    -webkit-transform: rotate(-2.5deg); /* Chrome, Safari, Opera */
+	    transform: rotate(-2.5deg);
+	    left: -60px;
+	    overflow: hidden;
+	    outline: 1px solid transparent;
+}
+
+// Invert diagonal-container
+@mixin invert-diagonal {
+	 -webkit-backface-visibility: hidden;
+	 -moz-backface-visibility: hidden;
+	 -o-backface-visibility: hidden;
+	 backface-visibility: hidden;
+    -ms-transform: rotate(2.5deg); /* IE 9 */
+    -webkit-transform: rotate(2.5deg); /* Chrome, Safari, Opera */
+    transform: rotate(2.5deg);
+}
+
+//pattern background
+@mixin pattern-background {
+	background-repeat: repeat !important;
+	background-size: auto !important;
+}
+
+// parallax mixin 
+@mixin photo-background {
+	background-attachment: fixed;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+
+}
+
+// mixin for feature blocks section
+@mixin icons-feature {
+	content: '';
+	background-size: 100% 100%;
+	position: absolute;
+    height: 42px;
+    left: 20px; 
+  
+}
+
+@mixin logo-effects {
+		img {
+			  -webkit-filter: grayscale(100%);
+			  -moz-filter: grayscale(100%);
+			  -ms-filter: grayscale(100%);
+			  -o-filter: grayscale(100%);
+			  filter: grayscale(100%);
+			  filter: gray; /* IE 6-9 */
+		}
+
+		&:hover {
+		  img {
+				-webkit-filter: grayscale(0%);
+				-moz-filter: grayscale(0%); 
+				-ms-filter: grayscale(0%); 
+				-o-filter: grayscale(0%); 
+				filter: grayscale(0%);
+			}
+		}	
+}
+
+
+@mixin contact-info {
+	p {
+		&.phone {
+			text-transform: uppercase;
+		}
+		a {
+			color: $dark;
+		}
+	}
+}
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin dots{
+	transition: 0.5s;
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border: 3px solid $lowlight;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+@mixin line {
+  display: inline-block;
+  width: $button-size;
+  height: $button-size/7;
+  background: $color;
+  border-radius: $button-size/14; 
+  transition: $transition;
+}
+
+@mixin testimonials_bg {
+	
+	background-size: 102%;
+	background-repeat: no-repeat;
+
+	&:hover {
+		background-size: 108%;
+	}
+
+	@media screen and (max-width: 1024px) {
+    	background-size: 110%;
+
+    	&:hover {
+			background-size: 118%;
+		}
+	
+    }
+}
+
+
+

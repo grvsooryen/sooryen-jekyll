@@ -1,0 +1,430 @@
+._case-study {
+
+	.first-block {
+
+		img {
+			@include transition;
+			width: 300px;
+			text-align: center;
+			display: block;
+			padding: 10vw 0px 2% 0px;
+			margin: 0 auto;
+			@media screen and (max-width: 700px) {
+			   padding: 20vmin 0px 12vmin 0px;
+			   width: 240px;
+	        }
+		}
+		
+		
+
+		.zte-img {
+			padding: 18vw 0px 10% 0px;
+			width: 180px;
+
+			@media screen and (max-width: 700px) {
+			   padding: 45vmin 0px 26vmin 0px;
+			   width: 160px;
+	        }
+		}
+
+		p {
+			@include transition;
+			color: $lightest;
+			font-size: $font_large;
+			margin-top: -40px;
+			padding: 0px 0px 15vw 0px;
+			@media screen and (max-width: 700px) {
+			   font-size: $font_base;
+	        }
+		}
+	}
+
+	.oriental-trading-hero {
+		@include photo-background;
+		background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy2/otc_1_wo.jpg);
+	}
+	.oriental-trading-middle{
+		@include photo-background;
+		background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy2/otc_6.jpg);
+	}
+
+	.lg-content-head {
+		.case-intro {
+			color: $lightest;
+			font-family: $font_hairline;
+			h1 {
+				@include transition;
+				color: $lightest;
+				font-family: $font_light;
+				text-transform: uppercase;
+				font-size: $font_largest;
+				padding: 18vw 0px 10px 0px;
+				@media screen and (max-width: 700px) {
+				   font-size: $font_larger;
+		           padding: 40vmin 0px 12vmin 0px;
+		        }
+			}
+
+			p{
+				@include transition;
+				padding: 0px 0px 15vw 0px;
+				font-size: $font_large;
+				@media screen and (max-width: 700px) {
+					font-size: $font_base;
+				}
+			}
+		}
+	}
+
+	.full-img {
+		img {
+			width: 100%;
+		}
+	}
+
+	.flowers-case {
+		.large-12 {
+			@include invert-diagonal;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.case-problem, .case-solution {
+	  color: $darkest;
+	    h2 {
+	    	text-transform: uppercase;
+			color: $highlight;
+			font-family: $font_light;
+			font-size: $font_largest;
+	    	padding: 5vw 0px 1vw 0px;
+	    	@media screen and (max-width: 700px) {
+	    		font-size: $font_larger;
+			    padding: 10vw 0px 2vw 0px;
+			}
+	    }
+
+	    p {
+			padding: 1vw 0px 7vw 0px;
+			font-size: $font_large;
+			@media screen and (max-width: 700px) {
+				font-size: $font_base;
+			}
+	    }
+	}
+
+	.case-benefits {
+		color: $lightest;
+		h2 {
+			color: $lightest;
+		}
+
+		p{
+			padding: 0vw 0px 2.5vw 0px;
+		}
+
+
+		.case-dial1, .case-dial2, .case-dial3, .case-dial4,
+		.otc-case-dial1, .otc-case-dial2, .otc-case-dial3, .otc-case-dial4,
+		.pop-case-dial1, .pop-case-dial2, .pop-case-dial3, .pop-case-dial4,
+		.min-case-dial1, .min-case-dial2, .min-case-dial3, .min-case-dial4 {
+      height: 150px;
+      box-sizing: border-box;
+
+      .radial-svg {
+		    display: block;
+		    margin: 0 auto;
+		    height: 150px;
+		    width: 125px;
+
+		    .component {
+			    fill: $lightest;
+
+			    .background {
+				    fill: $lightest;
+				    fill-opacity: 0.01;
+					}
+				}
+				.arc {
+			    stroke-weight:0.1;
+			    fill: $highlight;
+				}
+				.percentage {
+			    text-anchor: middle;
+			    fill: $lightest;
+				font-family: $font_light;
+				}
+			}
+        }
+	}
+
+	.benefits-text {
+		margin: 0 auto;
+		padding: 0;
+	}
+
+	.related-case-studies {
+
+
+			ol.flex-control-nav.flex-control-paging {
+				margin-bottom: -8vw;
+				li a {
+					background: white;
+					border: 1px solid rgba(219, 64, 6, 0.9);
+				}
+				.flex-active {
+					background: rgba(219, 64, 6, 0.9); 
+				}
+			}
+
+
+		.large-12{
+			padding: 2vw 0 5vw 0;
+		}
+
+		.large-3 {
+			padding: 0;
+			max-height: 200px;
+			overflow: hidden;
+		}
+
+		h2{
+			color: $highlight;
+		}
+
+		.related-case_otc {
+			background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/workspagecasestudyotcsmall.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			text-transform: uppercase;
+			background-color: rgba(200, 54, 54, 0.2);
+
+		}
+		.related-case_flowers {
+			background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/workspagecasestudy1800small.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			text-transform: uppercase;
+			background-color: rgba(200, 54, 54, 0.2);
+		}
+
+		.related-case_popcorn {
+			background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/popcornfactoryworkssmall.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			text-transform: uppercase;
+			background-color: rgba(200, 54, 54, 0.2);
+		}
+
+		.related-case_minware {
+			background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/mindwareworkssmall.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			text-transform: uppercase;
+			background-color: rgba(200, 54, 54, 0.2);
+		}
+
+		.related-case_zte {
+			background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/zte.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			text-transform: uppercase;
+			background-color: rgba(200, 54, 54, 0.2);
+		}
+
+		.related-case_500BC {
+			background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/500bc_1.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			text-transform: uppercase;
+			background-color: rgba(200, 54, 54, 0.2);
+		}
+
+		.related-case_tates {
+			background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/tates_01.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			text-transform: uppercase;
+			background-color: rgba(200, 54, 54, 0.2);
+		}
+
+		.related-case_otc-boomi {
+			background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/otc_dellboomi_1.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			text-transform: uppercase;
+			background-color: rgba(200, 54, 54, 0.2);
+		}
+
+		.related-case_khanlucas {
+			background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/KL_1.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			text-transform: uppercase;
+			background-color: rgba(200, 54, 54, 0.2);
+		}
+
+		.related-case_bloomreach {
+			background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/bloomreach_1.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			text-transform: uppercase;
+			background-color: rgba(200, 54, 54, 0.2);
+		}
+
+		.related-case_1-800Analytics {
+			background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/analytics_01.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			text-transform: uppercase;
+			background-color: rgba(200, 54, 54, 0.2);
+		}
+
+		.related-case_smilemakers {
+			background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/SM_1.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			text-transform: uppercase;
+			background-color: rgba(200, 54, 54, 0.2);
+		}
+		
+
+		.related-case {
+
+
+				@include transition;
+				padding: 2vw 0 7.5vw 0;
+
+			h4 {
+				color: $lightest;
+				font-family: $font_regular;
+				padding: 2vw 5px 0vw 15px;
+			}
+			p {
+				color: $lightest;
+				font-size: $font_smaller;
+				padding: 0vw 5px 5vw 15px;
+			}
+			&:hover {
+				@include transition;
+				background: $highlight;
+			}
+		}
+
+		.full-list {
+			position: relative;
+			margin-top: 8%;
+			h4{
+				padding: 1vw 0;
+				a {
+					color: $darkest;
+					&:hover {
+						color: $highlight;
+					}
+				}
+			}
+
+
+			text-transform: uppercase;
+
+		}
+	}
+	.SD_full-list {
+		position: relative;
+		margin-top: 1%;
+		h4{
+			padding: 1vw 0;
+			a {
+				color: $darkest;
+				&:hover {
+					color: $highlight;
+				}
+			}
+		}
+	}
+
+	.diagonal-container {
+		@include diagonal-container;
+
+		.large-6  {
+			padding: 0;
+			margin: 0;
+			position: relative;
+			img {
+				width: 120%;
+				margin: -5% 0 -5% -5%;
+				@include invert-diagonal;
+
+				@media screen and (max-width: 600px) {
+			    	margin: -5% 0 -5% 0%;
+				}
+
+			}
+		}
+
+	}
+
+}
+
+.tates1 .first-block img {
+    width: 300px;
+    padding-bottom: 70px;
+    padding-top: 135px;
+}
+
+.tates1 .first-block p {
+    padding: 0px 0px 8vw 0px;
+}
+
+.bloomreach1 .first-block img {
+    width: 300px;
+    padding-bottom: 70px;
+    padding-top: 195px;
+}
+
+.khanlucas1 .first-block img {
+	padding-bottom: 0 !important;
+}
+
+.smilemakers1 .first-block img {
+    padding: 20vh 0px 18vh 0px;
+}
+
+
+.bloomreach1 .first-block p {
+    padding: 30px 0px 11vw 0px;
+}
+
+.khanlucas1 .first-block p {
+    padding: 0px 0px 11vw 0px;
+}
+
+.a1-800Analytics1 .first-block img {
+    padding: 22vh 0px 11vh 0px;
+}
+.save-day1 .first-block, .cetera1 .first-block{
+	@media screen and (max-width: 650px){
+		 padding: 16vw 0 0 0;
+	}
+	
+	h1{
+		padding: 20vw 0px 2% 0px;
+		color: #fff;
+		@media screen and (max-width: 700px) {
+		   	padding: 25vw 0px 15vw 0px;
+		}
+		@media screen and (max-width: 420px){
+			font-size: 1.5rem;
+		}
+	}
+	.SDBannerText{
+		padding: 5vw 0px 15vw 0px;
+	}
+	p{
+		@media screen and (max-width: 700px) {
+			padding: 8vw 0px 15vw 0px;
+		}
+	}
+}

@@ -1,0 +1,231 @@
+._about-us-new {
+	.border-container{
+	    background-attachment: fixed;
+	    background-position: 0 0;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    position: relative;
+	    background-image: url(https://d283pee6upvkfl.cloudfront.net/img/about-us/hero_about-us.jpg);
+	}
+
+	.homeB2 {
+		margin-top: 0%;
+	}
+
+	.about-us-background-text{
+	    padding: 220px 15vw 160px 15vw;
+	    text-align: center;
+	}
+
+	.about-us-background-text h1 {
+	    color: white;
+        font-size: 48px;
+	}
+
+	.about-us-body{
+	    padding: 80px 10%;
+	    height: 56vw;
+	    z-index: 1;
+	    background: white;
+	}
+
+	.about-us-founder-text{
+	    float: left;
+        margin-left: 5%;
+	    display: inline;
+        width: 54%;
+	    color: black;
+	}
+
+	.about-us-founder-subtext{
+	    color: rgba(219, 64, 6, 1);
+        font-size: 1.8vw;
+    	margin-bottom: 35px;
+	}
+
+	.about-us-founder-main-text {
+		text-align: left;
+	}
+
+	.about-us-image{
+	    width: 41%;
+	    float: right;
+	}
+
+	.about-us-left{
+	    float: left !important;
+	}
+
+	h1 {
+	  font-size: 1.6em;
+	}
+
+	.about-us-founder-subtext, .about-us-founder-name, .about-us-founder-main-text{
+		font-weight: 600;
+	}
+
+	.about-us-founder-name{
+	    width: 100%;
+		font-size: 2.4vw;
+	}
+
+	.about-us-founder-main-text{
+	    font-size: 1.59vw;
+	}
+	/**Slider**/
+
+	.slider-padding{
+		padding: 3% 0 0px 0;
+		margin: 0 auto;
+	}
+
+	.image-slider {
+		text-align: center;
+	    width: 30%;
+
+		img{
+		    margin: 36% auto;
+			width: 71%;
+			z-index: 1;
+			border-radius: 100%;
+		}
+	}
+
+	.slider-text {
+		width: 70%;
+	    margin: 0 auto;
+	    padding: 4.5vw 4vw;
+
+		@media screen and (max-width: 1024px) {
+				text-align: center;
+			}
+
+		h2{
+			color: #fff;
+			font-size: 1.7em;
+			padding: 3.5vw 0 0 0;
+		}
+
+		p {
+			color: #fff;
+			padding: 4vmin 0 0 0;
+		}
+	}
+
+	.border-D-top:before {
+		top: -3.8vw;
+	}
+
+	/**End of slider**/
+
+	@media only screen and (max-width: 1000px) {
+	    .about-us-image{
+		    position: relative;
+		    display: block;
+		    margin-left: 20%;
+	        width: 60%;
+    	}
+
+        .about-us-founder-subtext{
+    	    width: 100%;
+    	    font-size: 1.3rem;
+        }
+
+        .about-us-founder-text{
+    	    padding-top: 27px;
+			margin-left: 0px;
+			text-align: center;
+			width: 100%;
+        }
+
+        .about-us-founder-text{
+        }
+
+        .about-us-founder-main-text{
+        	font-size: 1.2rem;
+        }
+
+        .about-us-founder-name{
+    	    font-size: 1.7rem;
+        }
+	
+		.about-us-body {
+	       height: calc(-5vw + 884px);
+		}
+
+	}
+
+	@media only screen and (max-width: 420px) {
+
+		.about-us-body {
+		    height: calc(-80vw + 1324px);
+		}
+
+	}
+
+	@media only screen and (min-width: 900px) {
+		.homeB2 {
+			margin-top: 0%;
+		}
+
+	}
+
+	@media only screen and (max-width: 875px) {
+		.slider-text, .image-slider {
+		    float: none;
+		    display: block;
+		    padding: 0;
+		}
+
+		.slider-text {
+		    width: 100%;
+		    margin: 0 auto;
+		    padding-top: 0;
+		}
+
+		.image-slider {
+		    display: block;
+		    margin: 0 auto;
+		    padding-top: 40px;
+		    width: 190px;
+
+		    img {
+			    margin: 0 auto;
+			    display: block;
+			}
+		}
+
+	}
+
+	.flex-control-nav{
+		bottom: 2vmin;
+	}
+
+	.flex-viewport {
+	    padding-bottom: 60px;
+	}
+
+	img#office-img-1, img#office-img-4 {
+	    float: left;
+	    display: inline;
+	    width: 47%;
+	    margin: 2%;
+	    margin-right: 0;
+	    margin-left: 2%;
+	}
+
+	img#office-img-2, img#office-img-5 {
+	    float: right;
+	    display: inline;
+	    width: 47%;
+	    margin: 2%;
+	}
+
+	img#office-img-3 {
+	    width: 96%;
+	    margin: 2% auto;
+	    display: block;
+	    margin-bottom: 0;
+	}
+
+}

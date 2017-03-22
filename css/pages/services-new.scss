@@ -1,0 +1,315 @@
+._services-new {
+
+	h1 {
+		color: $lightest;
+		font-size: $font_largest;
+		font-family: $font_light;
+		padding: 5% 0 2% 0;
+		text-transform: uppercase;
+		@media screen and (max-width: 850px) and (min-width: 500px) {
+			padding: 15% 0 5% 0;
+		}
+        @media screen and (max-width: 500px) {
+           padding: 30% 0 10% 0;        
+        }
+	}
+
+	.btn {
+	    margin: 0 auto;
+	    border: 2px solid white;
+	    padding: 5px 40px;
+	    display: block;
+	    width: 170px;
+	    text-align: center;
+	    margin-bottom: 12%;
+	    color: white;
+	    font-size: 0.9em;
+	    border-radius: 5px;
+	}
+
+	.first-block {
+	    padding: 8% 0 2% 0;
+
+		.large-3 {
+			h2 {
+				color: $lightest;
+				text-align: center;
+				padding: 7% 0;
+				font-size: 1.2em;
+			}
+			p {
+				font-family: $font_hairline;
+				font-size: $font_large;
+				font-style: italic;
+				padding: 3% 0;
+			}
+			p.heading{
+				min-height: 160px;
+			}
+			color: $lightest;
+			position: relative;
+			padding: 3% 2%;
+			img {
+			  width: 60px;
+			  display:block;				  
+			  left:0;
+			  right:0;
+			  bottom:0;
+			  margin:auto;
+			}
+
+			ul {
+				padding: 10% 0 1% 0;
+			}
+		}
+	}
+
+	.sm-content-head {
+
+		p {
+			color: $dark;
+		}
+
+		h2{
+			@media screen and (max-width: 600px) { 
+				padding: 14vmin 0 1vw 0;	
+			}
+			padding: 7vmin 0 1vw 0;
+			font-size: $font_largest;
+			color: $highlight;
+		}
+	}
+
+	.process {
+		h1 {
+		    text-align: center;
+		    font-size: 48px;
+		    color: #DB4006;
+		    line-height: 72px;
+		}
+
+		h4 {
+		    font-size: 24px;
+		    text-align: center;
+		}
+
+		p {
+		    font-size: 16px;
+		    line-height: 24px;
+		    color: black;
+		    width: 270px;
+		    margin: 20px  auto;
+		    text-align: center;
+		    @media only screen and (min-width: 685px) and (max-width: 900px) {
+			    width: 215px;
+			}
+		    
+		}
+
+		.large-4 {
+		    padding: 0;
+		    @media only screen and (min-width: 685px) {
+			    width: 33.33333%;
+			}
+
+		}
+
+		.columns-parent {
+		    width: 81%;
+		    @media only screen and (max-width: 1025px) {
+			    width: 95%;
+			}
+		}
+	}
+
+	
+	.clients {
+		background: rgba(248, 248, 248, 0.8);
+		position: relative;
+		top: 1vw;
+		z-index: 5;
+		margin: 0;
+
+		p {
+			text-align: center;
+			color: $dark;
+		}
+
+		.client-logo {
+			height: auto;
+			text-align: center;
+			img {				
+			  width: 140px;
+			  -webkit-filter: grayscale(100%); 
+        	  filter: grayscale(100%);
+        	  padding-bottom: 8%;
+        	  @media screen and (max-width: 480px) { 
+					 width: 150px;
+				}
+		  }
+		}
+		.client-logo-m {
+			height: auto;
+			text-align: center;
+		  img {
+		  	width: 160px;
+			-webkit-filter: grayscale(100%); 
+            filter: grayscale(100%);
+	  		@media screen and (max-width: 480px) { 
+				width: 200px;
+			}
+		  }
+		}
+	}
+
+	.servicesB4{
+		h2 {
+			color: $dark;
+		}
+	}
+
+	.servicesB5-new{
+		@media screen and (max-width: 894px) { 
+			background-position: 0 !important;
+		}
+	}
+
+	.dark-color {
+		color: $dark;
+	}
+
+	.quote-block {
+
+		p {	
+			font-size: $font_large;
+			font-family: $font_regular;
+		}
+
+		img {
+			max-width: 180px;
+		}
+	}
+
+	// controls the icon size of this page
+	.icon-size {
+		width: 88px;
+	}
+	
+	.partners-bg {
+		padding: 5% 0;
+		text-align: center;
+		h1 {
+		    text-align: center;
+		    font-size: 48px;
+		    color: #DB4006;
+		    line-height: 72px;
+		    font-family: 'latolight';
+		}
+		h3 {
+			font-size: $font_large;
+			padding: 3% 0 6% 0;
+		}
+		.dell-logo {
+			img {
+				width: 120px;
+			}
+		}
+		.amazon-logo {
+			img {
+				width: 175px;
+			}
+		}
+		.partners-logo {
+			img {
+				width: 200px;
+			}
+		}
+
+		.magento-logo {
+			img {
+				width: 150px;
+			}
+		}
+		.ibm-logo {
+			img {
+				width: 175px;
+			}
+		}
+		.text-center {
+			@media screen and (min-width: 1025px) { 
+				width: 51%;
+			}
+		}
+	}
+
+	div#learn-more {
+	    background: #EFEFEF;
+	    padding: 30px 0;
+	    -webkit-box-shadow: inset 0px 18px 107px -32px rgba(0,0,0,0.68);
+	    -moz-box-shadow: inset 0px 18px 107px -32px rgba(0,0,0,0.68);
+	    box-shadow: inset 0px 18px 107px -32px rgba(0,0,0,0.68);
+	
+	    .service {
+	    	padding: 40px 40px 0 0;
+	    	.service-img-icon {
+			    width: 15%;
+			    float: left;
+			    img {
+				    width: 90px;
+				    display: block;
+				    left: 0;
+				    right: 0;
+				    bottom: 0;
+				    float: right;
+				}
+			}
+
+			.service-info {
+			    width: 82%;
+			    float: right;
+			    .columns {
+				    padding: 0;
+				    color: black;
+				}
+				p {
+				    color: black;
+				}
+				h3 {
+				    color: #DB4006;
+				    font-size: 32px;
+				    line-height: 1.7;
+				}
+			}
+	    }
+
+
+	}
+
+	@media screen and (max-width: 650px) { 
+	
+	div#learn-more {
+		.service {
+		    padding: 40px;
+		    .service-img-icon {
+			    float: none;
+			    width: 100%;
+			    display: block;
+			    margin: 0 auto;
+			    position: relative;
+			    img {
+				    width: 140px;
+				    float: none;
+				    margin: 0 auto;
+				}
+			}
+
+			.service-info {
+			    float: none;
+			    width: 100%;
+			    text-align: center;
+			    display: block;
+			}
+		}
+	}
+}
+}

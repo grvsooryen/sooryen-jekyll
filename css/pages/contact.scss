@@ -1,0 +1,258 @@
+.contact-pic {
+	background-image: url("https://d283pee6upvkfl.cloudfront.net/img/000025.jpg");
+	background-size: cover;
+	height: 40vw;
+	width: 100%;
+
+}
+
+._contact{
+	color: $dark;
+	.sm-content-head {
+		h1 {
+			color: white;
+			font-family: $font_hairline;
+			font-size: $font_largest;
+			padding: 17vw 0px 12vmin 0px;
+			text-transform: uppercase;
+			@media screen and (max-width: 700px) {
+						padding: 50vmin 0px 12vmin 0px;
+						color: rgba(219, 64, 6, 0.9);
+	        }
+		}
+	}
+
+	.large-6 {
+		padding: 0;
+	}
+    .form8 .warning, .form8.error {
+        display: none !important;
+    }
+	.article-selected {
+		background: $highlight;
+		color: $lightest;
+	}
+
+	#contact {
+		@media screen and (max-width: 520px) {
+	        margin-top: 30%;
+	     }
+	}
+
+	.map-container {
+		position: relative;
+		section {
+
+			@include transition;
+			 display: -moz-box;
+			 display: -ms-flexbox;
+			 display: -webkit-box;
+			 display: -webkit-flex;
+			 display: flex;
+			background: $light;
+			bottom: -20%;
+			left:0;
+			position: absolute;
+			width: 80%;
+			z-index: 1;
+		    margin-left:auto;
+		    margin-right:auto;
+		    right:0;
+
+		    @media screen and (max-width: 700px) {
+	          bottom: -23%;
+	        }
+
+	         @media screen and (max-width: 520px) {
+		        display: inline-block;
+		         bottom: -47%;
+		     }
+
+			aside {
+
+				@media screen and (max-width: 520px) {
+			        width: 100%;
+			    }
+
+				width: 35%;
+				ul {
+					margin-bottom: 0 !important;
+					margin-left: 0 !important;
+					li {
+						border-bottom: 1px solid $medium;
+						list-style: none;
+						text-align: center;
+
+						&:last-child {
+							border-bottom: 0px solid $medium;
+						}
+
+						a {
+							padding: 7.3px 0;
+							display: block;
+							color: $dark;
+							&:hover {
+								background: $high_Overriding;
+								color: $lightest;
+							}
+						}
+
+
+					}
+				}
+			}
+
+			article {
+				@media screen and (max-width: 520px) {
+			        width: 100%;
+			    }
+				width: 65%;
+
+				p {
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	.map {
+		position: relative;
+		overflow: hidden;
+		iframe{
+			z-index: -9999;
+			border:0;
+			width:100%;
+			min-height:550px;
+  			height:auto !important;
+  			height:550px;
+			margin-top: -50px;
+			@media screen and (max-width: 950px) {
+				min-height:400px;
+	  			height:400px;
+			}
+
+			@media screen and (max-width: 450px) {
+				min-height:350px;
+	  			height:350px;
+			}
+
+			@media screen and (max-width: 520px) {
+				visibility: hidden;
+			}   
+		}
+	}
+
+	form{
+		max-width: 500px;
+		margin: 0px auto;
+		padding: 0 4% 10% 4%;
+
+		p{
+			font-size: 1.1em;
+			margin-bottom: 5px;
+			margin-left: 8px;
+			text-align: left;
+		}
+
+		input{
+			border: none;
+			border-bottom: 1px solid $dark;
+			box-shadow: none;
+			color: $dark;
+			&#form-company, &#form-email {
+				width: 48%;
+  				float: left;
+			}
+			&#form-company {
+				margin-right: 4%;
+			}
+		}
+
+		textarea{
+			border-bottom: 1px solid $dark;
+		}
+
+		button {
+			color: $highlight;
+			float: right;
+			font-family: $font_regular;
+		}
+	}
+
+	.maps-top-n {
+		margin-top: -6vmax;
+	}
+
+	.red-alert{
+	    border-bottom: 4px solid $highlight;
+	    -webkit-transition: 0.2s;
+	    -moz-transition: 0.2s;
+	    -ms-transition: 0.2s;
+	    -o-transition: 0.2s;
+	    transition: 0.2s;
+
+	    &::-webkit-input-placeholder {
+		    color: $highlight;
+		    opacity: 1 !important; /* for chrome */
+		}
+	}
+
+	.sent{
+		background-color: $highlight;
+		color: $lightest;
+		display: none;
+		float: left;
+		margin-top: 5%;
+		padding: 2% 4%;
+	}
+
+	.locations {
+		transition: 1.2s;
+		@include maps;
+
+		.large-3 {
+			padding: 5px 10px;
+		}
+	}
+
+	.contact-info {
+		@include contact-info;
+        padding-top: 50px;
+	}
+
+	input#insightly_firstName, input#insightly_organization {
+	    width: 48%;
+	    float: left;
+	    margin-right: 4%;
+	}
+
+	input#insightly_lastName, input#insightly_role {
+	    width: 48%;
+	    float: left;
+	}
+
+	textarea#insightly_background {
+	    height: 160px;
+	    font-size: 16px;
+	}
+
+	input[type="submit"] {
+	    padding: 10px;
+	    width: 100%;
+	    background: #db4006;
+	    color: white;
+	    border: none;
+	}
+
+	@media only screen and (max-width: 1026px) {
+		.contact-info {
+			padding-top: 0;
+		}
+	}
+
+	.white-background-full {
+    padding-top: 0;
+}
+
+
+}

@@ -1,0 +1,245 @@
+._home {
+
+	p {
+		font-size: $font_base;
+	}
+
+	-webkit-font-smoothing: antialiased;
+
+	// .top-bar{
+	// 	.show-logo{
+	// 		display: none;
+	// 		@media screen and (max-width: 1265px) {
+	// 			display: inline-block;
+	// 		}
+	// 	}
+	// 	.hide-logo{
+	// 		display: inline-block;
+	// 		@media screen and (max-width: 1265px) {
+	// 			display: none;
+	// 		}
+	// 	}
+	// }
+
+	.apple-pay{
+
+		h2 {
+			font-family: $font_regular;
+			color: $lightest;
+			font-size: $font_largest;
+		}
+
+		p{
+			color: $lightest;
+			font-family: $font_regular;
+			max-width: 400px;
+			margin: 30px auto 50px;
+		}
+
+		.button{
+			font-family: $font_regular;
+			font-size: $font_base;
+			margin: 0 2%;
+			@media screen and (max-width: 450px) {
+				width: 100%;
+				display: block;
+				margin: 5px 2%;
+			}
+		}
+	}
+
+	.second-text{
+
+		span{
+			@media screen and (max-width: 850px) {
+			display: block;
+		  }
+		}
+
+		p {
+			font-size: $font_large;
+		}
+
+		.font-base {
+			p {
+				font-size: $font_base;
+			}
+		}
+
+	}
+
+	.N-margin {
+		margin-top: -5.5vmin !important;
+		@media screen and (max-width: 450px) {
+			margin-top: -5.5vmin !important;
+		  }
+	}
+
+	/* Slider Code Beginning */
+
+	.slider-padding{
+		padding: 3% 0 0px 0;
+		margin: 0 auto;
+	}
+
+	.image-slider {
+		text-align: center;
+
+		img{
+			margin: -3% auto;
+			padding-top: 10px;
+			width: auto;
+			z-index: 1;
+		}
+	}
+
+	.slider-text {
+		padding: 4.5vw 4vw;
+		margin: 0 auto;
+
+		@media screen and (max-width: 1024px) {
+				text-align: center;
+			}
+
+		h2{
+			color: #fff;
+			font-size: 1.7em;
+			padding: 3.5vw 0 0 0;
+		}
+
+		p {
+			color: #fff;
+			padding: 4vmin 0 0 0;
+		}
+	}
+
+	/* Slider Code END */
+
+	.sun-image {
+		width: 70px;
+	}
+
+	div.border-container.home-slider {
+		overflow: hidden;
+	}
+
+	.quote{
+		font-size: 1.2em;
+		font-family: $font_light;
+		max-width: 100%;
+		display: block;
+		margin: 0 auto;
+		&.credit {
+			color:$highlight;
+		}
+	}
+
+	.feature-background {
+		margin: 0;
+		color: $dark;
+
+		.padding-x-p{
+			padding: 3vw 5%;
+			text-align: center;
+		}
+
+		  h2 {
+		  	font-size: $font-big;
+		  	color: $highlight !important;
+		  	text-align: center;
+		  }
+
+		.backenddatacloud:before {
+		  @include icons-feature;
+	  	    background-image: url("https://d283pee6upvkfl.cloudfront.net/img/backenddatacloud-01.png");
+	        width: 42px;
+		}
+
+		.ecommerce:before {
+		   @include icons-feature;
+  	       background-image: url("https://d283pee6upvkfl.cloudfront.net/img/ecommerce-01.png");
+           width: 40px;
+		}
+
+	  .ui-icon:before {
+	  	  @include icons-feature;
+	  	  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/uiux-01.png");
+	      width: 40px;
+		}
+
+		h3 {
+			font-size: $font-base;
+			font-family: $font_bold;
+			margin-left: 50px;
+			margin-top: 10px;
+			line-height: 40px;
+			padding: 10px 0;
+		}
+
+		p{
+			padding: 15px 0;
+		}
+	}
+
+	.fintech-section{
+		.heading{
+			font-size: $font_large;
+			font-family: $font_light;
+		}
+		.text{
+			font-size: 18px; 
+		}
+	}
+
+	.clients-row {
+		.orient-logo {
+			@include logo-effects;
+			img {
+				width: 165px;
+			}
+	  }
+		.flower-logo {
+			@include logo-effects;
+			img {
+				width: 110px;
+			}
+		}
+		.five-logo {
+			@include logo-effects;
+			img {
+				width: 150px;
+			}
+		}
+	}
+
+	.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+	}
+		@keyframes blink{
+		    0% { opacity:1; }
+		    50% { opacity:0; }
+		    100% { opacity:1; }
+		}
+		@-webkit-keyframes blink{
+		    0% { opacity:1; }
+		    50% { opacity:0; }
+		    100% { opacity:1; }
+		}
+		@-moz-keyframes blink{
+		    0% { opacity:1; }
+		    50% { opacity:0; }
+		    100% { opacity:1; }
+	}
+
+	.menu-visible  .show-logo {
+	    display: none !important;
+	}
+}
+
+p.maureen {
+    color: #DB4006;
+}
+

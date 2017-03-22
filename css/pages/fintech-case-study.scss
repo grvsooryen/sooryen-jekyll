@@ -1,0 +1,287 @@
+._fintech-case-study {
+	-webkit-font-smoothing: antialiased;
+	header{
+		ul.right{
+			a,li:hover,a:hover{
+				color: rgb(0, 0, 0) !important; 
+			}
+		}
+	}
+	.sm-content-head {
+
+		h1 {
+			color: $highlight;
+			font-family: $font_light;
+			font-size: font_largest;
+			padding: 25vmin 0px 12vmin 0px;
+			text-transform: uppercase;
+
+			@media screen and (max-width: 700px) {
+	           padding: 40vmin 0px 12vmin 0px;
+	        }
+
+		}
+	}
+
+	.works-row {
+		  z-index: -9999 !important;
+		.case-study {
+			h2 {
+				color: $lightest;
+				font-family: 'latoheavy';
+				text-transform: uppercase;
+
+			}
+
+			&.save-day {
+				background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/newCaseStudies/SD_1.jpg");
+				background-size: cover;
+				z-index: -0;
+				padding: 8vw 0 8vw 0;
+				opacity: 0.9;
+
+				@include transition;
+					&:hover{
+						@include transition;
+						opacity: 1;
+					}
+
+			  .saveDay-logo {
+			  	background: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/newCaseStudies/saveday-wht-logo.png") no-repeat center;
+			  	background-size: contain;
+			  	width: 25vmin;
+			  	height: 18vmin;
+			  }
+			}
+
+			&.cetera {
+				background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy14/DOL-1.jpg");
+				background-size: cover;
+				padding: 8vw 0 8vw 0;
+				opacity: 0.9;
+				@include transition;
+					&:hover{
+						@include transition;
+						opacity: 1;
+					}
+
+				.cetera-logo {
+			  		background: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/newCaseStudies/cetera-logo-wht.png") no-repeat center;
+				  	background-size: contain;
+				  	width: 20vmin;
+				  	height: 18vmin;
+				 }
+			}
+		}
+	}
+
+	.clients-list {
+		h2 {
+			text-transform: uppercase;
+			color: $highlight;
+			font-family: $font_light;
+
+		}
+		.client {
+			padding: 2% 1.4%;
+			color: $darkest;
+			font-size: $font_base;
+			@media screen and (max-width: 600px) {
+			    padding: 5% 4%;
+			}
+			&.partners {
+				span {
+				display: block;
+				font-size: $font_smallest;
+				font-family: $font_regular;
+				color: $medium;
+				}
+			}
+
+			a{
+				color: $darkest;
+				display: block;
+				&:hover {
+					color: $highlight;
+				}
+			}
+		}
+	}
+
+	.mobile-screen{
+		margin-bottom: 5%;
+		.flex-viewport{
+			cursor: auto;
+		}
+
+		.slides li {
+			cursor: pointer;
+			position: relative;
+			overflow: hidden;
+
+			img {
+				border: 1px solid $highlight;
+				width: 95%;
+				height: 13%;
+				margin: 0 auto;
+
+			}
+
+			&:hover {
+				.full-bg-orange {
+					display: block;
+				}
+			}
+
+		}
+
+		.full-bg-orange {
+			display: none;
+			position: absolute;
+			width: 94.7%;
+			left: 9.6px;
+			padding-bottom: 55%;
+			background-color: $highlight_transparency;
+			transition: 1s !important;
+
+			img {
+				border: none !important;
+				width: 10% !important;
+				height: auto !important;
+				margin-top: 24.2% !important;
+
+			}
+		}
+
+		.flex-control-nav{
+			bottom: -8vmin !important;
+		}
+
+		.flex-control-paging li a {
+			  border: 1px solid red;
+		}
+
+		.flex-control-paging li a.flex-active {
+			background-color: $highlight;
+		}
+
+		cursor: pointer;
+		text-align: center;
+
+		.large-3{
+
+			background-color: RGBA(39, 40, 34, 0.6);
+
+			&:hover{
+				background-color: RGBA(39, 40, 34, 1);
+			}
+
+			&:active {
+				width: 80vw;
+				height: 80vw;
+				position: absolute;
+				top: 0px;
+			}
+
+		}
+	}
+
+	.works-examples{
+		position: relative;
+		margin-bottom: 5%;
+
+	.flex-control-thumbs {
+			margin: 10px auto;
+			img{
+				border: 1px solid $highlight;
+			}
+		}
+
+		img{
+			max-width: 200px;
+		}
+
+		h3{
+			padding: 2% 0 3vmin 0;
+			text-align: center;
+			color: $highlight;
+			font-size: $font_larger;
+		}
+
+		p{
+			padding: 4vmin 0 10% 0;
+		}
+
+		.slides {
+			text-align: center;
+
+			img {
+				max-width: 260px;
+			}
+		}
+
+		img {
+			margin: 0px auto;
+		}
+
+		.close{
+			right: 0;
+			top: 0px;
+			padding: 2px;
+			z-index: 5;
+			position: absolute;
+			cursor: pointer;
+			font-size: $font_large;
+			&:hover {
+				color: $dark;
+			}
+		}
+	}
+
+	.diagonal-container {
+		@include diagonal-container;
+
+		.logo-and-title {
+			padding-top: 5%;
+			width: 80%;
+			margin: 0px auto;
+			height: 50px;
+			background-color: red;
+		}
+
+		.large-6 {
+			padding: 0;
+			margin: 0;
+			position: relative;
+			img {
+				width: 120%;
+				margin: -5% 0 -5% -6.5%;
+				opacity: 0.9	;
+				@include transition;
+				&:hover {
+					@include transition;
+				  opacity: 1;
+				}
+				@include invert-diagonal;
+
+				@media screen and (max-width: 600px) {
+			    	margin: -5% 0 -5% 0%;
+				}
+
+			}
+		}
+
+	}
+}
+
+@media only screen and (min-width:1025px) and (max-width: 1068px)  {
+	.large-6.small-12.columns.case-study.khanlucas {
+	    padding: 11vw 0 8vw 0;
+	}
+}
+
+@media only screen and (min-width:1025px) and (max-width: 1030px)  {
+	.large-6.small-12.columns.case-study.popcorn {
+	    padding: 10.9vw 0 8vw 0;
+	}
+}

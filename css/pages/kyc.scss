@@ -1,0 +1,53 @@
+._kyc {
+    -webkit-font-smoothing: antialiased;
+    .hero {
+        .kyc-banner {
+            @include photo-background;
+            background-image: url("../../assets/img/kyc-banner.png");
+            h2 {
+                font-family: "latoregular";
+                color: #fff;
+                font-size: 2em;
+            }
+            p {
+                color: #fff;
+                font-family: "latoregular";
+                font-size: 1rem;
+                padding: 20px 0;
+            }
+            .button {
+                padding: 0.3rem 2.5rem;
+                font-family: "latoregular";
+            }
+            .columns {
+                padding-left: 20px;
+            }
+        }
+    }
+    .kyc-why {
+        background-image: url("../../assets/img/kyc-why.png");
+        h3 {
+            text-align: center;
+            font-family: lato;
+            color: #FFF;
+        }
+        p {
+            color: #FFF;
+            font-family: lato;
+        }
+    }
+    .kyc-what{
+        .padding-Yvw-10{
+            background : #DDD;
+            h3{
+                text-align: center;
+                color: #DB4006;
+                font-family: "latoregular";
+            }
+            p{
+                color: #666;
+                font-family: "latoregular";
+            }
+        }
+    }
+}

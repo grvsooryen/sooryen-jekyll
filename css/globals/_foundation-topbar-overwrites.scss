@@ -1,0 +1,13 @@
+// Background color for the top bar
+$topbar-bg-color: $lightest;
+$topbar-bg: $topbar-bg-color;
+
+// Height and margin
+$topbar-height: rem-calc(105);
+$topbar-margin-bottom: 0;
+
+// Transitions and breakpoint styles
+$topbar-transition-speed: 300ms;
+
+// Sticky Class
+$topbar-arrows: false; //Set false to remove the triangle icon from the menu item

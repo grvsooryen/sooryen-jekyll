@@ -1,0 +1,211 @@
+.perfopt {
+    .hero-banner, .homeB1, .homeB2, .homeB3, .path-to-success{
+        background-attachment: fixed;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    .hero-banner {
+        background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/perfopt/hero-photo.jpg);
+        @media screen and (max-width: 980px) {
+            background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/perfopt/hero-photo-mobile.jpg) !important;
+            background-position: 0px -175px !important;
+        }
+        p {
+            margin: 0;
+        }
+        h2 {
+            font-family: "latolight";
+            color: #fff;
+            font-size: 2.5em;
+        }
+        @media (max-width: 544px) {
+            background-position: 0px 0px !important;
+            h2, p {
+                text-align: center;
+            }
+            h2 {
+                font-size: 2em;
+                &:first-child {
+                    padding-top: 85px;
+                }
+            }
+        }
+    }
+    .homeB1 {
+        background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/perfopt/banner-photo-1.jpg);
+    }
+	.homeB2 {
+        background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/perfopt/banner-photo-2.jpg);
+    }
+    .homeB3 {
+        background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/perfopt/banner-photo-3.jpg);
+    }   
+    p {
+        font-size: 1.3rem;
+    }
+    .feature-background {
+        h2 {
+            font-size: 2.35em;
+            color: #DB4006 !important;
+            text-align: center;
+        }
+        h3 {
+            font-size: 1.3rem;
+            font-family: "latolight";
+            margin-left: 20px;
+            margin-top: 10px;
+            line-height: 40px;
+            padding: 10px 0;
+            font-weight: 700;
+            span {
+                font-weight: 300;
+                color: #444;
+            }
+        }
+        p {
+			padding: 0;
+		}
+    }
+    .probsol ul {
+        margin-left: auto;
+        li{
+            font-family: "latoregular";
+            font-size: 0.95em;
+        }
+    }
+
+    .whatsperf .font-base p, 
+    .csmobile .font-base p, 
+    .poservice .font-base p {
+        font-size: 0.875rem;
+        font-family: "latolight";
+        font-weight: 800;
+        color: black;
+    }
+    
+    .csmobile .feature-background h3 {
+        margin-left: 0px;
+        margin-top: 0px;
+        color: #DB4006 !important;
+        padding-bottom: 5px;
+    }
+    .cslegacyimg, .csnewimg {
+        margin-top: 30px;
+    }
+    .main-container .probsol .row.font-base, 
+    .main-container .whatsperf .row.font-base, 
+    .main-container .poservice .row.font-base, 
+    .main-container .csmobile .row.font-base 
+    {
+        max-width: 1030px;
+        margin: 0 auto;
+    }
+    .padding-Yvw-3 {
+        padding: 34px 0;
+    }
+    .backno{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        font-size: 200px;
+        text-align: center;
+        color: #EEEEEE;
+        font-family: Arial;
+        font-weight: bold;
+        z-index: -1;
+        margin-top: -120px;
+        margin-left: -25px;
+    }
+    @media (max-width: 1024px) {
+        #prob {
+            text-align: center;
+        }
+        .iterprac {
+            padding-top: 15px;
+        }
+        .poservice .large-4{
+            padding-bottom: 40px;
+        }
+    }
+    @media (min-width: 1025px) {
+        .cslegacyimg{
+            padding-top: 50px;
+        }
+        .cslegacyimg, .csnewimg {
+            margin-top: 60px;
+        }
+        .iterprac {
+            padding-top: 12px;
+        }
+        .infohypo {
+            padding-top: 6px;
+        }
+        .iterprac, .infohypo, .techass {
+            height: 135px;
+        }
+    }
+    
+    .list-center {
+        width:220px;
+        margin:0 auto;
+        text-align:left;
+    }
+
+    .path-to-success-text p, .path-to-success-text h3{
+        font-size: 16px; 
+    }
+    .path-to-success-text h3{
+        line-height: 21px;
+    }
+
+    .padding-Yvw-4{
+        padding-bottom: 78px;
+        margin-top: 16px;
+    }
+
+    .path-to-success{
+        background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/perfopt/banner-photo-4.jpg);
+        background-position: 0 0;
+    }
+
+    @media only screen and (max-width: 64.0625em){
+        .center-width-75{
+            text-align: left;
+            width: 75%;
+        }
+        .center-width-75 div.large-4.columns{
+            margin-bottom: 20px;
+        }
+
+        .padding-Yvw-3 .large-4.columns{
+            width: 48%;
+            margin: 0 auto;
+            float: none;
+            padding-bottom: 125px;
+        }
+    }
+
+    @media only screen and (max-width: 1025px){
+        .path-to-success{
+            background-position: -194px 0;
+        }
+
+    }
+
+    @media only screen and (max-width: 640px){
+        .path-to-success{
+            background-position: -375px 0;
+        }
+
+    }
+
+    @media only screen and (max-width: 375px){
+        .path-to-success{
+            background-position: -466px 0;
+        }
+
+    }
+
+} 

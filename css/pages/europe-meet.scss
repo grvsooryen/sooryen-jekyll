@@ -1,0 +1,324 @@
+._europe-meet {
+    .europe-form-container {
+        position: absolute;
+        float: left;
+        display: block;
+        border: 34px solid;
+        border-color: #EFEFEF;
+        width: 40%;
+        padding: 20px 6% 0px 6%;
+        webkit-transform: skewY(-7deg);
+        -moz-transform: skewY(-7deg);
+        -ms-transform: skewY(-7deg);
+        -o-transform: skewY(-7deg);
+        transform: skewY(-7deg);
+        background: #F8F8F8;
+        margin-top: -100px;
+        margin-left: 4%;
+    }
+
+    .europe-form-text-container{
+        webkit-transform: skewY(7deg);
+        -moz-transform: skewY(7deg);
+        -ms-transform: skewY(7deg);
+        -o-transform: skewY(7deg);
+        transform: skewY(7deg);
+        
+            #europe-form {
+                label {
+                    color: #DB4006;
+                    font-size: 0.75em;
+                    font-family: "latoregular";
+                }
+                button {
+                    background-color:#DB4006;
+                }
+
+            }
+    }
+    #ninja_forms_form_6_cont label{
+        color: #DB4006;
+        font-size: 0.75em;
+        font-family: "latoregular";
+    }
+
+    #ninja_forms_form_6_cont input{
+         box-shadow: none !important;
+          border: none !important;
+          border-bottom: 1px solid #4A4A4A !important;
+          padding: 0 !important;
+          height: 1.5em;
+          font-family: "latoregular";
+          font-size: 1.1rem;
+          color: #4A4A4A;
+          background: #f7f7f7;
+    }
+
+    .europe-about{
+          float: right;
+          color: black;
+          font-size: 0.875em;
+          width: 44%;
+          position: absolute;
+          right: 5%;
+    }
+
+    .europe-about {
+
+        h1{
+            width: 100%;
+            max-width: 422px;
+            display: inline;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        h1:nth-child(1) {
+            display: block;
+            margin: 0 auto;
+            padding-bottom: 20px;
+        }
+
+        p {
+            font-weight: 600;
+        }
+
+    }
+
+    .europe-about-container{
+        font-family: latoregular;
+
+    }
+
+    .europe-background{
+        height: 590px;
+          background-attachment: fixed;
+          background-position: 0 0;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+          background-image: url(https://d283pee6upvkfl.cloudfront.net/img/europe-meet/hero-img.jpg);
+          font-size: 50px;
+          /* top: 100px; */
+          padding: 21% 0 10% 0;
+          text-align: center;
+          color: black;
+    }
+
+    .europe-body{
+        min-height: 1190px;
+    }
+
+    .europe-list{
+        display: inline;
+        float: left;
+        padding-right: 27px;
+        display: inline-block;
+        width: 32%;
+        height: 100px;
+        text-align: center;
+    
+        h1 {
+            color: #FF5722;
+        }    
+
+    }
+
+    .sooryen-stats {
+        padding-top: 30px;
+    }
+
+    .tech-partners {
+        img {
+            display: inline;
+            width: 173px;
+            padding: 18px;
+            margin: 0 auto;
+        }
+        .aws-logo {
+            display: block;
+        }
+
+        .imgs {
+            width: 349px;
+            margin: auto;
+        }
+    }
+    
+    select {
+        box-shadow: none !important;
+        border: none !important;
+        border-bottom: 1px solid #4A4A4A !important;
+        padding: 0 !important;
+        height: 1.5em;
+        font-family: "latoregular";
+        font-size: 0.9rem;
+        color: #4A4A4A;
+        margin-bottom: 16px;
+    }
+
+    .address.country{
+        width: 100%;
+    }
+
+    .ninja-forms-form-wrap select {
+        width: 100%;
+        background-color: #f7f7f7;
+    }
+
+    @media screen and (min-width: 860px) {
+        .europe-form-container {
+            margin-left: 6%;
+        }
+        .europe-about {
+            right: 7%;
+        }
+    }
+
+    @media screen and (max-width: 860px) {
+        .europe-form-container {
+            width: 92%;
+        }
+        .europe-about {
+            width: 90%;
+            margin-top: 1150px;
+        }
+        .site-footer {
+            margin-top: 900px;
+        }
+        .europe-background {
+            padding: 30% 1% 10% 1%;
+        }
+    }
+    @media screen and (max-width: 560px) {
+        .europe-background {
+            padding-top: 40%;
+            font-size: 35px;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        .europe-background {
+            padding-top: 60%;
+        }
+    }
+
+    .ninja-forms-required-items {
+        display: none;
+    }
+
+    select#ninja_forms_field_14 {
+        float: left;
+        display: inline;
+    }
+
+    div#ninja_forms_field_14_div_wrap {
+        width: 48%;
+        display: inline;
+        float: left;
+    }
+
+    div#ninja_forms_field_19_div_wrap {
+        float: right;
+        width: 48%;
+        display: inline;
+        margin-top: -4px;
+    }
+
+    div#ui-datepicker-div {
+        background: #dc511e;
+        color: white;
+        border: none;
+        width: 290px;
+        border-radius: 0;
+    }
+    .ui-datepicker-calendar td {
+        width: 60px !important;
+        height: 40px !important;
+    }
+
+    .ui-icon {
+        color: white;
+    }
+
+    .ui-datepicker-calendar a {
+        color: #9a9a9a;
+    }
+
+    td.ui-datepicker-current-day {
+        border: none !important;
+        color: white !important;
+        background: #de511d;
+    }
+
+    .ui-datepicker-current-day a {
+        color: white;
+    }
+
+    input#ninja_forms_field_28 { /* submit button */
+        color: white !important;
+        background: #db4006 !important;
+        width: 190px;
+        height: 50px !important;
+        border: none !important;
+        margin: 20px auto;
+    }
+    
+    div#ninja_forms_form_6_response_msg {
+        padding-bottom: 62px;
+        color: #dd511d;
+    }
+
+    div#nf_submit_6 {
+        width: 191px;
+        margin: 35px auto;
+    }
+
+    #ninja_forms_field_27{
+        resize: none;
+    }
+
+    @media screen and (max-width: 385px) {
+        .imgs img{
+            margin: 0px auto;
+            display: block;
+        }
+
+        .tech-partners .imgs {
+            width: 200px;
+        }
+
+        .site-footer{
+            margin-top: 1041px;
+        }
+    }
+
+    @media screen and (max-width: 375px) {
+        .site-footer{
+            margin-top: 1095px;
+        }
+    }
+
+    @media screen and (max-width: 361px) {
+        .site-footer{
+            margin-top: 1133px;
+        }
+    }
+
+    @media screen and (max-width: 358px) {
+        .site-footer{
+            margin-top: 1131px;
+        }
+    }
+
+    @media screen and (max-width: 344px) {
+        .site-footer{
+            margin-top: 1135px;
+        }
+    }
+
+    @media screen and (max-width: 309px) {
+        .site-footer{
+            margin-top: 1161px;
+        }
+    }
+}

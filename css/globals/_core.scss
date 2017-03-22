@@ -1,0 +1,36 @@
+html, body {
+	height: 100%;
+	::selection {
+	  background: $high_transparency;
+	  color: $lightest;
+	}
+	
+	::-moz-selection {
+	  background: $high_transparency;
+	  color: $lightest;
+	}
+
+	.main-container {
+		width: 100%;
+		overflow: hidden;
+
+		.small-logo { 
+			width:30px; 
+		}
+
+		main{
+			overflow: hidden;
+			margin-top:-50px;
+		}
+
+		.row { 
+			max-width: 100%; 
+			margin: 0 auto;
+		}
+	}
+
+	&.menu-visible{
+		overflow: hidden; 
+	}
+
+}

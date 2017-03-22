@@ -1,0 +1,132 @@
+.site-footer  {
+	padding: 4vw 1vw;
+	background:$dark;
+	font-family: $font_light;
+	font-size: 1em;
+	color: $medium;
+
+	.large-10 .office{
+		padding: 2vw 0;
+		text-align: left !important;
+	}
+	.site-footer .large-10 h2 {
+    	font-size: 1.5em;
+    }
+
+    .large-8, .large-10 .office .columns {
+    	padding: 0;
+    }
+
+	h3, .h3 {
+	 	font-size: 1.25em !important;
+	}
+   	h4 {
+    	color: #fff;
+    	font-size: 0.875em;
+  	}
+
+	.row{
+		background: none;
+		padding: 1vw 2vw;
+	}
+	p {
+		font-size: 0.9rem !important;
+	}
+	p, span{
+		color: $medium_transparency;
+	}
+	
+	h2{
+		color: $highlight;
+	}
+
+	.fist-p{
+		padding: 2vw 0 0 0;
+	}
+	.fist-frst {
+    	padding-top: 3.6vw !important;
+    }
+
+	.addresses{
+		h3{
+			padding-bottom: 0vw;
+			color: #fff;
+			font-family: $font_light;
+		}
+		a:hover, a:active, a:focus{
+			outline: none !important;
+		}
+	}
+
+	.bottom-u{
+
+		ul {
+
+			float: right;
+			@media screen and (max-width: 640px) {
+				width: 100%;
+				 display: -webkit-box;
+				 display: -moz-box;
+				 display: -ms-flexbox;
+				 display: -webkit-flex;
+				 display: flex;
+				justify-content: space-around;
+				-webkit-justify-content: space-around;
+				-moz-justify-content: space-around;
+				-o-justify-content: space-around;
+				-ms-justify-content: space-around;
+				padding-top: 5%;
+			}
+
+			li {
+				margin-right: 2vw;
+				img {		
+					padding: 1vmin 0;
+					width: 30px;
+					float: right;
+					
+					opacity: 0.6;			
+
+					&:hover{
+						opacity: 1;				
+					}
+
+					@media screen and (max-width: 800px) {
+						padding: 8vmin 0 1vw 0;
+					}
+				}
+
+				display: inline-block;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+
+		padding: 3vmin 0;
+		position: relative;
+
+		
+
+		p{
+			@media screen and (max-width: 1000px) {
+				clear: both;
+			}
+		}
+
+		.email-right{
+			float: right;
+			padding-right: 2vmin;
+			@media screen and (max-width: 1000px) {
+				float: left;
+				clear: both;
+			}
+		}
+
+		.fix-width{
+			
+		}
+	}
+
+}
+

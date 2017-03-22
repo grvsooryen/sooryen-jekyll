@@ -1,0 +1,404 @@
+._careers {
+
+	h1 {
+		color: $lightest;
+		font-size: $font_largest;
+		font-family: $font_light;
+		padding: 14% 0 10% 0;
+		text-transform: uppercase;
+		@media screen and (max-width: 768px) {
+           padding: 20% 0 15% 0;        
+        }
+
+        @media screen and (max-width: 500px) {
+           padding: 37% 0 25% 0;        
+        }
+	}
+
+	.select-job {
+		cursor: pointer;
+		&:hover {
+			background: $medium_transparency;
+		}
+	}
+
+	.display-block {
+		display: block !important;
+	}
+
+	.job-position {
+		
+		iframe {
+			border: 0;
+			width: 100%;
+			height: 220px;
+		}
+
+		color: $darkest;
+		.bb-orange {
+			border-bottom: 1px solid $highlight_transparency;
+		}
+		
+		
+
+		section {
+			@include transition;
+			 display: -webkit-box;
+			 display: -moz-box;
+			 display: -ms-flexbox;
+			 display: -webkit-flex;
+			 display: flex;
+			 
+			 flex-flow: row wrap; 
+			 -webkit-flex-flow: row wrap;
+			 -moz-flex-flow: row wrap;
+			 -o-flex-flow: row wrap;
+			 -ms-flex-flow: row wrap;
+			 justify-content: space-between;
+			 -webkit-justify-content: space-between;
+			 -moz-justify-content: space-between;
+			 -o-justify-content: sspace-between;
+			 -ms-justify-content: space-between;
+			width: 100%;
+			@media screen and (max-width: 700px) {
+	           @include transition;      
+	           display: block;
+	        }
+
+			article {
+
+				@include transition;
+				@media screen and (max-width: 700px) {
+		           width: 100%;
+		        }
+				
+				width: 68%;
+				p {
+					color: $darkest;
+				}
+
+				h3 {
+					color: $highlight;
+				}
+			}
+
+			aside {
+
+				width: 30%;
+				@media screen and (max-width: 700px) {
+		           width: 100%;          
+		        }
+				p {
+					color: $medium;
+				}
+			}
+		}
+	}
+
+	.testi-section {
+
+		
+
+		.large-6, .large-12, .medium-12, .small-12 {
+			@include transition;
+		}
+
+		h1 {
+			font-size: $font_largest;
+			color: $highlight;
+			text-align: center;
+			padding: 2.2em 0 0.5em 0;
+		}
+
+		.testi-bg {
+			cursor: pointer;
+
+			&:hover .testi-details img {
+				border: 5px solid $lightest;
+				@include transition;
+			}
+
+			&:hover h6 {
+				@include transition;
+				opacity: 1 !important;
+				bottom: 18px !important;
+			}
+
+			.border-5px {
+				border: 5px solid $lightest;
+			}			
+			
+			
+			.maitry {
+				background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/Testimonials/Maitry_bg.jpg);
+				@include transition;
+				@include testimonials_bg;
+
+				p {
+				    padding: 1em 2em 0em;
+				    font-size: 16px;
+				}
+		
+			}
+
+			.rob {
+				background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/Testimonials/rob_bg.jpg);
+				@include transition;
+				@include testimonials_bg;
+			}
+
+			.chris {
+				background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/Testimonials/chris_bg.jpg);
+				@include transition;
+				@include testimonials_bg;
+			}
+
+			.akshay {
+				background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/Testimonials/Akshay_bg.jpg);
+				@include transition;
+				@include testimonials_bg;
+			}
+
+
+			.testi-details {
+				min-height: 300px;
+				opacity: 1;
+				text-align: center;
+				position: relative;
+				img {
+					margin: 2em 0 0 0;
+					width: 8em;
+					border-radius: 50%;
+					-webkit-border-radius: 50%;
+					-moz-border-radius: 50%;
+					-o-border-radius: 50%;
+					-ms-border-radius: 50%;
+					border: 2px solid $light_transparency;
+					@include transition;
+				}
+
+				p {
+					color: $lightest;
+					padding: 3em 3em 4em 3em;
+					display: none;
+				}
+
+				h4 {
+					color: $lightest;
+					font-size: $font_large;
+					padding: 1.2em 0 0em 0em;
+					@include transition;
+				}
+
+				h5 {
+					color: $lightest;
+				}
+
+				h6 {
+					@include transition;			
+					bottom: -50px;
+					font-size: $font_smaller;
+					position: absolute;
+				    color: $lightest;
+				    left: 0;
+				    right:0;
+				    text-align: center;
+				    opacity: 0;
+				}
+
+				.close {
+					position: absolute;
+					top: 3%;
+					right: 2.5%;
+					font-size: $font_larger;
+					color: $lightest;
+					display: none;
+					&:hover {
+						color: $light_transparency;
+					}
+				}
+			}
+		}
+	}
+
+	.full_widhtT {
+		width: 100%;
+	}
+
+	.hide {
+		display: none !important;
+	}
+
+	// .diagonal-container {
+	// 	@include diagonal-container;
+
+	// 	.large-6  {
+	// 		padding: 0;
+	// 		margin: 0;
+	// 		position: relative;
+	// 		img {
+				
+	// 			margin: -5% 0 -5% -5%;
+	// 			@include invert-diagonal;
+
+	// 			@media screen and (max-width: 600px) {
+	// 		    	margin: -5% 0 -5% 0%;
+	// 			}
+
+	// 		}
+	// 	}
+
+	// }
+
+
+
+	.job-description {
+		display: none;
+		color: $darkest;
+		section {
+			 display: -webkit-box;
+			 display: -moz-box;
+			 display: -ms-flexbox;
+			 display: -webkit-flex;
+			 display: -webkit-flex;
+			 display: flex;
+			 
+			 flex-flow: row wrap; 
+			 -webkit-flex-flow: row wrap;
+			 -moz-flex-flow: row wrap;
+			 -o-flex-flow: row wrap;
+			 -ms-flex-flow: row wrap;
+			 justify-content: space-between;
+			 -webkit-justify-content: space-between;
+			 -moz-justify-content: space-between;
+			 -o-justify-content: sspace-between;
+			 -ms-justify-content: space-between;
+			width: 100%;
+			@media screen and (max-width: 700px) {
+	           @include transition;      
+	           display: block;
+	        }
+
+	        article {
+	        	padding: 0 10px;
+				@include transition;
+				@media screen and (max-width: 700px) {
+		           width: 100%;
+
+		        }
+				
+				width: 65%;
+				p {
+					color: $darkest;
+				}
+
+				h3 {
+					color: $highlight;
+				}
+
+				ul {
+					list-style-type: none;
+
+					li {
+				
+						&:before {
+							font-family: "Flaticon";
+							content: "\e001";
+							margin:0 5px 0 -15px;
+							color: $highlight;
+							font-size: 12px;
+						}
+						padding: 5px 0;
+						p {
+							color: $darkest;
+						}
+						
+					}
+				}
+			}
+
+			aside {
+
+				.secondary-button {
+					@include transition;
+					margin-top: 10%;
+
+				}
+
+				padding: 0 10px;
+				width: 30%;
+				@media screen and (max-width: 700px) {
+		           width: 100%;          
+		        }
+				p {
+					color: $medium;
+				}
+
+				.iframe-container {
+					
+					width: 100%;
+					height: 25vmin;
+					margin: 0% auto;
+					overflow: hidden;
+
+					iframe {
+						width: 100%;
+						height: 40vmin;
+						margin-top: -54px;
+						border: 0;
+					}
+				}
+
+				.share-links {
+					a {
+						display: grid;
+					}
+					.flaticon-linkedin12, .flaticon-twitter2, .flaticon-logotype3, .flaticon-email5 {
+						
+						&:hover:before{
+							@include transition;
+							color: $dark;
+
+						}
+
+						&:before {
+							@include transition;
+							color: $medium;
+							font-size: 30px;
+							margin-left: 2%;
+						}
+
+						span {
+							&:hover {
+								color: red;
+							}
+						}
+
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 624px) {
+		#careers-iframe1{
+			height: 248px !important;
+		}
+		#careers-iframe2{
+			height: 554px !important;
+		}
+		#careers-iframe3{
+			height: 225px !important;
+		}
+	}
+
+	@media screen and (max-width: 504px) {
+		#careers-iframe1{
+			height: 328px !important;
+		}
+		#careers-iframe2{
+			height: 660px !important;
+		}
+	}
+
+}

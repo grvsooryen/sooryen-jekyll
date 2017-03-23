@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url(framework/foundation.min.css);
 @import url(framework/normalize.css);
-@import url(http://fonts.googleapis.com/css?family=Cuprum);
+@import url(//fonts.googleapis.com/css?family=Cuprum);
 @font-face {
   font-family: 'latoheavy';
   src: url("https://d283pee6upvkfl.cloudfront.net/fonts/Lato_font/Lato-Heavy-webfont.eot");
@@ -2435,11 +2435,11 @@ header.apple-header #primary-nav img {
 
 /*
  * jQuery FlexSlider v2.5.0
- * http://www.woothemes.com/flexslider/
+ * //www.woothemes.com/flexslider/
  *
  * Copyright 2012 WooThemes
  * Free to use under the GPLv2 and later license.
- * http://www.gnu.org/licenses/gpl-2.0.html
+ * //www.gnu.org/licenses/gpl-2.0.html
  *
  * Contributing author: Tyler Smith (@mbmufffin)
  * 
@@ -2751,9 +2751,9 @@ html[xmlns] .flexslider .slides {
 }
 /**
  * Featherlight – ultra slim jQuery lightbox
- * Version 1.3.1 - http://noelboss.github.io/featherlight/
+ * Version 1.3.1 - //noelboss.github.io/featherlight/
  *
- * Copyright 2015, Noël Raoul Bossart (http://www.noelboss.com)
+ * Copyright 2015, Noël Raoul Bossart (//www.noelboss.com)
  * MIT Licensed.
 **/
 @media all {
@@ -5407,7 +5407,7 @@ p.maureen {
   color: #4A4A4A;
 }
 ._work-example .frame {
-  background-image: url(http://d283pee6upvkfl.cloudfront.net/img/iPhone6_frame.png);
+  background-image: url(//d283pee6upvkfl.cloudfront.net/img/iPhone6_frame.png);
   background-repeat: no-repeat;
   background-size: 100%;
   z-index: 999;

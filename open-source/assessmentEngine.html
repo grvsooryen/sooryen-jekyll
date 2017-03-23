@@ -73,7 +73,7 @@ X-API-Key: Provided by the Assessment tool provider</pre>
     <ul>
         <li><span>Create a new quiz for context.</span></li>
         <li><span class="cName">Controller Name : </span><span>Api::V1::</span><span>QuizzesController</span><span>#create</span></li>
-        <li><span class="Endpoint">Endpoint : </span><span>http://{root_path}/api/v1/quizzes</span></li>
+        <li><span class="Endpoint">Endpoint : </span><span>//{root_path}/api/v1/quizzes</span></li>
         <li><span class="Method">Method : </span><span>POST</span></li>
         <li><span class="rParams">Required parameters :</span></li>
     </ul>
@@ -250,7 +250,7 @@ X-API-Key: Provided by the Assessment tool provider</pre>
     <ul>
         <li><span>Update the quiz</span></li>
         <li><span class="cName">Controller Name : </span><span>Api::V1::QuizzesController#update</span></li>
-        <li><span class="Endpoint">Endpoint : </span><span>http://{root_path}/api/v1/quizzes/:id</span></li>
+        <li><span class="Endpoint">Endpoint : </span><span>//{root_path}/api/v1/quizzes/:id</span></li>
         <li><span class="Method">Method : </span><span>PUT</span></li>
         <li><span class="rParams">Required parameters :</span></li>
     </ul>
@@ -417,7 +417,7 @@ X-API-Key: Provided by the Assessment tool provider</pre>
     <ul>
         <li><span>Shows the information of the quiz.</span></li>
         <li><span class="cName">Controller Name : </span><span>Api::V1::QuizzesController#show</span></li>
-        <li><span class="Endpoint">Endpoint : </span><span>http://{root_path}/api/v1/quizzes/:id</span></li>
+        <li><span class="Endpoint">Endpoint : </span><span>//{root_path}/api/v1/quizzes/:id</span></li>
         <li><span class="Method">Method : </span><span>GET</span></li>
         <li><span class="rParams">Required parameters :</span></li>
     </ul>
@@ -443,7 +443,7 @@ X-API-Key: Provided by the Assessment tool provider</pre>
     <ul>
         <li><span>Delete the quiz.</span></li>
         <li><span class="cName">Controller Name : </span><span>Api::V1::QuizzesController#destroy</span></li>
-        <li><span class="Endpoint">Endpoint : </span><span>http://{root_path}/api/v1/quizzes/:id</span></li>
+        <li><span class="Endpoint">Endpoint : </span><span>//{root_path}/api/v1/quizzes/:id</span></li>
         <li><span class="Method">Method : </span><span>DELETE</span></li>
         <li><span class="rParams">Required parameters :</span></li>
     </ul>
@@ -469,7 +469,7 @@ X-API-Key: Provided by the Assessment tool provider</pre>
     <ul>
         <li><span>Returns the list of all quizzes for current user for the particular context.</span></li>
         <li><span class="cName">Controller Name : </span><span>Api::V1::QuizzesController#index</span></li>
-        <li><span class="Endpoint">Endpoint : </span><span>http://{root_path}/api/v1/quizzes</span></li>
+        <li><span class="Endpoint">Endpoint : </span><span>//{root_path}/api/v1/quizzes</span></li>
         <li><span class="Method">Method : </span><span>GET</span></li>
         <li><span class="rParams">Required parameters :</span></li>
     </ul>
@@ -500,7 +500,7 @@ X-API-Key: Provided by the Assessment tool provider</pre>
     <ul>
         <li><span>List of questions from question bank.</span></li>
         <li><span class="cName">Controller Name : </span><span>Api::V1::QuestionBanksController#index</span></li>
-        <li><span class="Endpoint">Endpoint : </span><span>http://{root_path}/api/v1/question_banks</span></li>
+        <li><span class="Endpoint">Endpoint : </span><span>//{root_path}/api/v1/question_banks</span></li>
         <li><span class="Method">Method : </span><span>GET</span></li>
         <li><span class="rParams">Required parameters :</span></li>
     </ul>
@@ -551,7 +551,7 @@ X-API-Key: Provided by the Assessment tool provider</pre>
     <ul>
         <li><span>Add question to the quiz from question bank.</span></li>
         <li><span class="cName">Controller Name : </span><span>Api::V1::QuizzesController#add_question_to_quiz</span></li>
-        <li><span class="Endpoint">Endpoint : </span><span>http://{root_path}//api/v1/quizzes/add_question_to_quiz</span></li>
+        <li><span class="Endpoint">Endpoint : </span><span>//{root_path}//api/v1/quizzes/add_question_to_quiz</span></li>
         <li><span class="Method">Method : </span><span>GET</span></li>
         <li><span class="rParams">Required parameters :</span></li>
     </ul>
@@ -592,7 +592,7 @@ X-API-Key: Provided by the Assessment tool provider</pre>
     <ul>
         <li><span>Create a question and attach to a quiz.</span><span>&nbsp;</span></li>
         <li><span class="cName">Controller Name : </span><span>Api::v1::</span><span>QuizQuestions</span><span>Controller#create</span></li>
-        <li><span class="Endpoint">Endpoint : </span><span>http://{root_path}/api/v1/quizzes/{quiz_id}/quiz_questions</span></li>
+        <li><span class="Endpoint">Endpoint : </span><span>//{root_path}/api/v1/quizzes/{quiz_id}/quiz_questions</span></li>
         <li><span class="Method">Method : </span><span>POST</span></li>
         <li><span class="rParams">Required parameters :</span></li>
     </ul>
@@ -673,7 +673,7 @@ X-API-Key: Provided by the Assessment tool provider</pre>
     <ul>
         <li><span>Update the question of quiz.</span></li>
         <li><span class="cName">Controller Name : </span><span>Api::v1::</span><span>QuizQuestions</span><span>Controller#update</span></li>
-        <li><span class="Endpoint">Endpoint </span><span>: http://{root_path}/api/v1/quizzes/:quiz_id/quiz_questions/:question_id</span></li>
+        <li><span class="Endpoint">Endpoint </span><span>: //{root_path}/api/v1/quizzes/:quiz_id/quiz_questions/:question_id</span></li>
         <li><span class="Method">Method : </span><span>PUT</span></li>
         <li><span class="rParams">Required parameters :</span></li>
     </ul>
@@ -754,7 +754,7 @@ X-API-Key: Provided by the Assessment tool provider</pre>
     <ul>
         <li><span>Delete the question from quiz.</span></li>
         <li><span class="cName">Controller Name : </span><span>Api::V1::QuizQuestionsController#destroy</span></li>
-        <li><span class="Endpoint">Endpoint : </span><span>http://{root_path}/api/v1/quizzes/{quiz_id}/quiz_questions/id</span></li>
+        <li><span class="Endpoint">Endpoint : </span><span>//{root_path}/api/v1/quizzes/{quiz_id}/quiz_questions/id</span></li>
         <li><span class="Method">Method : </span><span>DELETE</span></li>
         <li><span class="rParams">Required parameters :</span></li>
     </ul>
@@ -785,7 +785,7 @@ X-API-Key: Provided by the Assessment tool provider</pre>
     <ul>
         <li><span>List of all questions attached to quiz.</span></li>
         <li><span class="cName">Controller Name : </span><span>Api::V1::QuizQuestionsController#index</span></li>
-        <li><span class="Endpoint">Endpoint : </span><span>http://{root_path}/api/v1/quizzes/{quiz_id}/quiz_questions</span></li>
+        <li><span class="Endpoint">Endpoint : </span><span>//{root_path}/api/v1/quizzes/{quiz_id}/quiz_questions</span></li>
         <li><span class="Method">Method : </span><span>GET</span></li>
         <li><span class="rParams">Required parameters :</span></li>
     </ul>
@@ -816,7 +816,7 @@ X-API-Key: Provided by the Assessment tool provider</pre>
     <ul>
         <li><span>Get student attempts object(grades for all attempt).</span></li>
         <li><span class="cName">Controller Name : </span><span>Api::V1::QuizSubmissionsController#get_user_attempts</span></li>
-        <li><span class="Endpoint">Endpoint : </span><span>http://{root_path}/</span><span>api/v1/quizzes/:quiz_id/quiz_submissions/get_user_attempts?user_id={user_id}&amp;context_id={context_id}</span></li>
+        <li><span class="Endpoint">Endpoint : </span><span>//{root_path}/</span><span>api/v1/quizzes/:quiz_id/quiz_submissions/get_user_attempts?user_id={user_id}&amp;context_id={context_id}</span></li>
         <li><span class="Method">Method : </span><span>GET</span></li>
         <li><span class="rParams">Required parameters :</span></li>
     </ul>
@@ -857,7 +857,7 @@ X-API-Key: Provided by the Assessment tool provider</pre>
     <ul>
         <li><span>It will create attempt id for student and will send the attempt id to the tool consumer which will be needed by the tool consumer throughout the Attempt submission.</span></li>
         <li><span class="cName">Controller Name : </span><span>Api::V1::QuizSubmissionsController#create</span></li>
-        <li><span class="Endpoint">Endpoint : </span><span>http://{root_path}/</span><span>api/v1/quizzes/</span><span>{quiz_id}</span><span>/quiz_submissions</span></li>
+        <li><span class="Endpoint">Endpoint : </span><span>//{root_path}/</span><span>api/v1/quizzes/</span><span>{quiz_id}</span><span>/quiz_submissions</span></li>
         <li><span class="Method">Method : </span><span>POST</span></li>
         <li><span class="rParams">Required parameters :</span></li>
     </ul>
@@ -919,7 +919,7 @@ X-API-Key: Provided by the Assessment tool provider</pre>
     <h3>One by One Quiz Attempt</h3>
     <ul>
         <li><span class="cName">Controller Name : </span><span>Api::V1::QuizSubmissionsController#whole_next_previous</span></li>
-        <li><span class="Endpoint">Endpoint : </span><span>http://{root_path}/api/v1/quizzes/:quiz_id/quiz_submissions/whole_next_previous</span></li>
+        <li><span class="Endpoint">Endpoint : </span><span>//{root_path}/api/v1/quizzes/:quiz_id/quiz_submissions/whole_next_previous</span></li>
         <li><span class="Method">Method : </span><span>POST</span></li>
         <li><span class="rParams">Required parameters :</span></li>
     </ul>
@@ -960,7 +960,7 @@ X-API-Key: Provided by the Assessment tool provider</pre>
     <h3>Update Quiz Attempt</h3>
     <ul>
         <li><span class="cName">Controller Name : </span><span>Api::V1::QuizSubmissions_Controller#update</span></li>
-        <li><span class="Endpoint">Endpoint : </span><span>http://{root_path}/</span><span>api/v1/quizzes/</span><span>:quiz_id</span><span>/quiz_submissions/:id</span></li>
+        <li><span class="Endpoint">Endpoint : </span><span>//{root_path}/</span><span>api/v1/quizzes/</span><span>:quiz_id</span><span>/quiz_submissions/:id</span></li>
         <li><span class="Method">Method : </span><span>PUT</span></li>
         <li><span class="rParams">Required parameters :</span></li>
     </ul>
@@ -1001,7 +1001,7 @@ X-API-Key: Provided by the Assessment tool provider</pre>
     <ul>
         <li><span>To show the details of student attempts to a student according to the quiz setting.(For Instructor it will show all attempts irrespective of quiz settings.)</span></li>
         <li><span class="cName">Controller Name : </span><span>Api::V1::QuizSubmissionsController#quiz_submission_results</span></li>
-        <li><span class="Endpoint">Endpoint : </span><span>http://{root_path}/</span><span>api/v1/quizzes/:quiz_id/quiz_submissions/quiz_submission_results</span></li>
+        <li><span class="Endpoint">Endpoint : </span><span>//{root_path}/</span><span>api/v1/quizzes/:quiz_id/quiz_submissions/quiz_submission_results</span></li>
         <li><span class="Method">Method : </span><span>GET</span></li>
         <li><span class="rParams">Required parameters :</span></li>
     </ul>
@@ -1042,7 +1042,7 @@ X-API-Key: Provided by the Assessment tool provider</pre>
     <ul>
         <li><span>Will show the quiz attempt detail for a student</span></li>
         <li><span class="cName">Controller Name : </span><span>Api::V1::QuizSubmissionsController#get_user_attempts</span></li>
-        <li><span class="Endpoint">Endpoint : </span><span>http://{root_path}/api/v1/quizzes/:quiz_id/quiz_submissions/get_user_attempts</span></li>
+        <li><span class="Endpoint">Endpoint : </span><span>//{root_path}/api/v1/quizzes/:quiz_id/quiz_submissions/get_user_attempts</span></li>
         <li><span class="Method">Method : </span><span>GET</span></li>
         <li><span class="rParams">Required parameters :</span></li>
     </ul>
@@ -1083,7 +1083,7 @@ X-API-Key: Provided by the Assessment tool provider</pre>
     <ul>
         <li><span>To get the score and start/end quiz time for students/student according to the parameters passed for particular context.</span></li>
         <li><span class="cName">Controller Name : </span><span>Api::V1::QuizSubmissionsController#get_the_scores_information</span></li>
-        <li><span class="Endpoint">Endpoint : </span><span>http://{root_path}/api/v1/quizzes/get_the_scores_information</span></li>
+        <li><span class="Endpoint">Endpoint : </span><span>//{root_path}/api/v1/quizzes/get_the_scores_information</span></li>
         <li><span class="Method">Method : </span><span>GET</span></li>
         <li><span class="rParams">Required parameters :</span></li>
     </ul>

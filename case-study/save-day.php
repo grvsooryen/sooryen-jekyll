@@ -24,19 +24,19 @@ layout: case-study
 <div class="row">
 	<div class="diagonal-container">			
 		<div class="large-6 medium-6 small-12 columns adjust-container">
-			<img src="http://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy13/SD_2.jpg" alt="Pending1">
+			<img src="//d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy13/SD_2.jpg" alt="Pending1">
 		</div>
 		<div class="large-6 medium-6 small-12 columns adjust-container">
-			<img src="http://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy13/SD_3.jpg" alt="Pending1">
+			<img src="//d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy13/SD_3.jpg" alt="Pending1">
 		</div>
 	</div>	
 
 	<div class="diagonal-container">			
 		<div class="large-6 medium-6 small-12 columns adjust-container">
-			<img src="http://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy13/SD_4.jpg" alt="Pending1">
+			<img src="//d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy13/SD_4.jpg" alt="Pending1">
 		</div>
 		<div class="large-6 medium-6 small-12 columns adjust-container">
-			<img src="http://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy13/SD_5.jpg" alt="Pending1">
+			<img src="//d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy13/SD_5.jpg" alt="Pending1">
 		</div>				
 	</div>					
 </div>

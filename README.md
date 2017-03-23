@@ -11,6 +11,7 @@ Go to [https://rubyinstaller.org/](https://rubyinstaller.org/) and download it.
 ## Installation
 To Install and run the site:
 ```
+$ cd sooryen-jekyll
 $ gem install jekyll bundler
 $ bundle install
 $ bundle exec jekyll serve

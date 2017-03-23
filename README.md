@@ -1,5 +1,14 @@
 # Sooryen Website on Jekyll
+## Prerequisites
+- Install Ruby
+### ubuntu
+```
+$ sudo apt-get install ruby-full
+```
+### Windows
+Go to [https://rubyinstaller.org/](https://rubyinstaller.org/) and download it.
 
+## Installation
 To Install and run the site:
 ```
 $ gem install jekyll bundler

@@ -1,7 +1,44 @@
---- 
-layout: page 
-title: About Us 
-slug: _about-us-new wh-logo 
+---
+title: About Us
+layout: page
+slug: _about-us-new wh-logo
+text:
+  messagetext:
+    title: A MESSAGE FROM OUR FOUNDERS
+    desc: |2-
+       We started Söoryen with an intent to make people happy. Our employees, our customers and ourselves! This job is easier said
+                            than done. Happiness means different things to different people. This is what gets us motivated, helps
+                            us keep going and serves as a guiding beacon. We have grown from our home office roots to a global
+                            footprint of 5 offices and over a 100 associates with this core value. Our challenges will be numerous
+                            and there will be some steep hills to climb but the one thing that we vow not to lose sight of is the
+                            pursuit of happiness.
+  reviewtext:
+    developer1: Working at Söoryen Technologies has been an exciting and rewarding
+      experience. Being able to offer our clients the best services means having to
+      stay on top of the latest technologies and services we can put at their disposal;
+      which in turn, creates a myriad of opportunities for personal development.
+    devname1: '- Patrick Gryczka, Software Developer'
+    developer2: |-
+      Being a part of the Söoryen family has been a great learning experience. Every day has been
+                                        fun and exciting and being able to have a direct impact on projects has been rewarding
+                                        for me. The flexible and transparent environment of Söoryen is refreshing and motivating.
+                                        I look forward to the growth of the company as well as growing and excelling in my role
+                                        as a designer.
+    devname2: '- Sarah Lau, Interactive Designer'
+    developer3: |-
+      I have been working at Söoryen for more than a year. At Söoryen, I have plenty of opportunities
+                                        to learn cutting edge technologies and help my career grow. My colleagues are smart, helpful
+                                        and productive. The management team does its best to provide a great work environment,
+                                        benefits and satisfaction to every employee. I love working here and appreciate the Söoryen
+                                        team a lot!
+    devname3: '- Danni Shi, Software Developer'
+    developer4: I started working for Söoryen with only the aspiration to be a Front
+      End Web developer. Knowing only what I have taught myself, I proved myself capable
+      and have worked my way up to a lead support role for the 1800Flowers Front End
+      team in under 2 years. Söoryen provides you with the proper work environment
+      to grow in this field. By having the proper tools to succeed and being surrounded
+      by a great team, it is easy to grow individually and professionally.
+    devname4: '- Stephen Carlson, Software Developer'
 ---
 
 <div id="primary" class="content-area">
@@ -33,16 +70,11 @@ slug: _about-us-new wh-logo
                   <img class="about-us-image about-us-left" src="https://d283pee6upvkfl.cloudfront.net/img/about-us/founders.jpg">
 
                   <div class="about-us-founder-text">
-                    <h1 class="about-us-left about-us-founder-name">A MESSAGE FROM OUR FOUNDERS</h1>
+                    <h1 class="about-us-left about-us-founder-name">{{page.text.messagetext.title}}</h1>
                     <p class="about-us-founder-subtext about-us-left">Ram Ganesan & Vinod Paniker</p>
                     <br>
                     <p class="about-us-left about-us-founder-main-text">
-                      We started Söoryen with an intent to make people happy. Our employees, our customers and ourselves! This job is easier said
-                      than done. Happiness means different things to different people. This is what gets us motivated, helps
-                      us keep going and serves as a guiding beacon. We have grown from our home office roots to a global
-                      footprint of 5 offices and over a 100 associates with this core value. Our challenges will be numerous
-                      and there will be some steep hills to climb but the one thing that we vow not to lose sight of is the
-                      pursuit of happiness.
+                     {{page.text.messagetext.desc}}
                       <br><br>SHINE.
                     </p>
 
@@ -65,11 +97,8 @@ slug: _about-us-new wh-logo
                                 <img src="https://d283pee6upvkfl.cloudfront.net/img/about-us/patrick_thumbnail.JPG" draggable="false">
                               </div>
                               <div class="large-6 medium-12 columns slider-text margin-auto">
-                                <p>Working at Söoryen Technologies has been an exciting and rewarding experience. Being able
-                                  to offer our clients the best services means having to stay on top of the latest technologies
-                                  and services we can put at their disposal; which in turn, creates a myriad of opportunities
-                                  for personal development.</p>
-                                <p>- Patrick Gryczka, Software Developer</p>
+                                <p>{{page.text.reviewtext.developer1}}</p>
+                                <p>{{page.text.reviewtext.devname1}}</p>
                               </div>
                             </div>
                           </li>
@@ -80,12 +109,8 @@ slug: _about-us-new wh-logo
                                 <img src="https://d283pee6upvkfl.cloudfront.net/img/jpgs/Testimonials/sarah.jpg" draggable="false">
                               </div>
                               <div class="large-6 medium-12 columns slider-text margin-auto">
-                                <p>Being a part of the Söoryen family has been a great learning experience. Every day has been
-                                  fun and exciting and being able to have a direct impact on projects has been rewarding
-                                  for me. The flexible and transparent environment of Söoryen is refreshing and motivating.
-                                  I look forward to the growth of the company as well as growing and excelling in my role
-                                  as a designer.</p>
-                                <p>- Sarah Lau, Interactive Designer</p>
+                                <p>{{page.text.reviewtext.developer2}} </p>
+                                <p>{{page.text.reviewtext.devname2}}</p>
                               </div>
                             </div>
                           </li>
@@ -96,12 +121,8 @@ slug: _about-us-new wh-logo
                                 <img src="https://d283pee6upvkfl.cloudfront.net/img/jpgs/Testimonials/danni.jpg" draggable="false">
                               </div>
                               <div class="large-6 medium-12 columns slider-text margin-auto">
-                                <p>I have been working at Söoryen for more than a year. At Söoryen, I have plenty of opportunities
-                                  to learn cutting edge technologies and help my career grow. My colleagues are smart, helpful
-                                  and productive. The management team does its best to provide a great work environment,
-                                  benefits and satisfaction to every employee. I love working here and appreciate the Söoryen
-                                  team a lot!</p>
-                                <p>- Danni Shi, Software Developer</p>
+                                <p>{{page.text.reviewtext.developer3}} </p>
+                                <p>{{page.text.reviewtext.devname3}} </p>
                               </div>
                             </div>
                           </li>
@@ -113,12 +134,8 @@ slug: _about-us-new wh-logo
                                 <img src="https://d283pee6upvkfl.cloudfront.net/img/about-us/stephen.png" draggable="false">
                               </div>
                               <div class="large-6 medium-12 columns slider-text margin-auto">
-                                <p>I started working for Söoryen with only the aspiration to be a Front End Web developer. Knowing
-                                  only what I have taught myself, I proved myself capable and have worked my way up to a
-                                  lead support role for the 1800Flowers Front End team in under 2 years. Söoryen provides
-                                  you with the proper work environment to grow in this field. By having the proper tools
-                                  to succeed and being surrounded by a great team, it is easy to grow individually and professionally.</p>
-                                <p>- Stephen Carlson, Software Developer</p>
+                                <p>{{page.text.reviewtext.developer3}}</p>
+                                <p>{{page.text.reviewtext.devname3}}</p>
                               </div>
                             </div>
                           </li>

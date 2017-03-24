@@ -2,6 +2,43 @@
 title: Home
 layout: page
 slug: _home
+text:
+  fintext:
+    desc: Develop innovative FinTech Products and Services leveraging our deep Industry
+      Expertise and cutting edge Web Technologies
+    title: FinTech Services
+  managetext:
+    title: Managed Services
+    desc: Implement cloud services, analytics, CRM and many other valuable tools to
+      help you meet clients needs.
+  ecommercetext:
+    title: E-Commerce Solutions
+    desc: Develop a new platform or integrate with a current system to meet your E-Commerce
+      needs.
+  websitetext:
+    title: Website Design and Development
+    desc: Create an engaging experience by blending design and innovative technology
+  conversiontext:
+    title: ALL ABOUT CONVERSION
+    desc: We take a never ending conversion centric approach to optimizing websites.
+      By combining A/B testing tactics, 24 hour monitoring and the latest standards
+      and practices to ensure the highest conversion rates possible.
+  customertext:
+    title: THE CUSTOMER EXPERIENCE
+    desc: Customer satisfaction is our number one goal. With a team of certified technicians
+      that deliver round the clock support and monitoring.
+  platformtext:
+    title: PLATFORM CREATION
+    desc: Experienced UI/UX designers and developers use the latest web technologies
+      and standards to bring a unique user friendly environment. Our platform delivers
+      a device specific experience that caters to your customers individual needs.
+  summarytext:
+    desc: '"Sooryen has been a great partner in our social collaboration journey.
+      We valued their expertise in selecting the right product and technology for
+      us. They helped us rollout successfully and adopt Google Apps across the 1800flowers.com
+      enterprise."'
+    textby: Maureen Paradine,
+    workat: SVP Human Resources, 1800flowers.com
 ---
 
 <div class="row hero">
@@ -26,23 +63,23 @@ slug: _home
 
 	<div class="row padding-Yvw-3 font-base">
       <div class="large-4 columns">
-         <h3 class="paddingT-10 ui-icon">Website Design and Development</h3>
-         <p>Create an engaging experience by blending design and innovative technology</p>
+         <h3 class="paddingT-10 ui-icon">{{page.text.websitetext.title}}</h3>
+         <p>{{page.text.websitetext.desc}}</p>
       </div>
       <div class="large-4 columns darker-bg">
-            <h3 class="paddingT-10 ecommerce ">E-Commerce Solutions</h3>
-            <p>Develop a new platform or integrate with a current system to meet your E-Commerce needs.</p>
+            <h3 class="paddingT-10 ecommerce ">{{page.text.ecommercetext.title}}</h3>
+            <p>{{page.text.ecommercetext.desc}}</p>
       </div>
       <div class="large-4 columns">
-            <h3 class="paddingT-10 backenddatacloud">Managed Services</h3>
-            <p>Implement cloud services, analytics, CRM and many other valuable tools to help you meet clients needs.</p>
+            <h3 class="paddingT-10 backenddatacloud"> {{page.text.managetext.title}}</h3>
+            <p>{{page.text.managetext.desc}}</p>
       </div>
     </div>
 
     <div class="row paddingT-40 fintech-section">
 		<div class="large-12 large-centered text-center columns">
-			<p class="paddingT-10 heading highlight">FinTech Services</p>
-			<p class="text dark">Develop innovative FinTech Products and Services leveraging our deep Industry Expertise and cutting edge Web Technologies</p>
+			<p class="paddingT-10 heading highlight">{{page.text.fintext.title}}</p>
+			<p class="text dark">{{page.text.fintext.desc}}</p>
 		</div>
 		<div class="row paddingT-40 text-center">
 			<a href="fintech" class="button secondary-button">Learn More...</a>
@@ -64,8 +101,8 @@ slug: _home
 						    <li>
 						     <div class="row margin-auto">
 								<div class="large-6 medium-12 columns slider-text margin-auto">
-									<h2>ALL ABOUT CONVERSION</h2>
-									<p>We take a never ending conversion centric approach to optimizing websites. By combining A/B testing tactics, 24 hour monitoring and the latest standards and practices to ensure the highest conversion rates possible.</p>
+									<h2>{{page.text.conversiontext.title}}</h2>
+									<p>{{page.text.conversiontext.desc}}</p>
 								</div>
 								<div class="large-6 medium-12 columns image-slider">
 									<img src="https://d283pee6upvkfl.cloudfront.net/img/1800flowers.png">
@@ -75,8 +112,8 @@ slug: _home
 						    <li>
 						      <div class="row margin-auto">
 								<div class="large-6 medium-12 columns slider-text margin-auto">
-									<h2>THE CUSTOMER EXPERIENCE</h2>
-									<p>Customer satisfaction is our number one goal. With a team of certified technicians that deliver round the clock support and monitoring.</p>
+									<h2>{{page.text.customertext.title}}</h2>
+									<p>{{page.text.customertext.desc}}</p>
 								</div>
 								<div class="large-6 medium-12 column image-slider">
 									<img src="https://d283pee6upvkfl.cloudfront.net/img/500bc-HP-slider.png">
@@ -86,8 +123,8 @@ slug: _home
 						    <li>
 						      <div class="row margin-auto">
 								<div class="large-6 medium-12 columns slider-text margin-auto">
-									<h2>PLATFORM CREATION</h2>
-									<p>Experienced UI/UX designers and developers use the latest web technologies and standards to bring a unique user friendly environment. Our platform delivers a device specific experience that caters to your customers individual needs.</p>
+									<h2>{{page.text.platformtext.title}}</h2>
+									<p>{{page.text.platformtext.desc}}</p>
 								</div>
 								<div class="large-6 medium-12 columns image-slider">
 									<img src="https://d283pee6upvkfl.cloudfront.net/img/mindware-HP-slider.png">
@@ -106,11 +143,10 @@ slug: _home
 <div class="row text-row white-background-full N-margin">
 	<div class="border-D-top"></div>
 	<div class="large-6 small-10 small-centered large-centered columns text-center padding-Yvw-5">
-		<p class="quote dark">"Sooryen has been a great partner in our social collaboration journey. We valued their expertise in selecting the right product and technology for us. They helped us rollout successfully and adopt Google Apps across the 1800flowers.com enterprise." </p>
+		<p class="quote dark">{{page.text.summarytext.desc}} </p>
 		<p class="maureen">
-			-<br>Maureen Paradine,<br>SVP Human Resources, 1800flowers.com
+			-<br>{{page.text.summarytext.textby}}<br>{{page.text.summarytext.workat}}
 		</p>
-
 	</div>
 </div>
 

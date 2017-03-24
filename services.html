@@ -1,8 +1,45 @@
 ---
 title: Services
 layout: page
-slug: "_services-new wh-logo"
+slug: _services-new wh-logo
+text:
+  processtext:
+    title: OUR PROCESS
+  innovation:
+    title: INNOVATION
+    desc: Through innovative techniques and implementations, E-Commerce sites are
+      provided with the necessary catalysts for growth on web based platforms.
+  iteration:
+    title: ITERATION
+    desc: Agile processes in project management and engineering get clients the results
+      they need in an expedited fashion.
+  insight:
+    title: INSIGHT
+    desc: Leveraging your analytics will help you gain a deeper understanding of who
+      your audience is and the most effective way to draw in and convert potential
+      clients.
+  website:
+    title: Website Design &amp; Development
+    desc: Building websites with modern web design principles for seamless navigation
+      and increased conversions.
+  ecommerce:
+    title: E-Commerce Solutions
+    desc: Understanding your business and delivering eCommerce solutions tailored
+      to meet your specific business needs.
+  manage:
+    title: Managed Services
+    desc: As a trusted eCommerce partner, we continue to offer value added services
+      beyond the website launch.
+  fintech:
+    title: Fintech Services
+    desc: Product Development and Web Integration Solutions for the Financial Services
+      Industry.
+  partnertext:
+    title: TECHNOLOGY PARTNERS
+    desc: We partner with the best technology providers in this business, harnessing
+      the power of their offerings to transform your business
 ---
+
 <div class="row servicesB5-new" data-stellar-background-ratio="0.5">
 	<div class="clearfix">
 	 	<div class="row first-block">
@@ -33,20 +70,20 @@ slug: "_services-new wh-logo"
 <div class="row whatsperf border-D-top process">
 
 
-		<h1 class="padding-Yvw-3">OUR PROCESS</h1>
+		<h1 class="padding-Yvw-3">{{page.text.processtext.title}}</h1>
 
 		<div class="row padding-Yvw-3 font-base columns-parent">
 			  <div class="large-4 columns">
-			  	<h4>INNOVATION</h4>
-				<p>Through innovative techniques and implementations, E-Commerce sites are provided with the necessary catalysts for growth on web based platforms.</p>
+			  	<h4>{{page.text.innovation.title}}</h4>
+				<p>{{page.text.innovation.desc}}</p>
 			  </div>
 			  <div class="large-4 columns">
-			  	<h4>ITERATION</h4>
-				<p>Agile processes in project management and engineering get clients the results they need in an expedited fashion.</p>
+			  	<h4>{{page.text.iteration.title}}</h4>
+				<p>{{page.text.iteration.desc}}</p>
 			  </div>
 			  <div class="large-4 columns">
-			  	<h4>INSIGHT</h4>
-				<p>Leveraging your analytics will help you gain a deeper understanding of who your audience is and the most effective way to draw in and convert potential clients.</p>
+			  	<h4>{{page.text.insight.title}}</h4>
+				<p>{{page.text.insight.desc}}</p>
 			  </div>
 		</div>
 	</div>
@@ -58,8 +95,8 @@ slug: "_services-new wh-logo"
 				<img src="https://d283pee6upvkfl.cloudfront.net/img/mobile-apps-black.png">
 			</div>
 			<div class = "service-info">
-				<h3>Website Design &amp; Development</h3>
-				<em><p>Building websites with modern web design principles for seamless navigation and increased conversions.</p></em>
+				<h3>{{page.text.website.title}}</h3>
+				<em><p>{{page.text.website.desc}}</p></em>
 				<div class="row padding-Yvw-3 font-base columns-parent">
 				  <div class="large-4 columns">
 				  	<p>Mobile Centric Visual Design</p>
@@ -80,8 +117,8 @@ slug: "_services-new wh-logo"
 				<img src = "https://d283pee6upvkfl.cloudfront.net/img/ecommerce-graphic-black.png">
 			</div>
 			<div class = "service-info">
-				<h3>E-Commerce Solutions</h3>
-				<em><p>Understanding your business and delivering eCommerce solutions tailored to meet your specific business needs.</p></em>
+				<h3>{{page.text.ecommerce.title}}</h3>
+				<em><p>{{page.text.ecommerce.desc}}</p></em>
 				<div class="row padding-Yvw-3 font-base columns-parent">
 				  <div class="large-4 columns">
 				  	<p>Secure scalable eCommerce implementation</p>
@@ -108,8 +145,8 @@ slug: "_services-new wh-logo"
 				<img src = "https://d283pee6upvkfl.cloudfront.net/img/backend-cloud-graphic-black.png">
 			</div>
 			<div class = "service-info">
-				<h3>Managed Services</h3>
-				<em><p>As a trusted eCommerce partner, we continue to offer value added services beyond the website launch.</p></em>
+				<h3>{{page.text.manage.title}}</h3>
+				<em><p>{{page.text.manage.desc}}</p></em>
 				<div class="row padding-Yvw-3 font-base columns-parent">
 				  <div class="large-4 columns">
 				  	<p>Ecommerce Security Audit</p>
@@ -130,8 +167,8 @@ slug: "_services-new wh-logo"
 				<img src = "https://d283pee6upvkfl.cloudfront.net/img/fintech-icon-black.png">
 			</div>
 			<div class = "service-info">
-				<h3>Fintech Services</h3>
-				<em><p>Product Development and Web Integration Solutions for the Financial Services Industry.</p></em>
+				<h3>{{page.text.fintech.title}}</h3>
+				<em><p>{{page.text.fintech.desc}}</p></em>
 				<div class="row padding-Yvw-3 font-base columns-parent">
 				  <div class="large-4 columns">
 				  	<p>Brokerage</p>
@@ -152,8 +189,8 @@ slug: "_services-new wh-logo"
 <div class="row partners-bg clearfix">
 	<div class="row">
 		<div class="large-centered columns text-center">
-			<h1 class="medium">Technology Partners</h1>
-			<h3>We partner with the best technology providers in this business, harnessing the power of their offerings to transform your business </h3>
+			<h1 class="medium">{{page.text.partnertext.title}}</h1>
+			<h3> {{page.text.partnertext.desc}}</h3>
 		</div>
 	</div>
 	<div class="row paddingB-20">

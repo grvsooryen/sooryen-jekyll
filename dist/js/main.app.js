@@ -199,7 +199,26 @@ $(document).on('ready', function(){
 	$(".map").on("mousedown", function(){
 		$("#map").removeClass("scrolloff");
 	});
-	
+
+	var submenuopen = false
+
+	$('.solutions').click(function() {
+	    submenuopen = !submenuopen;
+
+	    if(submenuopen) {
+	    	$(".sol-link").attr("style", "border-bottom: 2px solid white;")
+			$(".solutions .sol-sub-menu li").attr("style", "height: 40px;");
+			$(".solutions i").attr("class", "fa fa-chevron-up")
+			$(".solutions i").attr("style", "top: 30px;")
+	    } else {
+	    	$(".sol-link").attr("style", "border: none;")
+			$(".solutions .sol-sub-menu li").attr("style", "height: 0;");
+			$(".solutions i").attr("class", "fa fa-chevron-down")
+			$(".solutions i").attr("style", "top: 80px;")
+	    }
+	});
+
+
 	//Header functionality
 	$( document ).scroll(function() {
   		var y = $(this).scrollTop();
@@ -238,7 +257,7 @@ $(document).on('ready', function(){
 
 
 	if($('body').hasClass('blk-logo')){
-		//$('#h1logo').attr("src", "http://d283pee6upvkfl.cloudfront.net/img/logoblack.png");
+		$('#h1logo').attr("src", "http://d283pee6upvkfl.cloudfront.net/img/logoblack.png");
 		$("#nav-icon span").addClass('span-dark');
 		$('#toggle').addClass('blk-bg');
 		$('.menu-text').addClass('blk-text');
@@ -269,7 +288,7 @@ $(document).on('ready', function(){
 		$(this).parent().find('.padding-Yvw-3').css( "display", "block");
 
 		 $(".close").on("click", function(){
-		 	console.log("CLose was pressed");
+		 	// console.log("CLose was pressed");
 		 	// $(".large-12").attr("class", "large-6 medium-12 small-12 columns testi-bg test-interaction no-padding");
 		 	$(this).parent().find('.padding-Yvw-3').css( "display", "none");
 		 	$(this).parent().find('.close').css( "display", "none");
@@ -277,8 +296,6 @@ $(document).on('ready', function(){
 		 	$(this).parent().find('img').css( "display", "initial");
 		 	$(this).parent().find('h4').css("padding", "1.2em 0 0 0"); 	
 		 })
-
-		// console.log("You just clicked on " + employee + " " + "Bitch")
 		
 		var read = $(this).parent().find("h6");
 
@@ -315,6 +332,7 @@ $(document).on('ready', function(){
 		}
 		//Steps to execute when the menu closses
 		else {
+
 			$(".menu-text").text("Menu");
 			$('#toggle').removeClass('wh-bg');
 			$('.menu-text').removeClass('wh-text');
@@ -327,8 +345,43 @@ $(document).on('ready', function(){
 				$('#h1logo').attr("src", "http://d283pee6upvkfl.cloudfront.net/img/logowhite.png");
 			}
 		}
-
 	});
+
+	// removing menu when screen is resized
+	$(window).resize(function(){
+		if ($(".hide-for-medium-only").css("display") != "none" && $("body").hasClass("menu-visible")){
+	        $('body').toggleClass('menu-visible');
+	        $(".menu-text").text("Menu");
+			$('#toggle').removeClass('wh-bg');
+			$('.menu-text').removeClass('wh-text');
+			enable_scroll();
+			$('#primary-nav').hide('fade' , 300);
+			
+			if($('body').hasClass('blk-logo')) {
+				$('#h1logo, #h2logo').attr("src", "http://d283pee6upvkfl.cloudfront.net/img/logoblack.png");
+			}else {
+				$('#h1logo').attr("src", "http://d283pee6upvkfl.cloudfront.net/img/logowhite.png");
+			}
+			$('.menu-click').toggleClass('close-menu');
+
+			$("#nav-icon span").toggleClass('white-span');
+			$("#nav-icon").toggleClass('open');
+
+			$(".white-logo").toggleClass('hide-active');
+			$(".show-logo").toggleClass('hide-innactive');
+  			$(".hide-logo").toggleClass('hide-innactive');
+	    }
+
+	    if($(".site-footer .small-12").css("padding-top") != "0px") {
+	    	$(".partner-office").insertAfter($( ".innovation-labs" ))
+	    }else {
+	    	$(".partner-office").appendTo($( ".left-col-footer" ))	
+	    }
+	});
+
+	if($(".site-footer .small-12").css("padding-top") != "0px") {
+    	$(".partner-office").insertAfter($( ".innovation-labs" ));
+    } 
 
    // Services page progress bar animations
    $( "#seventy-bar" )
@@ -708,7 +761,8 @@ function Analytics() {
                     param: {
                         animation: "slide",
                         touch : true,
-                        easing : "swing"
+                        easing : "swing",
+                        slideshowSpeed : 17000
                     }
                 },
                 // Slider Works Page

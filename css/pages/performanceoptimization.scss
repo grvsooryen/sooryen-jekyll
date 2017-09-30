@@ -7,9 +7,9 @@
         position: relative;
     }
     .hero-banner {
-        background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/perfopt/hero-photo.jpg);
+        background-image: url(/assets/img/jpgs/perfopt/hero-photo.jpg);
         @media screen and (max-width: 980px) {
-            background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/perfopt/hero-photo-mobile.jpg) !important;
+            background-image: url(/assets/img/jpgs/perfopt/hero-photo-mobile.jpg) !important;
             background-position: 0px -175px !important;
         }
         p {
@@ -34,13 +34,13 @@
         }
     }
     .homeB1 {
-        background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/perfopt/banner-photo-1.jpg);
+        background-image: url(/assets/img/jpgs/perfopt/banner-photo-1.jpg);
     }
 	.homeB2 {
-        background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/perfopt/banner-photo-2.jpg);
+        background-image: url(/assets/img/jpgs/perfopt/banner-photo-2.jpg);
     }
     .homeB3 {
-        background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/perfopt/banner-photo-3.jpg);
+        background-image: url(/assets/img/jpgs/perfopt/banner-photo-3.jpg);
     }   
     p {
         font-size: 1.3rem;
@@ -166,7 +166,7 @@
     }
 
     .path-to-success{
-        background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/perfopt/banner-photo-4.jpg);
+        background-image: url(/assets/img/jpgs/perfopt/banner-photo-4.jpg);
         background-position: 0 0;
     }
 

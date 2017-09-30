@@ -197,7 +197,9 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
-
+	@media only screen and (max-device-width: 500px) {
+        background-attachment: scroll;
+	}
 }
 
 // mixin for feature blocks section
@@ -206,7 +208,7 @@
 	background-size: 100% 100%;
 	position: absolute;
     height: 42px;
-    left: 20px; 
+    left: 13px; 
   
 }
 
@@ -283,6 +285,9 @@
 
 	@media screen and (max-width: 1024px) {
     	background-size: 110%;
+    	p {
+		    font-size: 0.8rem;
+    	}
 
     	&:hover {
 			background-size: 118%;

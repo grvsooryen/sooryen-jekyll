@@ -1,9 +1,9 @@
 .contact-pic {
-	background-image: url("https://d283pee6upvkfl.cloudfront.net/img/000025.jpg");
+	background-image: url("/assets/img/000025.jpg");
 	background-size: cover;
-	height: 40vw;
-	width: 100%;
-
+    height: 27vw;
+    width: 100%;
+    min-height: 180px;
 }
 
 ._contact{
@@ -13,7 +13,7 @@
 			color: white;
 			font-family: $font_hairline;
 			font-size: $font_largest;
-			padding: 17vw 0px 12vmin 0px;
+		    padding: 8vw 0px 12vmin 0px;
 			text-transform: uppercase;
 			@media screen and (max-width: 700px) {
 						padding: 50vmin 0px 12vmin 0px;
@@ -22,8 +22,11 @@
 		}
 	}
 
-	.large-6 {
+	.main-container .large-6 {
 		padding: 0;
+		@media screen and (min-width: 1024px) {
+		    margin-bottom: 150px;
+		}
 	}
     .form8 .warning, .form8.error {
         display: none !important;
@@ -118,6 +121,7 @@
 	.map {
 		position: relative;
 		overflow: hidden;
+		padding-top: 70px;
 		iframe{
 			z-index: -9999;
 			border:0;

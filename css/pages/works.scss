@@ -26,13 +26,13 @@
 		.case-study {
 			h2 {
 				color: $lightest;
-				font-family: 'latoheavy';
+				font-weight: 700;
 				text-transform: uppercase;
 
 			}
 
 			&.flowers {
-				background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/workspagecasestudy1800_hover.jpg");
+				background-image: url("/assets/img/jpgs/Works/workspagecasestudy1800_hover.jpg");
 				background-size: cover;
 				z-index: -0;
 				padding: 8vw 0 8vw 0;
@@ -45,7 +45,7 @@
 					}
 
 			  .flowers-logo {
-			  	background: url("https://d283pee6upvkfl.cloudfront.net/img/1800flowers white-01.png") no-repeat center;
+			  	background: url("/assets/img/1800flowers white-01.png") no-repeat center;
 			  	background-size: cover;
 			  	width: 33vmin;
 			  	height: 18vmin;
@@ -53,7 +53,7 @@
 			}
 
 			&.otc {
-				background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/workspagecasestudyotc_hover.jpg");
+				background-image: url("/assets/img/jpgs/Works/workspagecasestudyotc_hover.jpg");
 				background-size: cover;
 				padding: 8vw 0 8vw 0;
 				opacity: 0.9;
@@ -64,7 +64,7 @@
 					}
 
 				.oriental-logo {
-				  	background: url("https://d283pee6upvkfl.cloudfront.net/img/oriental trading white.png") no-repeat center;
+				  	background: url("/assets/img/oriental trading white.png") no-repeat center;
 				  	background-size: cover;
 				  	width: 33vmin;
 				  	height: 18vmin;
@@ -72,7 +72,7 @@
 			}
 
 			&.mindware {
-				background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/mindwareworks_hover.jpg");
+				background-image: url("/assets/img/jpgs/Works/mindwareworks_hover.jpg");
 				background-size: cover;
 				padding: 8vw 0 8vw 0;
 				opacity: 0.9;
@@ -82,7 +82,7 @@
 				  }
 
 				.mindware-logo {
-			  	background: url("https://d283pee6upvkfl.cloudfront.net/img/mindware-white.png") no-repeat center;
+			  	background: url("/assets/img/mindware-white.png") no-repeat center;
 			  	background-size: cover;
 			  	width: 33vmin;
 			  	height: 18vmin;
@@ -90,7 +90,7 @@
 			}
 
 			&.popcorn {
-				background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/popcornfactoryworks_hover.jpg");
+				background-image: url("/assets/img/jpgs/Works/popcornfactoryworks_hover.jpg");
 				background-size: cover;
 				padding: 8vw 0 8vw 0;
 				opacity: 0.9;
@@ -100,7 +100,7 @@
 				  }
 
 				.popcorn-logo {
-			  	background: url("https://d283pee6upvkfl.cloudfront.net/img/popcornfactorywhite.png") no-repeat center;
+			  	background: url("/assets/img/popcornfactorywhite.png") no-repeat center;
 			  	background-size: cover;
 			  	width: 33vmin;
 			  	height: 18vmin;
@@ -108,7 +108,7 @@
 			}
 
 			&.otc-boomi {
-				background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/otc_dellboomi_1.jpg");
+				background-image: url("/assets/img/jpgs/Works/otc_dellboomi_1.jpg");
 				background-size: cover;
 				padding: 9vw 0 9vw 0;
 				opacity: 0.9;
@@ -120,7 +120,7 @@
 
 
 				.otc-boomi-logo {
-			  	background: url("https://d283pee6upvkfl.cloudfront.net/img/otcdellboomilogo.png") no-repeat center;
+			  	background: url("/assets/img/otcdellboomilogo.png") no-repeat center;
 			  	background-size: cover;
 			  	width: 40vmin;
     			height: 19vmin;
@@ -130,7 +130,7 @@
 			}
 
 			&.a500bc {
-				background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/500bc_1.jpg");
+				background-image: url("/assets/img/jpgs/Works/500bc_1.jpg");
 				background-size: cover;
 				padding: 8vw 0 8vw 0;
 				opacity: 0.9;
@@ -141,7 +141,7 @@
 				  }
 
 				.a500bc-logo {
-			  	background: url("https://d283pee6upvkfl.cloudfront.net/img/500bc-white1.png") no-repeat center;
+			  	background: url("/assets/img/500bc-white1.png") no-repeat center;
 			  	background-size: cover;
 		  	    width: 19vmin;
 			    height: 19vmin;
@@ -149,7 +149,7 @@
 			}
 
 			&.zte {
-				background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/zte.jpg");
+				background-image: url("/assets/img/jpgs/Works/zte.jpg");
 				background-size: cover;
 				padding: 16vw 0 8vw 0;
 				opacity: 0.9;
@@ -159,7 +159,7 @@
 					}
 
 				.zte-logo {
-			  	background: url("https://d283pee6upvkfl.cloudfront.net/img/zte.png") no-repeat center;
+			  	background: url("/assets/img/zte.png") no-repeat center;
 			  	background-size: cover;
 			  	width: 22vmin;
 			  	height: 8vmin;
@@ -167,7 +167,7 @@
 		}
 
 		&.bloomreach {
-			background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/bloomreach_1.jpg");
+			background-image: url("/assets/img/jpgs/Works/bloomreach_1.jpg");
 			background-size: cover;
       padding: 10vw 0 8vw 0;
 			opacity: 0.9;
@@ -178,14 +178,14 @@
 				}
 
 			.bloomreach-logo {
-				background: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/bloomreach_logo-wht.png") no-repeat center bottom;
+				background: url("/assets/img/jpgs/Works/bloomreach_logo-wht.png") no-repeat center bottom;
 				background-size: cover;
 				width: 64vmin;
 				height: 12vmin;
 				margin: auto;
 			}
 			.flowers-logo {
- 			  	background: url("https://d283pee6upvkfl.cloudfront.net/img/1800flowers white-01.png") no-repeat center;
+ 			  	background: url("/assets/img/1800flowers white-01.png") no-repeat center;
  			  	background-size: cover;
  			  	width: 33vmin;
  			  	height: 18vmin;
@@ -195,7 +195,7 @@
 	}
 
 		&.tates {
-			background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/tates_01.jpg");
+			background-image: url("/assets/img/jpgs/Works/tates_01.jpg");
 			background-size: cover;
 			padding: 8vw 0 8vw 0;
 			opacity: 0.9;
@@ -205,7 +205,7 @@
 				}
 
 			.tates-logo {
-				background: url("https://d283pee6upvkfl.cloudfront.net/img/logo_tates.png") no-repeat center;
+				background: url("/assets/img/logo_tates.png") no-repeat center;
 				background-size: cover;
 				width: 36vmin;
     		height: 19vmin;
@@ -213,7 +213,7 @@
 	}
 
 	&.smileMakers {
-		background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/SM_1.jpg");
+		background-image: url("/assets/img/jpgs/Works/SM_1.jpg");
 		background-size: cover;
     padding: 9.5vw 0 10vw 0;
 		opacity: 0.9;
@@ -223,7 +223,7 @@
 			}
 
 		.smileMakers-logo {
-	    background: url("https://d283pee6upvkfl.cloudfront.net/img/2016-02-16.png") no-repeat center;
+	    background: url("/assets/img/2016-02-16.png") no-repeat center;
 	    background-size: cover;
 	    width: 62vmin;
 	    height: 13vmin;
@@ -232,7 +232,7 @@
 }
 
 &.a1-800Analytics {
-	background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/analytics_01.jpg");
+	background-image: url("/assets/img/jpgs/Works/analytics_01.jpg");
 	background-size: cover;
   padding: 6vw 0 8vw 0;
 	opacity: 0.9;
@@ -242,7 +242,7 @@
 		}
 
 	.a1-800Analytics-logo {
-		background: url("https://d283pee6upvkfl.cloudfront.net/img/flowerslogo.png") no-repeat center;
+		background: url("/assets/img/flowerslogo.png") no-repeat center;
 		background-size: cover;
 		width: 42vmin;
 		height: 19vmin;
@@ -251,7 +251,7 @@
 }
 
 	&.khanlucas {
-		background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/KL_1.jpg");
+		background-image: url("/assets/img/jpgs/Works/KL_1.jpg");
 		background-size: cover;
 		padding: 8vw 0 8vw 0;
 		opacity: 0.9;
@@ -261,7 +261,7 @@
 			}
 
 		.khanlucas-logo {
-			background: url("https://d283pee6upvkfl.cloudfront.net/img/KL_logo.png") no-repeat center;
+			background: url("/assets/img/KL_logo.png") no-repeat center;
 			background-size: cover;
 			width: 49vmin;
 			height: 19vmin;
@@ -270,7 +270,7 @@
 }
 
 			&.save-day {
-				background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/newCaseStudies/SD_1.jpg");
+				background-image: url("/assets/img/jpgs/newCaseStudies/SD_1.jpg");
 				background-size: cover;
 				z-index: -0;
 				padding: 8vw 0 8vw 0;
@@ -283,7 +283,7 @@
 					}
 
 			  .saveDay-logo {
-			  	background: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/newCaseStudies/saveday-wht-logo.png") no-repeat center;
+			  	background: url("/assets/img/jpgs/newCaseStudies/saveday-wht-logo.png") no-repeat center;
 			  	background-size: contain;
 			  	width: 34vmin;
 			  	height: 18vmin;
@@ -291,7 +291,7 @@
 			}
 
 			&.cetera {
-				background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy14/DOL-1.jpg");
+				background-image: url("/assets/img/jpgs/CaseStudy14/DOL-1.jpg");
 				background-size: cover;
 				padding: 8vw 0 8vw 0;
 				opacity: 0.9;
@@ -302,7 +302,7 @@
 					}
 
 				.cetera-logo {
-			  		background: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/newCaseStudies/cetera-logo-wht.png") no-repeat center;
+			  		background: url("/assets/img/jpgs/newCaseStudies/cetera-logo-wht.png") no-repeat center;
 				  	background-size: contain;
 			  	    width: 28vmin;
 				    height: 18vmin;

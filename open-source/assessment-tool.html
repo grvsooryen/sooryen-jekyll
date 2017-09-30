@@ -13,6 +13,2454 @@ slug: _assessment-tool
 </div>
 <div class="border-container">
 	<div class="row">
-		<?php include "assessmentEngine.html"; ?>
+		<div class="sidebar large-2 columns">
+			<ul>
+				<li class="main-nav-header" data-class="about_ae">About Assessment Engine</li>
+				<li class="nav-header">API Endpoints</li>
+				<li class="sub-menu"><span>Methods of Quiz</span>
+					<ul>
+						<li data-class="api_create_quiz">Create Quiz</li>
+						<li data-class="api_update_quiz">Update Quiz</li>
+						<li data-class="api_quiz_details">Quiz detail page</li>
+						<li data-class="api_delete_quiz">Delete Quiz</li>
+						<li data-class="api_all_quizzes">List of all Quizzes</li>
+						<li data-class="api_all_questions_bank">List of all Questions from Bank</li>
+						<li data-class="api_add_questions">Add multiple Questions in Quiz</li>
+					</ul>
+				</li>
+				<li class="sub-menu"><span>Methods of Quiz Questions</span>
+					<ul>
+						<li data-class="api_create_question">Create Question of Quiz</li>
+						<li data-class="api_update_question">Update Question of Quiz</li>
+						<li data-class="api_delete_question">Delete Question of Quiz</li>
+						<li data-class="api_all_questions">List of all Quiz Questions</li>
+						<li data-class="api_get_attempts_questions">Get user attempts for particular quiz</li>
+					</ul>
+				</li>
+				<li class="sub-menu"><span>Methods of Quiz Submissions</span>
+					<ul>
+						<li data-class="api_create_submission">Create Quiz submission</li>
+						<li data-class="api_obo_quiz_attempt">One by One Quiz Attempt</li>
+						<li data-class="api_update_quiz_attempt">Update Quiz Attempt</li>
+						<li data-class="api_show_students">User Attempts to show the student</li>
+						<li data-class="api_get_attempts_submission">Get user attempts for particular quiz</li>
+						<li data-class="api_get_score_quiz">Get scores only for quiz/quizzes</li>
+					</ul>
+				</li>
+				<li class="nav-header">Response of API</li>
+				<li data-class="create_quiz">Create Quiz</li>
+				<li data-class="update_quiz">Update Quiz</li>
+				<li data-class="quiz_detail">Quiz detail page</li>
+				<li data-class="delete_quiz">Delete Quiz</li>
+				<li data-class="all_quizzes">List of All Quizzes</li>
+				<li data-class="all_questions">List of All Question from Bank</li>
+				<li data-class="add_question">Add multiple Questions in Quiz</li>
+				<li data-class="create_question">Create Question of Quiz</li>
+				<li data-class="edit_question">Edit Question of Quiz</li>
+				<li data-class="update_question">Update Question of Quiz</li>
+				<li data-class="delete_question">Delete Question of Quiz </li>
+				<li data-class="all_question">List of All Questions of a Quiz</li>
+				<li data-class="create_submission">Create Quiz submission</li>
+				<li data-class="update_submission">Update Quiz submission</li>
+				<li data-class="get_user_attempt">Get user attempts for particular quiz</li>
+				<li class="nav-header">User Interface</li>
+				<li data-class="ui_create_quiz">Create quiz</li>
+				<li data-class="ui_create_question">Create question of quiz</li>
+				<li data-class="ui_create_quiz_submission">Create Quiz submission</li>
+			</ul>
+		</div>
+		<div class="content large-10 columns">
+		
+		<div class="about_ae">
+			<h3>About Assessment Engine</h3>
+			<p>Assessment engine is designed to assess mastery of student learning outcomes. Formative and summative assessments are designed and administered by instructors to be taken by students.</p>
+			<p>For more information,  <a href="https://github.com/Sooryen/assessment_engine" target="_blank" class="bitbucket_link">click here to visit bitbucket repository</a></p>
+		</div>
+		
+		<div class="all_api">
+			<p>Below mentioned Request Headers will be required in all API calls.</p>
+			<pre class="code json">
+		Cache-Control: "no-cache"
+		X-API-Key: Provided by the Assessment tool provider</pre>
+		</div>
+		<div class="api_create_quiz">
+			<h3>Create Quiz</h3>
+			<ul>
+				<li><span>Create a new quiz for context.</span></li>
+				<li><span class="cName">Controller Name : </span><span>Api::V1::</span><span>QuizzesController</span><span>#create</span></li>
+				<li><span class="Endpoint">Endpoint : </span><span>//{root_path}/api/v1/quizzes</span></li>
+				<li><span class="Method">Method : </span><span>POST</span></li>
+				<li><span class="rParams">Required parameters :</span></li>
+			</ul>
+			<div class="tableWrapper">
+				<table>
+					<thead>
+						<th>Parameter</th>
+						<th>Type</th>
+						<th>Description</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>first_name</td>
+							<td>String (Required)</td>
+							<td>First name of user</td>
+						</tr>
+						<tr>
+							<td>last name</td>
+							<td>String (Required)</td>
+							<td>Last name of user</td>
+						</tr>
+						<tr>
+							<td>email_id</td>
+							<td>String (Required)</td>
+							<td>Email of user</td>
+						</tr>
+						<tr>
+							<td>user_id</td>
+							<td>String (Required)</td>
+							<td>User id provided by application which is using api</td>
+						</tr>
+						<tr>
+							<td>role</td>
+							<td>String (Required)</td>
+							<td>Instructor/ Student (but for this api only Instructor is allowed.)</td>
+						</tr>
+						<tr>
+							<td>quiz[:title]</td>
+							<td>String (Required)</td>
+							<td>Name of Quiz</td>
+						</tr>
+						<tr>
+							<td>quiz[:description]</td>
+							<td>text (Required)</td>
+							<td>Description / Instruction for&nbsp;Quiz.</td>
+						</tr>
+						<tr>
+							<td>quiz[:resource_link_id]</td>
+							<td>String (Required)</td>
+							<td>It should be the unique key to recognize the quiz</td>
+						</tr>
+						<tr>
+							<td>quiz[:quiz_type]</td>
+							<td>String (Required)</td>
+							<td>Type of quiz&nbsp; [graded_assessment, survey] In v1 only graded_assessment is supported.</td>
+						</tr>
+						<tr>
+							<td>quiz[:shuffle_answers]</td>
+							<td>boolean</td>
+							<td>It will shuffle answer options</td>
+						</tr>
+						<tr>
+							<td>quiz[:time_limit_check]</td>
+							<td>boolean</td>
+							<td>It will check time_limit of quiz is present or not.</td>
+						</tr>
+						<tr>
+							<td>quiz[:time_limit]</td>
+							<td>integer</td>
+							<td>Value of time_limit in minutes.</td>
+						</tr>
+						<tr>
+							<td>quiz[:allow_multiple_attempt_check]</td>
+							<td>boolean</td>
+							<td>True/false value will check for allow_multiple_attempt_check.</td>
+						</tr>
+						<tr>
+							<td>quiz[:allowed_attempts]</td>
+							<td>integer</td>
+							<td>How many attempts are allowed&nbsp;for quiz value in integer here.</td>
+						</tr>
+						<tr>
+							<td>quiz[:score_filter]</td>
+							<td>string</td>
+							<td>Select category from highest &nbsp;/ lowest for list score of quiz.</td>
+						</tr>
+						<tr>
+							<td>quiz[:one_question_at_a_time]</td>
+							<td>boolean</td>
+							<td>It will check one question will be show at time or not.</td>
+						</tr>
+						<tr>
+							<td>quiz[:lock_question_after_answer]</td>
+							<td>boolean</td>
+							<td>It will lock question after answer at “true” value.</td>
+						</tr>
+						<tr>
+							<td>quiz[:show_quiz_response]</td>
+							<td>boolean</td>
+							<td>At “true” it will show quiz response</td>
+						</tr>
+						<tr>
+							<td>quiz[:once_after_each_attempt]</td>
+							<td>boolean</td>
+							<td>It will show quiz resource at once only at “true”</td>
+						</tr>
+						<tr>
+							<td>quiz[:show_correct_answers]</td>
+							<td>boolean</td>
+							<td>At “true” value it will show correct answer of question</td>
+						</tr>
+						<tr>
+							<td>quiz[:show_correct_answers_at_date]</td>
+							<td>date</td>
+							<td>It will show date of answer</td>
+						</tr>
+						<tr>
+							<td>quiz[:show_correct_answers_at_time]</td>
+							<td>time</td>
+							<td>It will show time of answer</td>
+						</tr>
+						<tr>
+							<td>quiz[:hide_correct_answers_at_date]</td>
+							<td>date</td>
+							<td>It will hide date of answer</td>
+						</tr>
+						<tr>
+							<td>quiz[:hide_correct_answers_at_time]</td>
+							<td>time</td>
+							<td>It will hide time of answer</td>
+						</tr>
+						<tr>
+							<td>quiz[:auto_publish]</td>
+							<td>boolean</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>quiz[:unlock_at]</td>
+							<td>datetime</td>
+							<td>It will unlock the question after go on the next question.</td>
+						</tr>
+						<tr>
+							<td>quiz[:lock_at]</td>
+							<td>datetime</td>
+							<td>After next question previous&nbsp;question will be auto lock on true value</td>
+						</tr>
+						<tr>
+							<td>quiz[:context_id]</td>
+							<td>integer</td>
+							<td>It will give you course_id of quiz</td>
+						</tr>
+						<tr>
+							<td>quiz[:resource_link_id]</td>
+							<td>string</td>
+							<td>It will give you unique&nbsp;id of doc from where quiz is created.</td>
+						</tr>
+						<tr>
+							<td>Commit</td>
+							<td>String</td>
+							<td>“Next” value have to pass to go to next step.</td>
+						</tr>
+						<tr>
+							<td>role</td>
+							<td>string</td>
+							<td>Role of current_user</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<p>Returns Quiz object</p>
+		</div>
+		<div class="api_update_quiz">
+			<h3>Update Quiz</h3>
+			<ul>
+				<li><span>Update the quiz</span></li>
+				<li><span class="cName">Controller Name : </span><span>Api::V1::QuizzesController#update</span></li>
+				<li><span class="Endpoint">Endpoint : </span><span>//{root_path}/api/v1/quizzes/:id</span></li>
+				<li><span class="Method">Method : </span><span>PUT</span></li>
+				<li><span class="rParams">Required parameters :</span></li>
+			</ul>
+			<div class="tableWrapper">
+				<table>
+					<thead>
+						<th>Parameter</th>
+						<th>Type</th>
+						<th>Description</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>quiz[:title]</td>
+							<td>String (Required)</td>
+							<td>Name of Quiz</td>
+						</tr>
+						<tr>
+							<td>quiz[:description]</td>
+							<td>Text (Required)</td>
+							<td>Description / Instruction of Quiz</td>
+						</tr>
+						<tr>
+							<td>quiz[:quiz_type]</td>
+							<td>string&nbsp;(Required)</td>
+							<td>Type of quiz Eg. graded_assessment</td>
+						</tr>
+						<tr>
+							<td>quiz[:shuffle_answers]</td>
+							<td>boolean</td>
+							<td>It will shuffle answer options</td>
+						</tr>
+						<tr>
+							<td>quiz[:time_limit_check]</td>
+							<td>boolean</td>
+							<td>It will check time_limit of quiz is present or not.</td>
+						</tr>
+						<tr>
+							<td>quiz[:time_limit]</td>
+							<td>integer</td>
+							<td>Value of time_limit in minutes.</td>
+						</tr>
+						<tr>
+							<td>quiz[:allow_multiple_attempt_check]</td>
+							<td>boolean</td>
+							<td>True/false value will check for allow_multiple_attempt_check.</td>
+						</tr>
+						<tr>
+							<td>quiz[:allowed_attempts]</td>
+							<td>integer</td>
+							<td>How many attempts are allowed&nbsp;for quiz value in integer here.</td>
+						</tr>
+						<tr>
+							<td>quiz[:score_filter]</td>
+							<td>string</td>
+							<td>Select category from highest &nbsp;/ lowest for list score of quiz.</td>
+						</tr>
+						<tr>
+							<td>quiz[:one_question_at_a_time]</td>
+							<td>boolean</td>
+							<td>It will check one question will be show at time or not.</td>
+						</tr>
+						<tr>
+							<td>quiz[:lock_question_after_answer]</td>
+							<td>boolean</td>
+							<td>It will lock question after answer at “true” value.</td>
+						</tr>
+						<tr>
+							<td>quiz[:show_quiz_response]</td>
+							<td>boolean</td>
+							<td>At “true” it will show quiz response</td>
+						</tr>
+						<tr>
+							<td>quiz[:once_after_each_attempt]</td>
+							<td>boolean</td>
+							<td>It will show quiz resource at once only at “true”</td>
+						</tr>
+						<tr>
+							<td>quiz[:show_correct_answers]</td>
+							<td>boolean</td>
+							<td>At “true” value it will show correct answer of question</td>
+						</tr>
+						<tr>
+							<td>quiz[:show_correct_answers_at_date]</td>
+							<td>date</td>
+							<td>It will show date of answer</td>
+						</tr>
+						<tr>
+							<td>quiz[:show_correct_answers_at_time]</td>
+							<td>time</td>
+							<td>It will show time of answer</td>
+						</tr>
+						<tr>
+							<td>quiz[:hide_correct_answers_at_date]</td>
+							<td>date</td>
+							<td>It will hide date of answer</td>
+						</tr>
+						<tr>
+							<td>quiz[:hide_correct_answers_at_time]</td>
+							<td>time</td>
+							<td>It will hide time of answer</td>
+						</tr>
+						<tr>
+							<td>quiz[:auto_publish]</td>
+							<td>boolean</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>quiz[:unlock_at]</td>
+							<td>datetime</td>
+							<td>It will unlock the question after go on the next question.</td>
+						</tr>
+						<tr>
+							<td>quiz[:lock_at]</td>
+							<td>datetime</td>
+							<td>After next question previous&nbsp;question will be auto lock on true value</td>
+						</tr>
+						<tr>
+							<td>quiz[:context_id]</td>
+							<td>integer</td>
+							<td>It will give you course_id of quiz</td>
+						</tr>
+						<tr>
+							<td>quiz[:resource_link_id[</td>
+							<td>string</td>
+							<td>It will give you unique&nbsp;id of doc from where quiz is created.</td>
+						</tr>
+						<tr>
+							<td>Commit</td>
+							<td>String</td>
+							<td>“Next” value have to pass to go to next step.</td>
+						</tr>
+						<tr>
+							<td>user_id</td>
+							<td>integer</td>
+							<td>Id of current_user</td>
+						</tr>
+						<tr>
+							<td>first_name</td>
+							<td>string</td>
+							<td>first_name of current_user</td>
+						</tr>
+						<tr>
+							<td>last_name</td>
+							<td>string</td>
+							<td>Last_name of current_user</td>
+						</tr>
+						<tr>
+							<td>email</td>
+							<td>string</td>
+							<td>Email of current_user</td>
+						</tr>
+						<tr>
+							<td>role</td>
+							<td>string</td>
+							<td>Role of current_user</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<p>Returns updated Quiz object.</p>
+		</div>
+		<div class="api_quiz_details">
+			<h3>Quiz detail page</h3>
+			<ul>
+				<li><span>Shows the information of the quiz.</span></li>
+				<li><span class="cName">Controller Name : </span><span>Api::V1::QuizzesController#show</span></li>
+				<li><span class="Endpoint">Endpoint : </span><span>//{root_path}/api/v1/quizzes/:id</span></li>
+				<li><span class="Method">Method : </span><span>GET</span></li>
+				<li><span class="rParams">Required parameters :</span></li>
+			</ul>
+			<div class="tableWrapper">
+				<table>
+					<thead>
+						<th>Parameter</th>
+						<th>Type</th>
+						<th>Description</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>id&nbsp;(Path parameter)</td>
+							<td>String&nbsp;(Required)</td>
+							<td>It is the resource link id of Quiz provided by tool consumer.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="api_delete_quiz">
+			<h3>Delete Quiz</h3>
+			<ul>
+				<li><span>Delete the quiz.</span></li>
+				<li><span class="cName">Controller Name : </span><span>Api::V1::QuizzesController#destroy</span></li>
+				<li><span class="Endpoint">Endpoint : </span><span>//{root_path}/api/v1/quizzes/:id</span></li>
+				<li><span class="Method">Method : </span><span>DELETE</span></li>
+				<li><span class="rParams">Required parameters :</span></li>
+			</ul>
+			<div class="tableWrapper">
+				<table>
+					<thead>
+						<th>Parameter</th>
+						<th>Type</th>
+						<th>Description</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>id</td>
+							<td>String (Required)</td>
+							<td>It is the resource link id of Quiz provided by tool consumer.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="api_all_quizzes">
+			<h3>List of all Quizzes</h3>
+			<ul>
+				<li><span>Returns the list of all quizzes for current user for the particular context.</span></li>
+				<li><span class="cName">Controller Name : </span><span>Api::V1::QuizzesController#index</span></li>
+				<li><span class="Endpoint">Endpoint : </span><span>//{root_path}/api/v1/quizzes</span></li>
+				<li><span class="Method">Method : </span><span>GET</span></li>
+				<li><span class="rParams">Required parameters :</span></li>
+			</ul>
+			<div class="tableWrapper">
+				<table>
+					<thead>
+						<th>Parameter</th>
+						<th>Type</th>
+						<th>Description</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>context_id</td>
+							<td>String (Required)</td>
+							<td>It will course_id / section id provided by tool consumer.</td>
+						</tr>
+						<tr>
+							<td>user_id</td>
+							<td>Integer (Required)</td>
+							<td>Id of current_user in the Tool consumer.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="api_all_questions_bank">
+			<h3>List of all Questions from Bank</h3>
+			<ul>
+				<li><span>List of questions from question bank.</span></li>
+				<li><span class="cName">Controller Name : </span><span>Api::V1::QuestionBanksController#index</span></li>
+				<li><span class="Endpoint">Endpoint : </span><span>//{root_path}/api/v1/question_banks</span></li>
+				<li><span class="Method">Method : </span><span>GET</span></li>
+				<li><span class="rParams">Required parameters :</span></li>
+			</ul>
+			<div class="tableWrapper">
+				<table>
+					<thead>
+						<th>Parameter</th>
+						<th>Type</th>
+						<th>Description</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>context_id</td>
+							<td>String (Required)</td>
+							<td>It will course_id / section id provided by tool consumer.</td>
+						</tr>
+						<tr>
+							<td>questions_id[]</td>
+							<td>Integer</td>
+							<td>Array of questions_id</td>
+						</tr>
+						<tr>
+							<td>user_id</td>
+							<td>Integer</td>
+							<td>Id of current_user provided by Tool consumer.</td>
+						</tr>
+						<tr>
+							<td>sort_by_questions</td>
+							<td>String</td>
+							<td>Pass keyword for do sorting of question list ex. title</td>
+						</tr>
+						<tr>
+							<td>questions_order</td>
+							<td>String</td>
+							<td>Order of sorting DESC/ASE</td>
+						</tr>
+						<tr>
+							<td>Search</td>
+							<td>String</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="api_add_questions">
+			<h3>Add multiple Questions in Quiz</h3>
+			<ul>
+				<li><span>Add question to the quiz from question bank.</span></li>
+				<li><span class="cName">Controller Name : </span><span>Api::V1::QuizzesController#add_question_to_quiz</span></li>
+				<li><span class="Endpoint">Endpoint : </span><span>//{root_path}//api/v1/quizzes/add_question_to_quiz</span></li>
+				<li><span class="Method">Method : </span><span>GET</span></li>
+				<li><span class="rParams">Required parameters :</span></li>
+			</ul>
+			<div class="tableWrapper">
+				<table>
+					<thead>
+						<th>Parameter</th>
+						<th>Type</th>
+						<th>Description</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>context_id</td>
+							<td>String (Required)</td>
+							<td>It will course_id / section_id.</td>
+						</tr>
+						<tr>
+							<td>questions_id[]</td>
+							<td>Integer</td>
+							<td>Array of questions_ids</td>
+						</tr>
+						<tr>
+							<td>user_id</td>
+							<td>Integer &nbsp;(Required)</td>
+							<td>Id of current_user provided by tool consumer.</td>
+						</tr>
+						<tr>
+							<td>resource_link_id</td>
+							<td>String (Required)</td>
+							<td>It will be the resource_link_id provided by tool consumer.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="api_create_question">
+			<h3>Create Question of Quiz</h3>
+			<ul>
+				<li><span>Create a question and attach to a quiz.</span><span>&nbsp;</span></li>
+				<li><span class="cName">Controller Name : </span><span>Api::v1::</span><span>QuizQuestions</span><span>Controller#create</span></li>
+				<li><span class="Endpoint">Endpoint : </span><span>//{root_path}/api/v1/quizzes/{quiz_id}/quiz_questions</span></li>
+				<li><span class="Method">Method : </span><span>POST</span></li>
+				<li><span class="rParams">Required parameters :</span></li>
+			</ul>
+			<div class="tableWrapper">
+				<table>
+					<thead>
+						<th>Parameter</th>
+						<th>Type</th>
+						<th>Description</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>context_id</td>
+							<td>Integer (required)</td>
+							<td>It will course_id / context_id.</td>
+						</tr>
+						<tr>
+							<td>user_id</td>
+							<td>Integer (required)</td>
+							<td>Id of current_user provided by tool consumer.</td>
+						</tr>
+						<tr>
+							<td>quiz_id</td>
+							<td>Integer (required)</td>
+							<td>It will be the resource_link_id provided by tool consumer.</td>
+						</tr>
+						<tr>
+							<td>question[:question_text]</td>
+							<td>String (required)</td>
+							<td>Text of question.</td>
+						</tr>
+						<tr>
+							<td>question[:question_type]</td>
+							<td>String (required)</td>
+							<td>Question type Ex. [multiple_choice_question, true_false_question, short_answer_question, multiple_answers_question, multiple_dropdowns_question, matching_question]</td>
+						</tr>
+						<tr>
+							<td>question[:points_possible]</td>
+							<td>Integer (required)</td>
+							<td>Point of question in integer only</td>
+						</tr>
+						<tr>
+							<td>question[:shuffle_answer]</td>
+							<td>Boolean</td>
+							<td>It will shuffle answer option if value is “true”</td>
+						</tr>
+						<tr>
+							<td>question[:answers][:text]</td>
+							<td>String</td>
+							<td>Answer description</td>
+						</tr>
+						<tr>
+							<td>question[:answers][:right_or_wrong]</td>
+							<td>Boolean</td>
+							<td>Answer is true at “true”.</td>
+						</tr>
+						<tr>
+							<td>question[:answers][:Comments]</td>
+							<td>String</td>
+							<td>Comment text will be here.</td>
+						</tr>
+						<tr>
+							<td>question[:correct_comment]</td>
+							<td>String</td>
+							<td>Comment text will be here.</td>
+						</tr>
+						<tr>
+							<td>question[:incorrect_comment]</td>
+							<td>String</td>
+							<td>Comment text will be here.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="api_update_question">
+			<h3>Update Question of Quiz</h3>
+			<ul>
+				<li><span>Update the question of quiz.</span></li>
+				<li><span class="cName">Controller Name : </span><span>Api::v1::</span><span>QuizQuestions</span><span>Controller#update</span></li>
+				<li><span class="Endpoint">Endpoint </span><span>: //{root_path}/api/v1/quizzes/:quiz_id/quiz_questions/:question_id</span></li>
+				<li><span class="Method">Method : </span><span>PUT</span></li>
+				<li><span class="rParams">Required parameters :</span></li>
+			</ul>
+			<div class="tableWrapper">
+				<table>
+					<thead>
+						<th>Parameter</th>
+						<th>Type</th>
+						<th>Description</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>context_id</td>
+							<td>Integer (required)</td>
+							<td>It will course_id / section_id.</td>
+						</tr>
+						<tr>
+							<td>user_id</td>
+							<td>Integer (required)</td>
+							<td>Id of current_user provided by tool consumer.</td>
+						</tr>
+						<tr>
+							<td>quiz_id</td>
+							<td>Integer (required)</td>
+							<td>It will be the resource_link_id provided by tool consumer.</td>
+						</tr>
+						<tr>
+							<td>question[:question_text]</td>
+							<td>String (required)</td>
+							<td>Definition of question.</td>
+						</tr>
+						<tr>
+							<td>question[:question_type]</td>
+							<td>String (required)</td>
+							<td>Question type Ex. [multiple_choice_question , true_false_question ].</td>
+						</tr>
+						<tr>
+							<td>Question[:points_possible]</td>
+							<td>Integer (required)</td>
+							<td>Point of question in integer only</td>
+						</tr>
+						<tr>
+							<td>Question[:shuffle_answer]</td>
+							<td>Boolean</td>
+							<td>It will shuffle answer option if value is “true”</td>
+						</tr>
+						<tr>
+							<td>Question[:answers][:text]</td>
+							<td>String</td>
+							<td>Answer description</td>
+						</tr>
+						<tr>
+							<td>Question[:answers][:right_or_wrong]</td>
+							<td>Boolean</td>
+							<td>Answer is true at “true”.</td>
+						</tr>
+						<tr>
+							<td>Question[:answers][:Comments]</td>
+							<td>String</td>
+							<td>Comment text will be here.</td>
+						</tr>
+						<tr>
+							<td>Question[:correct_comment]</td>
+							<td>String</td>
+							<td>Comment text will be here.</td>
+						</tr>
+						<tr>
+							<td>Question[:incorrect_comment]</td>
+							<td>String</td>
+							<td>Comment text will be here.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="api_delete_question">
+			<h3>Delete Question of Quiz</h3>
+			<ul>
+				<li><span>Delete the question from quiz.</span></li>
+				<li><span class="cName">Controller Name : </span><span>Api::V1::QuizQuestionsController#destroy</span></li>
+				<li><span class="Endpoint">Endpoint : </span><span>//{root_path}/api/v1/quizzes/{quiz_id}/quiz_questions/id</span></li>
+				<li><span class="Method">Method : </span><span>DELETE</span></li>
+				<li><span class="rParams">Required parameters :</span></li>
+			</ul>
+			<div class="tableWrapper">
+				<table>
+					<thead>
+						<th>Parameter</th>
+						<th>Type</th>
+						<th>Description</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>quiz_id</td>
+							<td>String (Required)</td>
+							<td>It will be the resource_link_id provided by tool consumer.</td>
+						</tr>
+						<tr>
+							<td>id</td>
+							<td>Integer (Required)</td>
+							<td>Id of question.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="api_all_questions">
+			<h3>List of all Quiz Questions</h3>
+			<ul>
+				<li><span>List of all questions attached to quiz.</span></li>
+				<li><span class="cName">Controller Name : </span><span>Api::V1::QuizQuestionsController#index</span></li>
+				<li><span class="Endpoint">Endpoint : </span><span>//{root_path}/api/v1/quizzes/{quiz_id}/quiz_questions</span></li>
+				<li><span class="Method">Method : </span><span>GET</span></li>
+				<li><span class="rParams">Required parameters :</span></li>
+			</ul>
+			<div class="tableWrapper">
+				<table>
+					<thead>
+						<th>Parameter</th>
+						<th>Type</th>
+						<th>Description</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>quiz_id</td>
+							<td>String (required)</td>
+							<td>It will be the resource_link_id provided by tool consumer.</td>
+						</tr>
+						<tr>
+							<td>context_id[b][c]</td>
+							<td>Integer (required)</td>
+							<td>It will course_id / section_id.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="api_get_attempts_questions">
+			<h3>Get user attempts for particular quiz</h3>
+			<ul>
+				<li><span>Get student attempts object(grades for all attempt).</span></li>
+				<li><span class="cName">Controller Name : </span><span>Api::V1::QuizSubmissionsController#get_user_attempts</span></li>
+				<li><span class="Endpoint">Endpoint : </span><span>//{root_path}/</span><span>api/v1/quizzes/:quiz_id/quiz_submissions/get_user_attempts?user_id={user_id}&amp;context_id={context_id}</span></li>
+				<li><span class="Method">Method : </span><span>GET</span></li>
+				<li><span class="rParams">Required parameters :</span></li>
+			</ul>
+			<div class="tableWrapper">
+				<table>
+					<thead>
+						<th>Parameter</th>
+						<th>Type</th>
+						<th>Description</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>user_id</td>
+							<td>Integer (Required)</td>
+							<td>Id of current_user</td>
+						</tr>
+						<tr>
+							<td>context_id</td>
+							<td>String (Required)</td>
+							<td>It will course_id / section_id.</td>
+						</tr>
+						<tr>
+							<td>quiz_id</td>
+							<td>String (Required)</td>
+							<td>It will be the resource_link_id provided by tool consumer.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="api_create_submission">
+			<ol>
+				<li><span>Create Quiz submission (Mandatory)</span></li>
+				<li><span>Update Quiz submission (if updating all questions at once then call update)</span></li>
+				<li><span>Quiz submission one question at a time. (</span><span>if updating question submission one by one then call update during the last question submission.</span><span>)</span></li>
+			</ol>
+			<h3>Create Quiz submission</h3>
+			<ul>
+				<li><span>It will create attempt id for student and will send the attempt id to the tool consumer which will be needed by the tool consumer throughout the Attempt submission.</span></li>
+				<li><span class="cName">Controller Name : </span><span>Api::V1::QuizSubmissionsController#create</span></li>
+				<li><span class="Endpoint">Endpoint : </span><span>//{root_path}/</span><span>api/v1/quizzes/</span><span>{quiz_id}</span><span>/quiz_submissions</span></li>
+				<li><span class="Method">Method : </span><span>POST</span></li>
+				<li><span class="rParams">Required parameters :</span></li>
+			</ul>
+			<div class="tableWrapper">
+				<table>
+					<thead>
+						<th>Parameter</th>
+						<th>Type</th>
+						<th>Description</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>context_id</td>
+							<td>String (Required)</td>
+							<td>It will be the course_id / section_id.</td>
+						</tr>
+						<tr>
+							<td>user_id</td>
+							<td>Integer</td>
+							<td>Id of current_user provided by tool consumer</td>
+						</tr>
+						<tr>
+							<td>quiz_id</td>
+							<td>String (Required)</td>
+							<td>It will be the resource_link_id provided by tool consumer.</td>
+						</tr>
+						<tr>
+							<td>first_name</td>
+							<td>string</td>
+							<td>first_name of user.</td>
+						</tr>
+						<tr>
+							<td>last_name</td>
+							<td>string</td>
+							<td>last_name of user.</td>
+						</tr>
+						<tr>
+							<td>Email</td>
+							<td>string</td>
+							<td>Email of user.</td>
+						</tr>
+						<tr>
+							<td>role</td>
+							<td>string</td>
+							<td>Role of user.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<p>The response will contain submission_id, submission_attempt_id, total_pages, questions and quiz information.</p>
+			<p>Now this information will tell the tool consumer that the quiz is all at once or one by one(because if the quiz is all at once then all questions will be sent to the consumer, otherwise single question will be sent).</p>
+			<p>According to this,</p>
+			<ul>
+				<li>If quiz is all questions at once then call <b>Update Quiz Attempt api </b> directly.</li>
+				<li>If quiz is one by one then call <b>One By One Quiz Attempt </b> api and for last question call <b>Update Quiz Attempt</b> api.</li>
+			</ul>
+		</div>
+		<div class="api_obo_quiz_attempt">
+			<h3>One by One Quiz Attempt</h3>
+			<ul>
+				<li><span class="cName">Controller Name : </span><span>Api::V1::QuizSubmissionsController#whole_next_previous</span></li>
+				<li><span class="Endpoint">Endpoint : </span><span>//{root_path}/api/v1/quizzes/:quiz_id/quiz_submissions/whole_next_previous</span></li>
+				<li><span class="Method">Method : </span><span>POST</span></li>
+				<li><span class="rParams">Required parameters :</span></li>
+			</ul>
+			<div class="tableWrapper">
+				<table>
+					<thead>
+						<th>Parameter</th>
+						<th>Type</th>
+						<th>Description</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>user_id</td>
+							<td>Integer</td>
+							<td>Id of current_user</td>
+						</tr>
+						<tr>
+							<td>context_id</td>
+							<td>String (Required)</td>
+							<td>It will be the course_id / section_id.</td>
+						</tr>
+						<tr>
+							<td>quiz_id</td>
+							<td>String (Required)</td>
+							<td>It will be the resource_link_id provided by tool consumer.</td>
+						</tr>
+						<tr>
+							<td>params[:commit]</td>
+							<td>String</td>
+							<td>“Next” or “Previous”</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<p>Pass params[:commit] as “Next” for next question and pass “Previous” for visiting the previous question. When last question appears then call <b> Update Quiz Attempt </b> api.</p>
+		</div>
+		<div class="api_update_quiz_attempt">
+			<h3>Update Quiz Attempt</h3>
+			<ul>
+				<li><span class="cName">Controller Name : </span><span>Api::V1::QuizSubmissions_Controller#update</span></li>
+				<li><span class="Endpoint">Endpoint : </span><span>//{root_path}/</span><span>api/v1/quizzes/</span><span>:quiz_id</span><span>/quiz_submissions/:id</span></li>
+				<li><span class="Method">Method : </span><span>PUT</span></li>
+				<li><span class="rParams">Required parameters :</span></li>
+			</ul>
+			<div class="tableWrapper">
+				<table>
+					<thead>
+						<th>Parameter</th>
+						<th>Type</th>
+						<th>Description</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>context_id</td>
+							<td>String (Required)</td>
+							<td>It will be the course_id / section id.</td>
+						</tr>
+						<tr>
+							<td>user_id</td>
+							<td>Integer (Required)</td>
+							<td>Id of current_user</td>
+						</tr>
+						<tr>
+							<td>quiz_id</td>
+							<td>String (Required)</td>
+							<td>It will be the resource_link_id provided by tool consumer.</td>
+						</tr>
+						<tr>
+							<td>id</td>
+							<td>Integer (Required)</td>
+							<td>quiz submission id</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="api_show_students">
+			<h3>User Attempts to show the student</h3>
+			<ul>
+				<li><span>To show the details of student attempts to a student according to the quiz setting.(For Instructor it will show all attempts irrespective of quiz settings.)</span></li>
+				<li><span class="cName">Controller Name : </span><span>Api::V1::QuizSubmissionsController#quiz_submission_results</span></li>
+				<li><span class="Endpoint">Endpoint : </span><span>//{root_path}/</span><span>api/v1/quizzes/:quiz_id/quiz_submissions/quiz_submission_results</span></li>
+				<li><span class="Method">Method : </span><span>GET</span></li>
+				<li><span class="rParams">Required parameters :</span></li>
+			</ul>
+			<div class="tableWrapper">
+				<table>
+					<thead>
+						<th>Parameter</th>
+						<th>Type</th>
+						<th>Description</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>user_id</td>
+							<td>Integer (Required)</td>
+							<td>Id of current_user</td>
+						</tr>
+						<tr>
+							<td>context_id</td>
+							<td>String (Required)</td>
+							<td>It will be the course_id / section id.</td>
+						</tr>
+						<tr>
+							<td>quiz_id</td>
+							<td>String (Required)</td>
+							<td>It will be the resource_link_id provided by tool consumer.</td>
+						</tr>
+						<tr>
+							<td>role</td>
+							<td>String (Required)</td>
+							<td>Role of user.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="api_get_attempts_submission">
+			<h3>Get user attempts for particular quiz</h3>
+			<ul>
+				<li><span>Will show the quiz attempt detail for a student</span></li>
+				<li><span class="cName">Controller Name : </span><span>Api::V1::QuizSubmissionsController#get_user_attempts</span></li>
+				<li><span class="Endpoint">Endpoint : </span><span>//{root_path}/api/v1/quizzes/:quiz_id/quiz_submissions/get_user_attempts</span></li>
+				<li><span class="Method">Method : </span><span>GET</span></li>
+				<li><span class="rParams">Required parameters :</span></li>
+			</ul>
+			<div class="tableWrapper">
+				<table>
+					<thead>
+						<th>Parameter</th>
+						<th>Type</th>
+						<th>Description</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>user_id</td>
+							<td>Integer (Required)</td>
+							<td>Id of current_user</td>
+						</tr>
+						<tr>
+							<td>context_id</td>
+							<td>String (Required)</td>
+							<td>It will be the course_id / section id.</td>
+						</tr>
+						<tr>
+							<td>quiz_id</td>
+							<td>String (Required)</td>
+							<td>It will be the resource_link_id provided by tool consumer.</td>
+						</tr>
+						<tr>
+							<td>role</td>
+							<td>String (Required)</td>
+							<td>Role of user.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="api_get_score_quiz">
+			<h3>Get scores only for quiz/quizzes</h3>
+			<ul>
+				<li><span>To get the score and start/end quiz time for students/student according to the parameters passed for particular context.</span></li>
+				<li><span class="cName">Controller Name : </span><span>Api::V1::QuizSubmissionsController#get_the_scores_information</span></li>
+				<li><span class="Endpoint">Endpoint : </span><span>//{root_path}/api/v1/quizzes/get_the_scores_information</span></li>
+				<li><span class="Method">Method : </span><span>GET</span></li>
+				<li><span class="rParams">Required parameters :</span></li>
+			</ul>
+			<div class="tableWrapper">
+				<table>
+					<thead>
+						<th>Parameter</th>
+						<th>Type</th>
+						<th>Description</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>user_id</td>
+							<td>Integer (Required)</td>
+							<td>Id of current_user</td>
+						</tr>
+						<tr>
+							<td>context_id</td>
+							<td>String (Required)</td>
+							<td>It will be the course_id / section id.</td>
+						</tr>
+						<tr>
+							<td>resource_link_ids[]</td>
+							<td>String (Required)</td>
+							<td>It will be the array of resource_link_ids &nbsp;provided by tool consumer.</td>
+						</tr>
+						<tr>
+							<td>role</td>
+							<td>String (Required)</td>
+							<td>Role of user.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
+		<div class="create_quiz">
+			<h3>Create Quiz</h3>
+			<p>After creating quiz response will be this.</p>
+			<pre class="code json">
+		{
+			"quiz" => {
+				"id" => 151,
+				"title" => "test Quiz",
+				"description" => "Test Quiz Description",
+				"context_id" => 1,
+				"resource_link_id" => 470,
+				"points_possible" => nil,
+				"shuffle_answers" => true,
+				"show_correct_answers" => true,
+				"time_limit" => 5,
+				"allowed_attempts" => 4,
+				"quiz_type" => "graded_assessment",
+				"question_count" => nil,
+				"last_edited_at" => "2016-11-11T11:47:19.994Z",
+				"created_by" => 1,
+				"updated_by" => 1,
+				"hide_results" => nil,
+				"one_question_at_a_time" => true,
+				"show_correct_answers_at_date" => "2016-11-11",
+				"show_correct_answers_at_time" => "2016-11-11T03:00:00.000+00:00",
+				"hide_correct_answers_at_date" => "2016-11-23",
+				"hide_correct_answers_at_time" => "2016-11-11T14:00:00.000+00:00",
+				"created_at" => "2016-11-11T11:47:20.004Z",
+				"updated_at" => "2016-11-11T11:47:20.004Z",
+				"score_filter" => "Highest",
+				"once_after_each_attempt" => true,
+				"auto_publish" => false,
+				"lock_question_after_answer" => true,
+				"time_limit_check" => true,
+				"show_quiz_response" => true,
+				"allow_multiple_attempt_check" => true
+			},
+			"total_questions_count" => 0,
+			"status" => 200
+		}</pre>
+		</div>
+		<div class="update_quiz">
+			<h3>Update Quiz</h3>
+			<p>After updating quiz response will be this in JSON.</p>
+			<pre class="code json">
+		{
+			"quiz" => {
+				"id" => 151,
+				"title" => "test Quiz",
+				"description" => "Test Quiz Description",
+				"context_id" => 1,
+				"resource_link_id" => 470,
+				"points_possible" => nil,
+				"shuffle_answers" => true,
+				"show_correct_answers" => true,
+				"time_limit" => 5,
+				"allowed_attempts" => 4,
+				"quiz_type" => "graded_assessment",
+				"question_count" => nil,
+				"last_edited_at" => "2016-11-11T11:47:19.994Z",
+				"created_by" => 1,
+				"updated_by" => 1,
+				"hide_results" => nil,
+				"one_question_at_a_time" => true,
+				"show_correct_answers_at_date" => "2016-11-11",
+				"show_correct_answers_at_time" => "2016-11-11T03:00:00.000+00:00",
+				"hide_correct_answers_at_date" => "2016-11-23",
+				"hide_correct_answers_at_time" => "2016-11-11T14:00:00.000+00:00",
+				"created_at" => "2016-11-11T11:47:20.004Z",
+				"updated_at" => "2016-11-11T11:47:20.004Z",
+				"score_filter" => "Highest",
+				"once_after_each_attempt" => true,
+				"auto_publish" => false,
+				"lock_question_after_answer" => true,
+				"time_limit_check" => true,
+				"show_quiz_response" => true,
+				"allow_multiple_attempt_check" => true
+			},
+			"total_questions_count" => 0,
+			"status" => 200
+		}</pre>
+		</div>
+		<div class="quiz_detail">
+			<h3>Quiz detail page</h3>
+			<p>When you call the API to see the Quiz detail response will be like below JSON.</p>
+			<pre class="code json">
+		{
+			"quiz" => {
+				"id" => 154,
+				"title" => "Test Quiz",
+				"description" => "description",
+				"context_id" => 1,
+				"resource_link_id" => "473",
+				"points_possible" => 32,
+				"shuffle_answers" => false,
+				"show_correct_answers" => false,
+				"time_limit" => nil,
+				"allowed_attempts" => nil,
+				"quiz_type" => "graded_assessment",
+				"question_count" => 7,
+				"last_edited_at" => "2016-11-11T12:11:37.000Z",
+				"created_by" => 1,
+				"updated_by" => 1,
+				"hide_results" => nil,
+				"one_question_at_a_time" => false,
+				"show_correct_answers_at_date" => nil,
+				"show_correct_answers_at_time" => nil,
+				"hide_correct_answers_at_date" => nil,
+				"hide_correct_answers_at_time" => nil,
+				"created_at" => "2016-11-11T12:11:37.000Z",
+				"updated_at" => "2016-11-11T12:35:11.000Z",
+				"score_filter" => nil,
+				"once_after_each_attempt" => nil,
+				"auto_publish" => false,
+				"lock_question_after_answer" => false,
+				"time_limit_check" => false,
+				"show_quiz_response" => false,
+				"allow_multiple_attempt_check" => false
+			},
+			"total_questions_count" => 7,
+			"quiz_editable" => true
+		}</pre>
+		</div>
+		<div class="delete_quiz">
+			<h3>Delete Quiz</h3>
+			<p>When you call delete quiz API you will a get JSON message like below.</p>
+			<pre class="code json">
+		{
+		 "The quiz is deleted successfully."
+		}</pre>
+		</div>
+		<div class="all_quizzes">
+			<h3>List of All Quizzes</h3>
+			<p>When you call index quiz API you will get a list of all quizzes in as JSON.</p>
+			<pre class="code json">
+		{
+		  "quizzes"=> [
+			{
+			  "id"=> 192,
+			  "title"=> "Assessment 1",
+			  "description"=> "Description of assessment",
+			  "context_id"=> 2,
+			  "resource_link_id"=> "514",
+			  "points_possible"=> 21,
+			  "shuffle_answers"=> false,
+			  "show_correct_answers"=> true,
+			  "time_limit"=> 1,
+			  "allowed_attempts"=> 10,
+			  "quiz_type"=> "graded_assessment",
+			  "lock_at"=> null,
+			  "unlock_at"=> null,
+			  "due_at"=> null,
+			  "question_count"=> 5,
+			  "published_at"=> null,
+			  "last_edited_at"=> "2016-11-28T12:15:37.000Z",
+			  "created_by"=> 5,
+			  "updated_by"=> 5,
+			  "hide_results"=> null,
+			  "one_question_at_a_time"=> false,
+			  "show_correct_answers_at_date"=> "2016-11-28",
+			  "show_correct_answers_at_time"=> "2000-01-01T05:44:00.000Z",
+			  "hide_correct_answers_at_date"=> "2016-11-29",
+			  "hide_correct_answers_at_time"=> "2000-01-01T05:44:00.000Z",
+			  "created_at"=> "2016-11-23T13:43:45.000Z",
+			  "updated_at"=> "2016-11-28T12:15:37.000Z",
+			  "score_filter"=> "Highest",
+			  "once_after_each_attempt"=> false,
+			  "auto_publish"=> false,
+			  "lock_question_after_answer"=> false,
+			  "time_limit_check"=> true,
+			  "show_quiz_response"=> true,
+			  "allow_multiple_attempt_check"=> true
+			},
+			{
+			  "id"=> 200,
+			  "title"=> "Title 1",
+			  "description"=> "Description 1",
+			  "context_id"=> 2,
+			  "resource_link_id"=> "568",
+			  "points_possible"=> null,
+			  "shuffle_answers"=> false,
+			  "show_correct_answers"=> false,
+			  "time_limit"=> -9,
+			  "allowed_attempts"=> null,
+			  "quiz_type"=> "graded_assessment",
+			  "lock_at"=> null,
+			  "unlock_at"=> null,
+			  "due_at"=> null,
+			  "question_count"=> null,
+			  "published_at"=> null,
+			  "last_edited_at"=> "2016-11-28T06:27:28.000Z",
+			  "created_by"=> 5,
+			  "updated_by"=> 5,
+			  "hide_results"=> null,
+			  "one_question_at_a_time"=> false,
+			  "show_correct_answers_at_date"=> null,
+			  "show_correct_answers_at_time"=> null,
+			  "hide_correct_answers_at_date"=> null,
+			  "hide_correct_answers_at_time"=> null,
+			  "created_at"=> "2016-11-28T06:26:50.000Z",
+			  "updated_at"=> "2016-11-28T06:27:28.000Z",
+			  "score_filter"=> null,
+			  "once_after_each_attempt"=> null,
+			  "auto_publish"=> false,
+			  "lock_question_after_answer"=> false,
+			  "time_limit_check"=> true,
+			  "show_quiz_response"=> false,
+			  "allow_multiple_attempt_check"=> false
+			}
+		}</pre>
+		</div>
+		<div class="all_questions">
+			<h3>List of All Question from Bank</h3>
+			<p>API of Question-bank will give you list of all Questions from all quiz.</p>
+			<pre class="code json">
+		 {
+			 "quizzes" => [{
+				 "id" => 12,
+				 "name" => "Question",
+				 "migration_id" => nil,
+				 "position" => nil,
+				 "deleted_at" => nil,
+				 "Question_data" => {
+					 "question_type" => "true_false_question",
+					 "points_possible" => "11",
+					 "question_text" => "Question Text is here",
+					 "answers" => {
+						 "1" => {
+							 "right_or_wrong" => "true",
+							 "text" => "true",
+							 "comments" => "",
+							 "id" => 1
+						 },
+						 "2" => {
+							 "right_or_wrong" => "false",
+							 "text" => "false",
+							 "comments" => "",
+							 "id" => 2
+						 }
+					 },
+					 "correct_comment" => "",
+					 "incorrect_comment" => ""
+				 },
+				 "question_bank_id" => 1,
+				 "context_id" => 1
+			 }, {
+				 "id" => 10,
+				 "name" => "Question",
+				 "migration_id" => nil,
+				 "position" => nil,
+				 "deleted_at" => nil,
+				 "question_data" => {
+					 "question_type" => "multiple_answers_questi
+					 on ",
+					 "points_possible" => "2",
+					 "question_text" => "Question Text is here",
+					 "answers" => {
+						 "1" => {
+							 "text" => "text",
+							 "right_or_wrong" => "true",
+							 "comments" => "",
+							 "id" => 1
+						 },
+						 "2" => {
+							 "text" => "text",
+							 "right_or_wrong" => "false",
+							 "comments" => "",
+							 "id" => 2
+						 },
+						 "3" => {
+							 "text" => "text",
+							 "right_or_wrong" => "false",
+							 "comments" => "",
+							 "id" => 3
+						 },
+						 "4" => {
+							 "text" => "text",
+							 "right_or_wrong" => "false",
+							 "comments" => "",
+							 "id" => 4
+						 }
+					 },
+					 "correct_comment" => "",
+					 "incorrect_comment" => ""
+				 }
+			 }]
+		 }</pre>
+		</div>
+		<div class="add_question">
+			<h3>Add multiple Questions in Quiz</h3>
+			<p>Add multiple Questions API will give you response like below.</p>
+			<pre class="code json">
+		{
+			"quiz_questions" => [{
+				"id" => 209,
+				"quiz_id" => 153,
+				"question_id" => 33,
+				"question_type" => "multiple_choice_question",
+				"question_data" => {
+					"question_type" => "multiple_choice_question",
+					"points_possible" => "5",
+					"question_text" => "Test Question 1",
+					"shuffle_answer" => "on",
+					"answers" => {
+						"1" => {
+							"text" => "Correct 
+							Answer ","
+							right_or_wrong "=>"
+							true ","
+							comments "=>"
+							","
+							id "=1
+						},
+						"2" => {
+							"text" => "Incorrect
+							Answer1 ","
+							right_or_wrong "=>"
+							false ","
+							comments "=>"
+							","
+							id "= >
+								2
+						},
+						"3" => {
+							"text" => "Incorrect	
+							Answer2 ","
+							right_or_wrong "=>"
+							false ","
+							comments "=>"
+							","
+							id "= >
+								3
+						}
+					},
+					"correct_comment" => "",
+					"incorrect_comment" => ""
+				},
+				"created_by" => 1,
+				"updated_by" => 1,
+				"created_at" => "2016-11-11T12:35:11.000Z",
+				"updated_at" => "2016-11-11T12:35:11.000Z"
+			}, {
+				"id" => 210,
+				"quiz_id" => 153,
+				"question_id" => 23,
+				"question_type" => "multiple_answers_question",
+				"question_data" => {
+					"question_type" => "multiple_answers_question",
+					"points_possible" => "2",
+					"question_text" => "multiple answers",
+					"shuffle_answer" => "on",
+					"answers" => {
+						"1" => {
+							"text" => "a", "right_or_wrong" => "true",
+							"comments" => "", "id" => 1
+						},
+						"2" => {
+							"text" => "b", "right_or_wrong" => "false", "comments" => "", "id" => 2
+						},
+						"3" => {
+							"text" => "c", "right_or_wrong" => "false", "comments" => "", "id" => 3
+						},
+						"4" => {
+							"text" => "d", "right_or_wrong" => "false", "comments" => "", "id" => 4
+						}
+					},
+					"correct_comment" => "",
+					"incorrect_comment" => ""
+				},
+				"created_by" => 1,
+				"updated_by" => 1,
+				"created_at" => "2016-11-11T12:35:11.000Z",
+				"updated_at" => "2016-11-11T12:35:11.000Z"
+			}],
+			"quiz_total_score" => 32.0,
+			"total_questions_count" => 7,
+			"quiz_editable" => true
+		}</pre>
+		</div>
+		<div class="create_question">
+			<h3>Create Question of Quiz</h3>
+			<p>User can add different type of question in Quiz.</p>
+			<p>Response of all type of create question in quiz are below.</p>
+			<p class="bold">Multiple Choice :</p>
+			<pre class="code json">
+		{
+			"quiz_question" => {
+				"id" => 203,
+				"quiz_id" => 153,
+				"question_id" => 34,
+				"question_type" => "multiple_choice_question",
+		
+		
+				"question_data" => {
+					"question_type" => "multiple_choice_question",
+					"points_possible" => "5",
+					"question_text" => "Multiple choice Question",
+					"shuffle_answer" => "on",
+		
+		
+					"answers" => {
+						"1" => {
+							"text" => "Correct Answer",
+							"right_or_wrong" => "true",
+							"comments" => "Comments is here, if the
+							student chooses this answer ",
+							"id" => 1
+						},
+						"2" => {
+							"text" => "Incorrect Answer 1",
+							"right_or_wrong" => "false",
+							"comments" => "",
+							"id" => 2
+						},
+						3 "=>{
+						"text" => "Incorrect Answer 2",
+						"right_or_wrong" => "false",
+						"comments" => "",
+						"id" => 3
+					}
+				},
+				"correct_comment" => "Universal Correct Answer Feedback is here ",
+				"incorrect_comment" => "Universal Incorrect Answer Feedback is here "
+			},
+			"created_by" => 1,
+			"updated_by" => 1,
+			"created_at" => "2016-11-11T12:16:30.000Z",
+			"updated_at" => "2016-11-11T12:16:30.000Z"
+		},
+		"quiz_total_score" => 5.0,
+		"total_questions_count" => 1,
+		"quiz_editable" => true
+		}</pre>
+		<p class="bold">True/False :</p>
+			<pre class="code json">
+		{
+			"quiz_question" => {
+				"id" => 204,
+				"quiz_id" => 153,
+				"question_id" => 35,
+				"question_type" => "true_false_question",
+				"question_data" => {
+					"question_type" => "true_false_question",
+					"points_possible" => "5",
+					"question_text" => "True/false Question",
+					"answers" => {
+						"1" => {
+							"right_or_wrong" => "true",
+							"text" => "true",
+							"comments" => "",
+							"id" => 1
+						},
+						"2" => {
+							"right_or_wrong" => "false",
+							"text" => "false",
+							"comments" => "",
+							"id" => 2
+						}
+					},
+					"correct_comment" => "",
+					"incorrect_comment" => ""
+				},
+				"created_by" => 1,
+				"updated_by" => 1,
+				"created_at" => "2016-11-11T12:19:15.000Z",
+				"updated_at" => "2016-11-11T12:19:15.000Z"
+			},
+			"quiz_total_score" => 10.0,
+			"total_questions_count" => 2,
+			"quiz_editable" => true
+		}</pre>
+		<p class="bold">Fill in the blanks :</p>
+			<pre class="code json">
+		{
+			"quiz_question" => {
+				"id" => 205,
+				"quiz_id" => 153,
+				"question_id" => 36,
+				"question_type" => "short_answer_question",
+				"question_data" => {
+					"question_type" => "short_answer_question",
+					"points_possible" => "5",
+					"question_text" => "Question of [ ] fill in the blank",
+					"answers" => {
+						"1" => {
+							"text" => "Correct Answer 1",
+							"right_or_wrong" => "true",
+							"comments" => "",
+							"id" => 1
+						},
+						"2" => {
+							"text" => "Possible Answer 1",
+							"right_or_wrong" => "true",
+							"comments" => "",
+							"id" => 2
+						},
+						"3" => {
+							"text" => "Possible Answer 2",
+							"right_or_wrong" => "true",
+							"comments" => "",
+							"id" => 3
+						}
+					},
+					"correct_comment" => "",
+					"incorrect_comment" => ""
+				},
+				"created_by" => 1,
+				"updated_by" => 1,
+				"created_at" => "2016-11-11T12:23:30.000Z",
+				"updated_at" => "2016-11-11T12:23:30.000Z"
+			},
+			"quiz_total_score" => 15.0,
+			"total_questions_count" => 3,
+			"quiz_editable" => true
+		}</pre>
+		<p class="bold">Multiple Answers :</p>
+			<pre class="code json">
+		{
+			"quiz_question" => {
+				"id" => 206,
+				"quiz_id" => 153,
+				"question_id" => 37,
+				"question_type" => "multiple_answers_question",
+				"question_data" => {
+					"question_type" => "multiple_answers_question",
+					"points_possible" => "5",
+					"question_text" => "Question of multiple answer",
+					"shuffle_answer" => "on",
+					"answers" => {
+						"1" => {
+							"text" => "Correct Answer 1",
+							"right_or_wrong" => "true",
+							"comments" => "",
+							"id" => 1
+						},
+						"2" => {
+							"text" => "Correct Answer 2",
+							"right_or_wrong" => "true",
+							"comments" => "",
+							"id" => 2
+						},
+						"3" => {
+							"text" => "Incorrect Answer",
+							"right_or_wrong" => "false",
+							"comments" => "",
+							"id" => 3
+						}
+					},
+					"correct_comment" => "",
+					"incorrect_comment" => ""
+				},
+				"created_by" => 1,
+				"updated_by" => 1,
+				"created_at" => "2016-11-11T12:25:24.000Z",
+				"updated_at" => "2016-11-11T12:25:24.000Z"
+			},
+			"quiz_total_score" => 20.0,
+			"total_questions_count" => 4,
+			"quiz_editable" => true
+		}</pre>
+		<p class="bold">Matching :</p>
+			<pre class="code json">
+		{
+			"quiz_question" => {
+				"id" => 207,
+				"quiz_id" => 153,
+				"question_id" => 38,
+				"question_type" => "matching_question",
+				"question_data" => {
+					"question_type" => "matching_question",
+					"points_possible" => "5",
+					"question_text" => "Question of matching",
+					"answers" => {
+						"1" => {
+							"left" => "A", "right" => "a", "comments" =>
+							","
+							id "=>1},“
+							2 "=>{"
+							left "=>"
+							B ","
+							right "=>"
+							b ","
+							comments "=>"
+							","
+							id "=>2},
+							"3" => {
+								"left" => "C", "right" => "c", "comments" => "", "id" => 3
+							},
+							"4" => {
+								"left" => "D", "right" => "s", "comments" => "", "id" => 4
+							}
+						},
+						"correct_comment" => "",
+						"incorrect_comment" => ""
+					},
+					"created_by" => 1,
+					"updated_by" => 1,
+					"created_at" => "2016-11-11T12:26:37.000Z",
+					"updated_at" => "2016-11-11T12:26:37.000Z"
+				},
+				"quiz_total_score" => 25.0,
+				"total_questions_count" => 5,
+				"quiz_editable" => true
+			}
+		}</pre>
+		</div>
+		<div class="edit_question">
+			<h3>Edit Question of Quiz :</h3>
+			<p>Edit question API will give response like below in JSON.</p>
+			<pre class="code json">
+		{
+			"quiz_question" => {
+				"id" => 206,
+				"quiz_id" => 153,
+				"question_id" => 37,
+				"question_type" => "multiple_answers_question",
+				"question_data" => {
+					"question_type" => "multiple_answers_question",
+					"points_possible" => "5",
+					"question_text" => "Question of multiple 
+					answer ",
+					"shuffle_answer" => "on",
+					"answers" => {
+						"1" => {
+							"text" => "Correct Answer 
+							1 ",
+							"right_or_wrong" => "true",
+							"comments" => "",
+							"id" => 1
+						},
+						"2" => {
+							"text" => "Correct Answer
+							2 ",		"
+							right_or_wrong "=>"
+							true ",
+							"comments" => "",
+							"id" => 2
+						},
+						"3" => {
+							"text" => "Incorrect
+							Answer ",
+							"right_or_wrong" => "fals
+							e ",
+							"comments" => "",
+							"id" => 3
+						}
+					},
+					"correct_comment" => "",
+					"incorrect_comment" => ""
+				},
+				"created_by" => 1,
+				"updated_by" => 1,
+				"created_at" => "2016-11-11T12:25:24.000Z",
+				"updated_at" => "2016-11-11T12:25:24.000Z"
+			},
+			"resource_link_id" => "472",
+			"question_id" => 37
+		}</pre>
+		</div>
+		<div class="update_question">
+			<h3>Update Question of Quiz</h3>
+			<p>Update question API response will be like below in JSON.</p>
+			<pre class="code json">
+		{
+		"quiz_question"=>
+			{
+				"id"=>206,
+				"quiz_id"=>153,
+				"question_id"=>37,
+				"question_type"=>"multiple_answers_question",
+					"question_data"=>
+						{
+							"question_type"=>"multiple_answers_question",
+							"points_possible"=>"5",
+							"question_text"=>"Question of multiple answer",
+							"shuffle_answer"=>"on",
+								"answers"=>
+								{
+									"1"=>
+									{
+										"text"=>"Correct Answer 1",
+										"right_or_wrong"=>"true",
+										"comments"=>"",
+										"id"=>1
+									},
+									"2"=>
+									{
+										"text"=>"Correct Answer 2",
+										"right_or_wrong"=>"true",
+										"comments"=>"",
+										"id"=>2
+									},
+									"3"=>
+									{
+										"text"=>"Incorrect Answer 3",
+										"right_or_wrong"=>"false",
+										"comments"=>"",
+										"id"=>3
+									},
+									"4"=>
+									{
+										"text"=>"Incorrect Answer 4",
+										"right_or_wrong"=>"false",
+										"comments"=>"",
+										"id"=>4
+									}
+								},
+							"correct_comment"=>"",
+							"incorrect_comment"=>""
+						},
+					"workflow_state"=>nil,
+					"created_by"=>1,
+					"updated_by"=>1,
+					"created_at"=>"2016-11-11T12:25:24.000Z",
+					"updated_at"=>"2016-11-11T12:30:58.458Z"
+				},
+			"quiz_total_score"=>25.0,
+			"total_questions_count"=>5,
+			"quiz_editable"=>true
+		}</pre>
+		</div>
+		<div class="delete_question">
+			<h3>Delete Question of Quiz </h3>
+			<p>When you delete Question from quiz it will give you response in JSON with message.</p>
+			<pre class="code json">
+		{
+			"quiz_question" => "The Question is deleted successfully.",
+			"quiz_question_id" => 33,
+			"total_questions_count" => 5
+		}</pre>
+		</div>
+		<div class="all_question">
+			<h3>List of All Questions of a Quiz</h3>
+			<p>List of Questions of a Quiz will give response like below in JSON.</p>
+			<pre class="code json">
+		{
+			"quiz_questions" => [{
+				"id" => 204,
+				"quiz_id" => 153,
+				"question_id" => 35,
+				"question_type" => "true_false_question",
+				"question_data" => {
+					"question_type" => "true_false_question",
+					"points_possible" => "5",
+					"question_text" => "True/false Question",
+					"answers" => {
+						"1" => {
+							"right_or_wrong" => "true",
+							"text" => "true",
+							"comments" => "",
+							"id" => 1
+						},
+						"2" => {
+							"right_or_wrong" => "false",
+							"text" => "false",
+							"comments" => "",
+							"id" => 2
+						}
+					},
+					"correct_comment" => "",
+					"incorrect_comment" => ""
+				},
+				"created_by" => 1,
+				"updated_by" => 1,
+				"created_at" => "2016-11-11T12:19:15.000Z",
+				"updated_at" => "2016-11-11T12:19:15.000Z"
+			}]
+		}</pre>
+		</div>
+		<div class="create_submission">
+			<h3>Create Quiz submission</h3>
+			<p>Quiz submission will give the response like below.</p>
+			<pre class="code json">
+		{
+			"quiz_submission_attempt_id" => 62,
+			"quiz_submission_id" => 17,
+			"quiz_question" => [{
+				"id" => 221,
+				"quiz_id" => 156,
+				"question_id" => 35,
+				"question_type" => "true_false_question",
+				"question_data" => {
+					"question_type" => "true_false_question",
+					"points_possible" => "5",
+					"question_text" => "True/false Question",
+					"answers" => {
+						"1" => {
+		
+							"right_or_wrong" => "true
+							",
+							"text" => "true",
+							"comments" => "",
+							"id" => 1
+						},
+						"2" => {
+							"right_or_wrong" => "fals
+							e ",
+							"text" => "false",
+							"comments" => "",
+							"id" => 2
+						}
+					},
+					"correct_comment" => "",
+					"incorrect_comment" => ""
+				},
+				"workflow_state" => nil,
+				"created_by" => 1,
+				"updated_by" => 1,
+				"created_at" => "2016-11-13T09:55:49.000Z",
+				"updated_at" => "2016-11-13T09:55:49.000Z"
+			}, {
+				"id" => 222,
+				"quiz_id" => 156,
+				"question_id" => 33,
+				"question_type" => "multiple_choice_question",
+				"question_data" => {
+					"question_type" => "multiple_choice_question",
+					"points_possible" => "5",
+					"question_text" => "Test Question 1",
+					"shuffle_answer" => "on",
+					"answers" => {
+						"2" => {
+							"text" => "Incorrect Answer 1",
+							"right_or_wrong" => "false",
+							"comments" => "",
+							"id" => 2
+						},
+						"3" => {
+							"text" => "Incorrect Answer 2",
+							"right_or_wrong" => "false",
+							"comments" => "",
+							"id" => 3
+						},
+						"1" => {
+							"text" => "Correct Answer",
+							"right_or_wrong" => "true",
+							"comments" => "",
+							"id" => 1
+						}
+					},
+					"correct_comment" => "",
+					"incorrect_comment" => ""
+				},
+				"created_by" => 1,
+				"updated_by" => 1,
+				"created_at" => "2016-11-13T09:55:49.000Z",
+				"updated_at" => "2016-11-13T09:55:49.000Z"
+			}, {
+				"id" => 223,
+				"quiz_id" => 156,
+				"question_id" => 36,
+				"question_type" => "short_answer_question",
+				"question_data" => {
+					"question_type" => "short_answer_question",
+					"points_possible" => "5",
+					"question_text" => "Question of [ ] fill in the blank",
+					"answers" => {
+						"1" => {
+							"text" => "Correct 
+							Answer ",
+							"right_or_wrong" => "true
+							",
+							"comments" => "",
+							"id" => 1
+						},
+						"2" => {
+							"text" => "Possible 
+							Answer 1 ",
+							"right_or_wrong" => "true
+							",
+							"comments" => "",
+							"id" => 2
+						},
+						"3" => {
+							"text" => "Possible 
+							Answer 2 ",
+							"right_or_wrong" => "true",
+							"comments" => "",
+							"id" => 3
+						}
+					},
+					"correct_comment" => "",
+					"incorrect_comment" => ""
+				},
+				"created_by" => 1,
+				"updated_by" => 1,
+				"created_at" => "2016-11-13T09:55:49.000Z",
+				"updated_at" => "2016-11-13T09:55:49.000Z"
+			}],
+			"quiz_id" => 156,
+			"quiz_title" => "Assessment 111",
+			"quiz_description" => "Quiz Description",
+			"total_page" => 3,
+			"time_spent" => nil,
+			"time_limit" => 1,
+			"time_limit_check" => true
+		}</pre>
+		</div>
+		<div class="update_submission">
+			<h3>Update Quiz submission</h3>
+			<p>Update Quiz submission API response is below.</p>
+			<pre class="code json">
+		{
+			"success" => 200,
+			"score" => 10,
+			"message" => "Done",
+			"attempt_history" => [{
+				"id" => 61,
+				"quiz_submission_id" => 17,
+				"submission_data" => [
+					["35", {
+						"answer" => "1"
+					}],
+					["33", {
+						"answer" => "2"
+					}],
+					["36", {
+						"answers" => {
+							"0" => {
+								"answer" => ""
+							}
+						}
+					}]
+				],
+				"score" => 5,
+				"kept_score" => nil,
+				"quiz_data" => nil,
+				"started_at" => "2016-11-13T10:01:26.000Z",
+				"end_at" => "2016-11-13T10:01:52.000Z",
+				"finished_at" => "2016-11-13T10:01:52.000Z",
+				"workflow_state" => nil,
+				"created_by" => 2,
+				"updated_by" => 2,
+				"fudge_points" => nil,
+				"quiz_points_possible" => nil,
+				"extra_time" => nil,
+				"manually_unlocked" => nil,
+				"manually_scored" => nil,
+				"score_before_regrade" => nil,
+				"was_preview" => nil,
+				"has_seen_results" => nil,
+				"created_at" => "2016-11-13T09:55:13.000Z",
+				"updated_at" => "2016-11-13T10:01:52.000Z",
+				"time_spent" => 14
+			}, {
+				"id" => 62,
+				"quiz_submission_id" => 17,
+				"submission_data" => [
+					["35", {
+						"answer" => "1"
+					}],
+					["33", {
+						"answer" => "1"
+					}],
+					["36", {
+						"answers" => {
+							"0" => {
+								"answer" => "saas"
+							}
+						}
+					}]
+				],
+				"score" => 10,
+				"kept_score" => nil,
+				"quiz_data" => nil,
+				"started_at" => "2016-11-13T10:06:08.000Z",
+				"end_at" => "2016-11-13T10:09:30.000Z",
+				"finished_at" => "2016-11-13T10:09:30.000Z",
+				"workflow_state" => nil,
+				"created_by" => 2,
+				"updated_by" => 2,
+				"fudge_points" => nil,
+				"quiz_points_possible" => nil,
+				"extra_time" => nil,
+				"manually_unlocked" => nil,
+				"manually_scored" => nil,
+				"score_before_regrade" => nil,
+				"was_preview" => nil,
+				"has_seen_results" => nil,
+				"created_at" => "2016-11-13T09:55:13.000Z",
+				"updated_at" => "2016-11-13T10:09:30.000Z",
+				"time_spent" => 13
+			}],
+			"quiz_id" => 156,
+			"quiz" => {
+				"id" => 156,
+				"title" => "Assessment 111",
+				"description" => "description",
+				"context_id" => 1,
+				"resource_link_id" => "475",
+				"points_possible" => 15,
+				"context_type" => nil,
+				"workflow_state" => nil,
+				"shuffle_answers" => false,
+				"show_correct_answers" => false,
+				"time_limit" => 1,
+				"allowed_attempts" => 10,
+				"quiz_type" => "graded_assessment",
+				"lock_at" => nil,
+				"unlock_at" => nil,
+				"could_be_locked" => nil,
+				"due_at" => nil,
+				"question_count" => 3,
+				"published_at" => nil,
+				"last_edited_at" => "2016-11-13T09:55:13.000Z",
+				"created_by" => 1,
+				"updated_by" => 1,
+				"hide_results" => nil,
+				"one_question_at_a_time" => false,
+				"show_correct_answers_at_date" => nil,
+				"show_correct_answers_at_time" => nil,
+				"hide_correct_answers_at_date" => nil,
+				"hide_correct_answers_at_time" => nil,
+				"one_time_result" => nil,
+				"show_correct_answers_after_last_attempt" => nil,
+				"created_at" => "2016-11-13T09:55:13.000Z",
+				"updated_at" => "2016-11-13T09:55:29.000Z",
+				"score_filter" => "Highest",
+				"once_after_each_attempt" => nil,
+				"auto_publish" => false,
+				"lock_question_after_answer" => false,
+				"time_limit_check" => true,
+				"show_quiz_response" => false,
+				"allow_multiple_attempt_check" => true
+			}
+		}</pre>
+		</div>
+		<div class="get_user_attempt">
+			<h3>Get user attempts for particular quiz</h3>
+			<p>"Get user attempts" API will give JSON message if user have not attempted the quiz yet.</p>
+			<pre class="code json">
+		{
+			"error" => ["No attempts found"]
+		}</pre>
+		<p>If quiz has be attempted by user than the response will be like below in JSON</p>
+		<pre class="code json">
+		{
+			"quiz" => {
+				"id" => 156,
+				"title" => "Assessment 111",
+				"description" => "Description",
+				"context_id" => 1,
+				"resource_link_id" => "475",
+				"points_possible" => 15,
+				"context_type" => nil,
+				"workflow_state" => nil,
+				"shuffle_answers" => false,
+				"show_correct_answers" => false,
+				"time_limit" => 1,
+				"allowed_attempts" => 10,
+				"quiz_type" => "graded_assessment",
+				"lock_at" => nil,
+				"unlock_at" => nil,
+				"could_be_locked" => nil,
+				"due_at" => nil,
+				"question_count" => 3,
+				"published_at" => nil,
+				"last_edited_at" => "2016-11-13T09:55:13.000Z",
+				"created_by" => 1,
+				"updated_by" => 1,
+				"hide_results" => nil,
+				"one_question_at_a_time" => false,
+				"show_correct_answers_at_date" => nil,
+				"show_correct_answers_at_time" => nil,
+				"hide_correct_answers_at_date" => nil,
+				"hide_correct_answers_at_time" => nil,
+				"one_time_result" => nil,
+				"show_correct_answers_after_last_attempt" => nil,
+				"created_at" => "2016-11-13T09:55:13.000Z",
+				"updated_at" => "2016-11-13T09:55:29.000Z",
+				"score_filter" => "Highest",
+				"once_after_each_attempt" => nil,
+				"auto_publish" => false,
+				"lock_question_after_answer" => false,
+				"time_limit_check" => true,
+				"show_quiz_response" => false,
+				"allow_multiple_attempt_check" => true
+			},
+			"total_questions_count" => 3,
+			"quiz_editable" => false
+		}</pre>
+		</div>
+		<div class="ui_create_quiz">
+			<p>Here you can use how to make form and pass proper parameters to get proper response of api.</p>
+			<h3>Create quiz</h3>
+			<p>To create quiz from api you need to design of form like below.</p>
+			<pre class="code json">
+		<%= form_for(:quiz, :url=> form_url, :html=> {:method=>"get"}) do |form|%>
+			<%= form.text_field :title,:placeholder=>"Title" %>
+				<%= form.text_area :description, :placeholder=>"Please Enter Instructions" %>
+				<%= form.select(:quiz_type, options_for_select([['Graded Assessment','graded_assessment']])) %>
+				<%= form.text_field :points_possible, :placeholder=>"0" %>
+				<%= form.check_box :shuffle_answers, { :checked=> 0} %>
+				<%= form.check_box :time_limit_check, {:checked=> 0} %>
+				<%= form.text_field :time_limit, :placeholder=>"0" %>
+				<%= form.check_box :allow_multiple_attempt_check, {:checked=> 0, %>
+				<%= form.select(:allowed_attempts, options_for_select([['1', '1'], ['2', '2'], ['3', '3'], ['4','4'], ['5', '5'], ['6', '6'], ['7', '7'], ['8', '8'], ['9', '9'], ['10', '10']], :selected => 1 %>
+				<%= form.select(:score_filter, options_for_select([['Highest', 'Highest'], ['Lowest','Lowest'], ['Latest', 'Latest']], :selected 'Highest' %>
+				<%= form.check_box :one_question_at_a_time, {:checked=> 0} %>
+				<%= form.check_box :lock_question_after_answer, {:checked=>0} %>
+				<%= form.check_box :show_quiz_response,{:checked=>0} %>
+				<%= form.check_box :once_after_each_attempt, {:checked=>0} %>
+				<%= form.check_box :show_correct_answers, {:checked=>0} %>
+				<%= form.text_field :show_correct_answers_at_date, :placeholder=>"Start Date"%>
+				<%= form.text_field :show_correct_answers_at_time,placeholder=>"Start Time" %>
+				<%= form.text_field :hide_correct_answers_at_date, :placeholder=>"End Date" %>
+				<%= form.text_field :hide_correct_answers_at_time, :placeholder=>"End Time" %>
+				<%= form.check_box :auto_publish, {:checked=> 0 }%>
+				<%= form.text_field :unlock_at, :placeholder=>"MM-DD-YYYY" %>
+				<%= form.text_field :lock_at, :placeholder=>"MM-DD-YYYY" %>
+			<%= form.submit "Next" %>
+		<% end %>
+		</pre>
+			<p>When you submit the form you will make below API call.</p>
+			<pre class="code json">
+		url = URI.parse(“root_path/api/v1/quizzes”)
+		http = Net::HTTP.new(url.host, url.port)
+		request = Net::HTTP::Post.new(url)
+		request["content-type"] = 'application/json'
+		request["x-api-key"] = 'sample_api_key'
+		params["quiz"]['context_id'] = context_id #(Course ID/section Id)
+		params['user_id'] = user_id
+		params['first_name'] = first_name of user
+		params['last_name'] = last_name of user
+		params['email'] = email of user
+		params['role'] = "Instructor"
+		params["quiz"]["resource_link_id"] = content_id
+		request.set_form_data(params)
+		response = http.request(request)
+		@response = JSON.parse(response.body)
+		</pre>
+		</div>
+		<div class="ui_create_question">
+			<h3>Create question of quiz</h3>
+			<p>To create question in the quiz from api you need the design of form like below.</p>
+			<p>Here  5 type of question you can create in quiz.</p>
+			<ul>
+				<li>1) Multiple Choice</li>
+				<li>2) True/False</li>
+				<li>3) Fill in the blanks</li>
+				<li>4) Multiple Answers</li>
+				<li>5) Matching</li>
+			</ul>
+			<p>To create question you have to create different type of form as pare the type of question to submit question in quiz</p>
+			<p>Below you can see form type wise for question creation.</p>
+			<pre class="code json">
+		<%= form_for(:question, :url=> form_url, :html=> {:method=>"get"}) do |form|%>
+			<%= form.select :question_type, options_for_select([["Select One", "Select One"],["Multiple Choice", "multiple_choice_question"], ["True/False", "true_false_question"], ["Fill in the blanks", "short_answer_question"], ["Multiple Answers","multiple_answers_question"],["Matching", "matching_question"]],:selected =>'',:disabled => ["Select One"]) %>
+			<%= form.text_field :points_possible,:placeholder=>"0" %>
+			<%= form.text_area :question_text %>
+			// Note: Please use <b>[ ]</b> to place the blank.
+			// Ex. The capital city of Massachusetts is [ ].
+			<%= check_box_tag 'question[shuffle_answer]'%>
+			<% total_answer = 4 %>
+			<%= render partial: "multiple_choice / true_false / fill_in_the_blank / multipal_answer / matching" %>
+			<%= form.text_area :correct_comment, :placeholder=>"Please Add Correct Answer Feedback." %>
+			<%= form.text_area :incorrect_comment, :placeholder=>"Please Add Incorrect Answer Feedback." %>
+			<%= form.submit "Submit Question" %>
+		<% end %>
+		</pre>
+			<p class="bold">For Multiple Choice partial_form</p>
+			<pre class="code html">
+		<% for i in 1..total_answer %>
+			<%= fields_for "question[answers[#{i}]]" do |answer| %>
+			&lt;label class="inline left no-margin blue-color true_false_answer_label"&gt;
+				<%= i == 1 ? 'Correct' : 'Incorrect' %> Answer
+			&lt;/label&gt;
+			<%= answer.text_field :text , :placeholder=>"Answer Text" %>
+			&lt;a href="javascript:void(0)" class="mark_correct_or_uncorrect"&gt;Mark as a Correct Answer&lt;/a&gt;
+			&lt;a href="javascript:void(0)"&gt;&lt;span&gt;Remove&lt;/span&gt;&lt;/a&gt;
+			<%= link_to "Add a feedback" %>
+			<%= answer.text_area :comments, :placeholder=>"Please Add Comment"%>
+			<% end %>
+		<% end %>
+		&lt;a href="javascript:void(0)"&gt; Add Another Answer &lt;/a&gt;
+		</pre>
+			<p class="bold">For True/False partial_form</p>
+			<pre class="code json">
+		<%= fields_for "question[answers[1]]" do |answer| %>
+			<%= answer.hidden_field :right_or_wrong, :value=>true %>
+			&lt;b&gt;True&lt;/b&gt;
+			&lt;a href="javascript:void(0)" class="mark_correct_or_uncorrect"&gt;Mark Correct or Incorrect&lt;/a&gt;
+			<%= link_to "Add a Feedback", "javascript:void(0)" %>
+			<%= answer.text_field :comments, :placeholder=>"Please Enter Your Feedback" %>
+		<% end %>
+		<%= fields_for "question[answers[2]]" do |answer| %>
+			<%= answer.hidden_field :right_or_wrong, :value=> false %>
+			&lt;b&gt;False&lt;/b&gt;
+			&lt;a href="javascript:void(0)" class="mark_correct_or_uncorrect"&gt;Mark Correct or Incorrect&lt;/a&gt;
+			<%= link_to "Add a Feedback", "javascript:void(0)" %>
+			<%= answer.text_field :comments, :placeholder=>"Please Enter Your Feedback" %>
+		<% end %>
+		</pre>
+			<p class="bold">For Fill in the blanks partial_form</p>
+			<pre class="code json">
+		<% for i in 1..total_answer %>
+			<%= fields_for "question[answers[#{i}]]"  do |answer| %>
+				&lt;label class="inline left no-margin bold true_false_answer_label"&gt;
+					<%= i == 1 ? 'Correct' : 'Possible'%> Answer
+				&lt;/label&gt;
+				<%= answer.text_field :text , :placeholder=>"Answer Text" %>
+				&lt;a href="javascript:void(0)"&gt;Remove&lt;/a&gt;
+				<%= link_to "Add a Feedback", "javascript:void(0)" %>
+				<%= answer.text_area :comments, :placeholder=>"Please Add Feedback" %>
+			<% end %>
+		<% end %>
+		&lt;a href="javascript:void(0)"&gt; Add Another Answer &lt;/a&gt;
+		</pre>
+			<p class="bold">For Multiple Answers partial_form</p>
+			<pre class="code json">
+		<% for i in 1..total_answer %>
+			<%= fields_for "question[answers[#{i}]]"  do |answer| %>
+			&lt;label class="inline left no-margin blue-color true_false_answer_label"&gt;
+				<%= i == 1 ? 'Correct' : 'Incorrect' %> Answer
+			&lt;/label&gt;
+			<%= answer.text_field :text , :placeholder=>"Answer Text" %>
+			&lt;a href="javascript:void(0)" &gt;Mark as a <%= i == 1 ? 'Incorrect' : 'Correct' %>Answer&lt;/a&gt;
+			&lt;a href="javascript:void(0)"&gt;Remove&lt;/a&gt;
+			<%= link_to "Add a Feedback" %>
+			<%= answer.text_area :comments, :placeholder=>"Please Add Comment"%>
+			<% end %>
+		<% end %>
+		&lt;a href="javascript:void(0)"&gt; Add Another Answer &lt;/a&gt;
+		</pre>
+			<p class="bold">For Matching partial_form</p>
+			<pre class="code json">
+		<% for i in 1..total_answer %>
+			<%= fields_for "question[answers[#{i}]]"  do |answer| %>
+				<%= answer.text_field :left , :placeholder=>"Matching Left" %>
+				<%= answer.text_field :right, :placeholder=>"Matching Right" %>
+				&lt;a href="javascript:void(0)"&gt;Remove&lt;/a&gt;
+				<%= link_to "Add a Feedback", "javascript:void(0)" %>
+				<%= answer.text_area :comments, :placeholder=>"Matching Right" %>
+			<% end %>
+		<% end %>
+		&lt;a href="javascript:void(0)"&gt; Add Another Match &lt;/a&gt;
+		</pre>
+			<p>When you submit the form you will make below API call.</p>
+			<pre class="code json">
+		url = URI.parse("/root_path/api/v1/quizzes/#{quiz_id}/quiz_questions")
+		http = Net::HTTP.new(url.host, url.port)
+		request = Net::HTTP::Post.new(url)
+		request["content-type"] = 'application/json'
+		request["x-api-key"] = 'sample_api_key'
+		params['user_id'] =user_id
+		request.set_form_data(params)
+		response = http.request(request)
+		@response = JSON.parse(response.body)
+		</pre>
+		</div>
+		<div class="ui_create_quiz_submission">
+			<h3>Create Quiz submission</h3>
+			<p>To submit quiz api you need to design of form like below.</p>
+			<pre class="code json">
+		<%= form_for(:quiz_question, :url=> form_url ,:html=> {:method=>"post"}) do |form|%
+			<% @response["quiz_question"].each do |question| %>
+				<%= question["question_data"]["points_possible"] %> pts
+				<% if question["question_data"]["question_type"] == "multiple_choice_question" %>
+					<%= question["question_data"]["question_text"] %>   
+					<% letter = "A" %>
+					<% question["question_data"]["answers"].each_with_index do |ans, index| %>
+						<%= fields_for "quiz_question[#{question['question_id']}][answers[#{index}]]"  Do |answer| %>
+							<%= answer.radio_button :answer, ans[1]["id"] %>
+							<%= answer.label :answer, ans[1]["text"] do %>
+							<%= ans[1]["text"] %>
+						<% end %>
+					<% end %>
+				<% elsif question["question_data"]["question_type"] == "true_false_question" %>
+					<%= question["question_data"]["question_text"] %>
+						<%= fields_for "quiz_question[#{question['question_id']}][answers[0]]" do |answer| %>
+							<%= answer.radio_button :answer, "1" do %>True<% end %>
+							<%= answer.radio_button :answer, "2"do %>False<% end %>
+						<% end %>
+				<% elsif question["question_data"]["question_type"] == "short_answer_question" %>
+					<%= question["question_data"]["question_text"] %>
+						<%= fields_for "quiz_question[#{question['question_id']}][answers[0]]" do |answer| %>
+							<%= answer.text_field :answer%>
+						<% end %>
+				<% elsif question["question_data"]["question_type"] == "multiple_answers_question" %>
+					<%= question["question_data"]["question_text"] %>
+						<% question["question_data"]["answers"].each_with_index do |ans,index| %>
+							<%= fields_for "quiz_question[#{question['question_id']}][answers[#{ans[1]['id']}]]" do |answer| %>
+								<%= answer.check_box :answer %>
+								<%= answer.label :answer, ans[1]["text"] do %>
+									<%= ans[1]["text"] %>
+								<% end %>
+							<% end %>
+						<% end %>
+				<% elsif question["question_data"]["question_type"] == "matching_question" %>
+					<% answer_left = [] %>
+					<%= question["question_data"]["question_text"] %>
+						<% question["question_data"]["answers"].each_with_index do |ans,index| %>
+							<%= fields_for "quiz_question[#{question['question_id']}][answers[#{ans[1]['id']}]]" do |answer| %>
+								<%= ans[1]["left"] %>
+							<% end %>
+						<% end %>
+						<%question["question_data"]["answers"]=Hash[question["question_data"]["answers"].to_a.shuffle] %>
+						<% question["question_data"]["answers"].each_with_index do |ans, index| %>
+							<%= fields_for "quiz_question[#{question['question_id']}][answers[#{index+1}]]" do  |answer| %>
+								<%= answer.hidden_field answer_left[index] %>
+							<% end %>
+						<% end %>
+					<% end %>
+				<% end %>
+		<%= form.submit "Previous" %>  
+		<%= form.submit "Next" %>
+		&lt;a href="#"&gt;Submit&lt;/a&gt;
+		</pre>
+		<p>When you submit the form you will make below API call.</p>
+		<pre class="code json">
+		url = URI.parse(“root_path/api/v1/quizzes/{content_id}/quiz_submissions”)
+		http = Net::HTTP.new(url.host, url.port)
+		request = Net::HTTP::Post.new(url)
+		request["content-type"] = 'application/json'
+		request["x-api-key"] = 'sample_api_key'
+		params["context_id"] = section_id/course_id
+		params["resource_link_id"] = content_id
+		params['user_id'] = user_id
+		params['first_name'] =first_name of user
+		params['last_name'] = last_name of user
+		params['email'] = email of user
+		request.set_form_data(params)
+		response = http.request(request)
+		@response = JSON.parse(response.body)
+		</pre>
+		</div>
+		</div>
 	</div>
 </div>

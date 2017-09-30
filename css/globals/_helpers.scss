@@ -22,7 +22,7 @@
 	@media screen and (max-width: 600px) {
 		@include pattern-background;
 		@include transition;
-	  	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/Landingpage/orange-p-b.png) !important;
+	  	background-image: url(/assets/img/jpgs/Landingpage/orange-p-b.png) !important;
 	}
 }
 
@@ -31,7 +31,7 @@
 	@media screen and (max-width: 600px) {
 		@include pattern-background;
 		@include transition;
-	  	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/Landingpage/gray-p-b.fw.png) !important;
+	  	background-image: url(/assets/img/jpgs/Landingpage/gray-p-b.fw.png) !important;
 	}
 }
 
@@ -40,7 +40,7 @@
 	@media screen and (max-width: 600px) {
 		@include pattern-background;
 		@include transition;
-	  	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/Landingpage/blue-p-b.fw.png) !important;
+	  	background-image: url(/assets/img/jpgs/Landingpage/blue-p-b.fw.png) !important;
 	}
 }
 
@@ -49,7 +49,7 @@
 	@media screen and (max-width: 600px) {
 		@include pattern-background;
 		@include transition;
-	  	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/Landingpage/white-p-b.fw.png) !important;
+	  	background-image: url(/assets/img/jpgs/Landingpage/white-p-b.fw.png) !important;
 	}
 }
 
@@ -58,61 +58,61 @@
 
 .homeB1 {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/Landingpage/mainpagelanding.jpg);
+	background-image: url(/assets/img/jpgs/Landingpage/mainpagelanding.jpg);
 }
 
 .homeB2 {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/Landingpage/2wo-01.jpg);
+	background-image: url(/assets/img/polygon-bkg-02.jpg);
 }
 
 .aboutusB1 {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/AboutUs/1wo.jpg);
+	background-image: url(/assets/img/jpgs/AboutUs/1wo.jpg);
 }
 
 .aboutusB2 {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/AboutUs/2wo.jpeg);
+	background-image: url(/assets/img/jpgs/AboutUs/2wo.jpeg);
 }
 
 .servicesB1 {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/OTC_services_page_background.jpg);
+	background-image: url(/assets/img/OTC_services_page_background.jpg);
 }
 
 .servicesB2 {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy1/casestudyAbackground1.jpg);
+	background-image: url(/assets/img/jpgs/CaseStudy1/casestudyAbackground1.jpg);
 }
 
 .servicesB3 {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/services/stars_overlay.jpg);
+	background-image: url(/assets/img/jpgs/services/stars_overlay.jpg);
 }
 
 .servicesB4 {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/services/busy_street_whiteoverlay.jpg);
+	background-image: url(/assets/img/jpgs/services/busy_street_whiteoverlay.jpg);
 }
 
 .servicesB5 {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/services/Services_bg.jpg);
+	background-image: url(/assets/img/jpgs/services/Services_bg.jpg);
 }
 
 .servicesB5-new {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/services/services-hero-image.jpg);
+	background-image: url(/assets/img/jpgs/services/services-hero-image.jpg);
 }
 
 .fintechBanner{
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/fintech/hero-image.jpg);
+	background-image: url(/assets/img/jpgs/fintech/hero-image.jpg);
 }
 .one1800FB1 {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy1/casestudyAbackground1.jpg);
+	background-image: url(/assets/img/jpgs/CaseStudy1/casestudyAbackground1.jpg);
 }
 
 .aeBanner{
@@ -122,182 +122,202 @@
 
 .one1800FB2 {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy1/1800f_22.fw.jpg);
+	background-image: url(/assets/img/jpgs/CaseStudy1/1800f_22.fw.jpg);
 }
 
 .one1800FB3 {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy1/casestudyAbackground2.jpg);
+	background-image: url(/assets/img/jpgs/CaseStudy1/casestudyAbackground2.jpg);
 }
 
 .one1800FB4 {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy1/1800f_31.jpg);
+	background-image: url(/assets/img/jpgs/CaseStudy1/1800f_31.jpg);
 }
 
 .oTB1 {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy7/otc_dellboomi_1.jpg);
+	background-image: url(/assets/img/jpgs/CaseStudy7/otc_dellboomi_1.jpg);
 }
 
 
 .oTB2 {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy2/casestudyBbackground2.jpg);
+	background-image: url(/assets/img/jpgs/CaseStudy2/casestudyBbackground2.jpg);
 }
 
 .oTB3 {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy7/otc-dellboomi_desktop_3.jpg);
+	background-image: url(/assets/img/jpgs/CaseStudy7/otc-dellboomi_desktop_3.jpg);
 }
 
 .pop1 {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy3/popcorn_1.jpg);
+	background-image: url(/assets/img/jpgs/CaseStudy3/popcorn_1.jpg);
 }
 
 
 .pop2 {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy3/popconfactoryB.jpg);
+	background-image: url(/assets/img/jpgs/CaseStudy3/popconfactoryB.jpg);
 }
 
 .pop3 {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy3/popcorn_6.jpg);
+	background-image: url(/assets/img/jpgs/CaseStudy3/popcorn_6.jpg);
 }
 
 .min1 {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy4/mw_1.jpg);
+	background-image: url(/assets/img/jpgs/CaseStudy4/mw_1.jpg);
 }
 
 
 .min2 {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy4/mindwareB.jpg);
+	background-image: url(/assets/img/jpgs/CaseStudy4/mindwareB.jpg);
 }
 
 .min3 {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy4/mw_6.jpg);
+	background-image: url(/assets/img/jpgs/CaseStudy4/mw_6.jpg);
 }
 
 .zte1 {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy5/zte_1.jpg);
+	background-image: url(/assets/img/jpgs/CaseStudy5/zte_1.jpg);
 }
 
 .zte2 {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy5/zte_6.jpg);
+	background-image: url(/assets/img/jpgs/CaseStudy5/zte_6.jpg);
 }
 
 .save-day1{
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy13/SD_1.jpg);
+	background-image: url(/assets/img/jpgs/CaseStudy13/SD_1.jpg);
 }
 
 .save-day2{
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy13/SD_6.jpg);
+	background-image: url(/assets/img/jpgs/CaseStudy13/SD_6.jpg);
 }
 
 .cetera1{
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy14/DOL-1.jpg);
+	background-image: url(/assets/img/jpgs/CaseStudy14/DOL-1.jpg);
 }
 
 .cetera2{
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy14/DOL-6.jpg);
+	background-image: url(/assets/img/jpgs/CaseStudy14/DOL-6.jpg);
 } 
 
 .a500bc1 {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy6/500bc_1.jpg);
+	background-image: url(/assets/img/jpgs/CaseStudy6/500bc_1.jpg);
 }
 .a500bc6{
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy6/500bc_6.jpg);
+	background-image: url(/assets/img/jpgs/CaseStudy6/500bc_6.jpg);
 }
 
 .smilemakers1 {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy11/SM_1.jpg);
+	background-image: url(/assets/img/jpgs/CaseStudy11/SM_1.jpg);
 }
 .smilemakers6 {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy11/SM_6.jpg);
+	background-image: url(/assets/img/jpgs/CaseStudy11/SM_6.jpg);
 }
 
 .tates1 {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy8/tates_01.jpg);
+	background-image: url(/assets/img/jpgs/CaseStudy8/tates_01.jpg);
 }
 
 .tates6 {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy8/tates_06.jpg);
+	background-image: url(/assets/img/jpgs/CaseStudy8/tates_06.jpg);
 }
 
 .khanlucas1 {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy9/KL_1.jpg);
+	background-image: url(/assets/img/jpgs/CaseStudy9/KL_1.jpg);
 }
 
 .khanlucas6 {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy9/KL_6.jpg);
+	background-image: url(/assets/img/jpgs/CaseStudy9/KL_6.jpg);
 }
 
 .a1-800Analytics1 {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy12/analytics_01.jpg);
+	background-image: url(/assets/img/jpgs/CaseStudy12/analytics_01.jpg);
 }
 
 .a1-800Analytics2 {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy12/analytics_02.jpg);
+	background-image: url(/assets/img/jpgs/CaseStudy12/analytics_02.jpg);
 }
 
 .bloomreach1 {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy10/bloomreach_1.jpg);
+	background-image: url(/assets/img/jpgs/CaseStudy10/bloomreach_1.jpg);
 }
 
 .bloomreach2 {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy10/bloomreach_2.jpg);
+	background-image: url(/assets/img/jpgs/CaseStudy10/bloomreach_2.jpg);
 }
 
+.machine-learning-hero {
+	@include photo-background;
+	background-image: url(https://s3-us-west-2.amazonaws.com/sooryen-website-assets/img/jpgs/MachineLearning/page-hero.jpg);
+}
+
+.blockchain-hero {
+	@include photo-background;
+	background-image: url(https://s3-us-west-2.amazonaws.com/sooryen-website-assets/img/jpgs/Blockchain/hero-bg.jpg);
+}
+
+.convopt-hero {
+	@include photo-background;
+	background-image: url(https://s3-us-west-2.amazonaws.com/sooryen-website-assets/img/jpgs/ConversionOpt/hero_bg.jpg); 
+}
 
 .Screenshot1 {
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/bg1.jpg);
+	background-image: url(/assets/img/bg1.jpg);
 }
 
 .apple-pay{
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/home-hero-img.jpg);
+	background-image: url(/assets/img/home-hero-img.jpg);
 	@media screen and (max-width: 1265px) {
-		background-image: url(https://d283pee6upvkfl.cloudfront.net/img/mobile-home-hero.jpg);
+		background-image: url(/assets/img/mobile-home-hero.jpg);
 	} 
+} 
+
+.homepage-hero {
+	@include photo-background;
+	background-attachment: scroll;
+	background-image: url(/assets/img/compressed-imgs/Homepage-hero.jpg);
 } 
 
 .digital-transformation{
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/hero-image.jpg);
+	background-image: url(/assets/img/hero-image.jpg);
 	@media screen and (max-width: 1265px) {
-		background-image: url(https://d283pee6upvkfl.cloudfront.net/img/mobile-hero.jpg);
+		background-image: url(/assets/img/mobile-hero.jpg);
 	}
 }
 
 .android{
 	@include photo-background;
-	background-image: url(https://d283pee6upvkfl.cloudfront.net/img/android-banner.jpg);
+	background-image: url(/assets/img/android-banner.jpg);
 	@media screen and (max-width: 1024px) {
-		background-image: url(https://d283pee6upvkfl.cloudfront.net/img/mobile-landing-hero.jpg);
+		background-image: url(/assets/img/mobile-landing-hero.jpg);
 	}
 }
 
@@ -448,15 +468,23 @@
 
 .paddingB-5 {padding-bottom: 5px;}
 
+.paddingB-2-p {padding-bottom: 2%;}
+
 .paddingB-5-p {padding-bottom: 5%;}
 
 .paddingB-8-p {padding-bottom: 8%;}
 
 .paddingB-10-p {padding-bottom: 10%;}
 
+.paddingB-15-p {padding-bottom: 15%;}
+
+.paddingB-20-p {padding-bottom: 20%;}
+
 .paddingB-10 {padding-bottom: 10px;}
 
 .paddingB-20 {padding-bottom: 20px;}
+
+.paddingB-40 {padding-bottom: 20px;}
 
 .margin-auto {margin: 0px auto !important;}
 

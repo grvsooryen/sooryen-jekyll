@@ -129,32 +129,60 @@
 			}			
 			
 			
-			.maitry {
-				background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/Testimonials/Maitry_bg.jpg);
+			.anthony {
+				background-image: url(/assets/img/jpgs/Testimonials/ant__bg.jpg);
 				@include transition;
-				@include testimonials_bg;
+
+				background-size: 102%;
+				background-repeat: no-repeat;
+				
+				&:hover {
+					background-size: 108%;
+				}
 
 				p {
-				    padding: 1em 2em 0em;
-				    font-size: 16px;
+				    font-size: 15px;
+    				padding-bottom: 20px !important;
 				}
+
+				@media screen and (max-width: 1024px) {
+			    	background-size: 110%;
+
+			    	p {
+					    font-size: 0.7em;
+					}
+
+			    	&:hover {
+						background-size: 129%;
+					}
+				
+			    }
 		
 			}
 
 			.rob {
-				background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/Testimonials/rob_bg.jpg);
+				background-image: url(/assets/img/jpgs/Testimonials/rob_bg.jpg);
 				@include transition;
 				@include testimonials_bg;
 			}
 
 			.chris {
-				background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/Testimonials/chris_bg.jpg);
+				background-image: url(/assets/img/jpgs/Testimonials/chris_bg.jpg);
 				@include transition;
 				@include testimonials_bg;
+
+				@media screen and (max-width: 1024px) {
+		    	    background-size: 123%;
+
+			    	&:hover {
+					    background-size: 134%;
+					}
+				
+			    }
 			}
 
-			.akshay {
-				background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/Testimonials/Akshay_bg.jpg);
+			.meha {
+				background-image: url(/assets/img/jpgs/Testimonials/meha_bg.jpg);
 				@include transition;
 				@include testimonials_bg;
 			}

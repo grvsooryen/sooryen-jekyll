@@ -17,6 +17,30 @@
     	padding: 0;
     }
 
+    .no-padding-left {
+    	padding-left: 0;
+    }
+
+    .partner-office {
+    	@media screen and (min-width: 640px) {
+	    	.france {
+			    width: 32%;
+	    	}
+    	}
+    }
+
+        
+
+    @media screen and (max-width: 640px) {
+		a {
+		    padding-top: 11px;
+		}
+
+		.small-12 {
+			padding-top: 4%;
+		}
+    }
+
 	h3, .h3 {
 	 	font-size: 1.25em !important;
 	}
@@ -38,6 +62,7 @@
 	
 	h2{
 		color: $highlight;
+		padding-left: 15px;
 	}
 
 	.fist-p{
@@ -103,7 +128,7 @@
 			}
 		}
 
-		padding: 3vmin 0;
+		padding: 3vmin 15px;
 		position: relative;
 
 		

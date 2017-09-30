@@ -342,7 +342,7 @@
                     background: "rob",
                     name: "Rob Chojnacki",
                     position: "Tech Lead",
-                    paragraph: "Having been one of the first employees that Ram hired, I've had the unique opportunity to not only watch the company grow, but to watch my skills grow with the company. The person I was when I started here could not have imagined the person I am today. That wouldn't have happened at a lot of places, but it's almost guaranteed to happen here at Sooryen.",
+                    paragraph: "Having been one of the first employees that Ram hired, I've had the unique opportunity to not only watch the company grow, but to watch my skills grow with the company. The person I was when I started here could not have imagined the person I am today. That wouldn't have happened at a lot of places, but it's almost guaranteed to happen here at Söoryen.",
                     thumbnail: "rob_thumbnail.jpg"
                 },
 
@@ -350,24 +350,25 @@
                     background: "chris",
                     name: "Chris Mucyo",
                     position: "Software Developer",
-                    paragraph: "The thing I like the most about Sooryen Technologies is the culture. Working for Sooryen means working in a fun, friendly and multicultural environment while also staying professional. Since I got here in 2015, the great coworkers and leadership have enabled me to learn something new every day and they have also helped me improve as a person.",
+                    paragraph: "The thing I like the most about Söoryen Technologies is the culture. Working for Söoryen means working in a fun, friendly and multicultural environment while also staying professional. Since I got here in 2015, the great coworkers and leadership have enabled me to learn something new every day and they have also helped me improve as a person.",
                     thumbnail: "chris_thumbnail.jpg"
                 },
+                
                 {
-                    background: "maitry",
-                    name: "Maitry Shah",
+                    background: "meha",
+                    name: "Meha Shah",
                     position: "Software Developer",
-                    paragraph: "Working at Sooryen Technologies feels like being part of a family. Sooryen Technologies is international but also very flexible. This is exactly the working environment where people can develop and make a difference! It also gives me the opportunity to work in a pleasant multicultural environment with very nice colleagues from different parts of the world. The management team is very good in making sure that the suggestions and opinions of employees are included in the company planning process. I am proud to be part of Sooryen Technologies!",
-                    thumbnail: "Maitry_thumbnail.jpg"
+                    paragraph: "I've been working at Söoryen for over 3 years now. The best part of working at Söoryen is its encouraging environment and friendly 'work hard, play hard' culture. With great people to work with and very approachable management, they are always open to new ideas. The company's growth and my growth have gone hand in hand, so it feels like a second home to me. I'm looking forward to many more future years at Söoryen.",
+                    thumbnail: "meha-thumbnail.jpg"
                 },
 
                 {
-                    background: "akshay",
-                    name: "Akshay Gaidhane",
-                    position: "Software Developer",
-                    paragraph: "It’s been almost 2 years that I have been working for Sooryen Technologies which has turned out to be great decision for me. I find myself among a great group of colleagues who share their experience and work together in a spirit of mutual benefit. I have been able to develop myself both personally and professionally. These have been of great help in grooming and development.",
-                    thumbnail: "Akshay-thumbnail.jpg"
-                 }
+                    background: "anthony",
+                    name: "Anthony Aliano",
+                    position: "Designer",
+                    paragraph: "I started at Söoryen nearly two years ago, and I have had nothing less than amazing experiences the entire time. The past few years have offered me not only opportunities, but also challenges to learn and grow as a designer, and push me outside my comfort zone allowing me to rise to the challenge. Söoryen has been the place where the office feels less like “the office” and more like a second home, with the people around you being less your “coworkers” and more your close friends.",
+                    thumbnail: "anthony__thumbnail.jpg"
+                }
             ]
         }
     })

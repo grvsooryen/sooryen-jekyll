@@ -6,7 +6,7 @@
     background-position: 0 0;
     background-repeat: no-repeat;
     position: relative;
-    background-image: url("https://d283pee6upvkfl.cloudfront.net/img/mobile-dev/hero-image.jpg");
+    background-image: url("/assets/img/mobile-dev/hero-image.jpg");
     background-size: cover;
   }
 
@@ -21,7 +21,6 @@
   .app-text {
     /*font-weight: bold;*/
     color: #000;
-    font-family: "latoregular";
     font-size: 0.875em;
   }
 
@@ -91,7 +90,6 @@
       color: #DB4006;
       font-weight: bold;
       font-size: 0.75em;
-      font-family: "latoregular";
   }
 
   input {
@@ -100,7 +98,6 @@
       border-bottom: 1px solid #4A4A4A !important;
       padding: 0 !important;
       height: 1.5em;
-      font-family: "latoregular";
       font-size: 1.1rem;
       color: #4A4A4A;
       background: #f7f7f7;
@@ -176,7 +173,7 @@
 
     .case-studies-list {
       .a500BC {
-        background-image: url("https://d283pee6upvkfl.cloudfront.net/img/mobile-dev/case1-bw.png");
+        background-image: url("/assets/img/mobile-dev/case1-bw.png");
         background-size: cover;
         -webkit-transition: 0.4s ease-in-out;
         -moz-transition: 0.4s ease-in-out;
@@ -186,20 +183,20 @@
       }
       @media screen and (min-width: 768px) {
       .a500BC:hover {
-        background-image: url("https://d283pee6upvkfl.cloudfront.net/img/mobile-dev/case1.png");
+        background-image: url("/assets/img/mobile-dev/case1.png");
       }
       .flowers:hover {
-        background-image: url("https://d283pee6upvkfl.cloudfront.net/img/mobile-dev/case2.png");
+        background-image: url("/assets/img/mobile-dev/case2.png");
       }
       .mindware:hover {
-        background-image: url("https://d283pee6upvkfl.cloudfront.net/img/mobile-dev/case3.png");
+        background-image: url("/assets/img/mobile-dev/case3.png");
       }
       .orientaltrading:hover {
-        background-image: url("https://d283pee6upvkfl.cloudfront.net/img/mobile-dev/case4.png");
+        background-image: url("/assets/img/mobile-dev/case4.png");
       }
       }
       .flowers {
-        background-image: url("https://d283pee6upvkfl.cloudfront.net/img/mobile-dev/case2-bw.png");
+        background-image: url("/assets/img/mobile-dev/case2-bw.png");
         background-size: cover;
         -webkit-transition: 0.4s ease-in-out;
         -moz-transition: 0.4s ease-in-out;
@@ -208,7 +205,7 @@
       }
 
       .mindware {
-        background-image: url("https://d283pee6upvkfl.cloudfront.net/img/mobile-dev/case3-bw.png");
+        background-image: url("/assets/img/mobile-dev/case3-bw.png");
         background-size: cover;
         -webkit-transition: 0.4s ease-in-out;
         -moz-transition: 0.4s ease-in-out;
@@ -217,7 +214,7 @@
       }
 
       .orientaltrading {
-        background-image: url("https://d283pee6upvkfl.cloudfront.net/img/mobile-dev/case4-bw.png");
+        background-image: url("/assets/img/mobile-dev/case4-bw.png");
         background-size: cover;
         -webkit-transition: 0.4s ease-in-out;
         -moz-transition: 0.4s ease-in-out;

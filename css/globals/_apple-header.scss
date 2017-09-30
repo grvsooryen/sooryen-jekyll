@@ -37,6 +37,69 @@ header.apple-header {
         background-color: transparent !important;
         @include transition;
 
+        li ul {
+            position:absolute;
+            top: 50px;
+            z-index:1;
+            list-style:none;
+            display: block;
+            width: 200px;
+            margin:0;
+            padding:0;
+            padding-bottom: 20px;
+            li {
+                overflow:hidden;
+                height:0;
+                padding: 0 !important;
+                width:200px;
+                *zoom:1;
+                background: #EF592A !important;
+                -webkit-transition:all 200ms ease-in;
+                -moz-transition:all 200ms ease-in;
+                -o-transition:all 200ms ease-in;
+                transition:all 200ms ease-in;
+                a {
+                    -webkit-transition:color 200ms ease-in;
+                    -moz-transition:color 200ms ease-in;
+                    -o-transition:color 200ms ease-in;
+                    transition:color 200ms ease-in;
+                }
+                a:hover {
+                    color: #f1f1f1 !important;
+                }
+            }
+        }
+        ul:after {
+            clear:both;
+        }
+
+        .sol-dropdown {
+            -webkit-transition:200ms ease;
+            -moz-transition:200ms ease;
+            -o-transition:200ms ease;
+            transition:200ms ease;
+        }
+
+        ul > li.sol-dropdown:hover {
+            background: #EF592A !important;
+            a {
+                color: white !important;
+            }
+
+            ul li {
+                height:36px;
+                padding-bottom: 50px !important;
+            }
+        }
+
+        ul > li.sol-dropdown .sol-sub-menu li:hover a {
+            color: #ffd6aa !important;
+        }
+
+        .sol-sub-menu li a:hover {
+            color: orange !important;
+        }
+
         .small-10{
             padding: 0;
             img {
@@ -170,6 +233,7 @@ header.apple-header {
                     padding: 5px 0px;
                     a{
                         font-size: 14px;
+                        color: white;
                         background: none !important;
                         @media screen and (max-width: 1068px){
                             font-size: 12px;
@@ -195,7 +259,7 @@ header.apple-header {
         }
     }
     #primary-nav {
-        background: $highlight;
+        background: #EF592A;
         height: 100%;
         left: 0;
         position: fixed;
@@ -206,6 +270,8 @@ header.apple-header {
         @media screen and (max-width: 500px) {
             overflow: scroll;
         }
+
+        
 
         .menu-container{
             @include vertical-align;
@@ -223,7 +289,7 @@ header.apple-header {
                 height: 83vh;
                 margin: 0px auto;
                 min-height: 320px;
-                max-height: 540px;
+                max-height: 380px;
                 position: relative;
                 -webkit-justify-content: space-around; /* Safari 6.1+ */
                 display: flex;
@@ -256,7 +322,8 @@ header.apple-header {
 
                 li{
                     width: 100%;
-                    text-align: center;
+                    text-align: left;
+                    padding-left: 30px;
                     list-style: none;
                     font-size: $font_largest;
                     @media screen and (max-width: 700px) {
@@ -279,6 +346,7 @@ header.apple-header {
                     a {
                         font-weight: bolder;
                         font-family: $font_light;
+                        font-weight: 200;
                         display: block;
                         color: $lightest;
                     }
@@ -306,6 +374,36 @@ header.apple-header {
                         }
                     }
                 }
+
+                .solutions {
+                    i {
+                        position: absolute;
+                        right: 22px;
+                        top: 80px;
+                        color: white;
+                        -webkit-transition:300ms ease;
+                        -moz-transition:300ms ease;
+                        -o-transition:300ms ease;
+                        transition:300ms ease;
+                        @media screen and (min-width: 500px) {
+                            top: 68px;
+                        }
+                        @media screen and (min-width: 700px) {
+                            top: 68px;
+                        }
+                    }
+                    .sol-sub-menu {
+                        display: inline;
+                        li {
+                            height: 0;
+                            overflow: hidden;
+                            -webkit-transition:height 200ms ease-in;
+                            -moz-transition:height 200ms ease-in;
+                            -o-transition:height 200ms ease-in;
+                            transition:height 200ms ease-in;
+                        }
+                    }
+                }
             }
 
             .social_icons {
@@ -330,6 +428,7 @@ header.apple-header {
 
              p {
                 font-family: $font_light;
+                font-weight: 200;
                 color: $lightest;
                 font-size: 1rem;
             }
@@ -338,5 +437,11 @@ header.apple-header {
         img {
             height: 30px;
         }
+    }
+}
+
+.blk-logo {
+    .apple-header nav .top-bar-section ul li a {
+        color: black;
     }
 }

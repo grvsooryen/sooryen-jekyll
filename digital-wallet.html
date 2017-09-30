@@ -1,0 +1,106 @@
+---
+title: Digital Wallet
+layout: page
+slug: _digital-wallet
+---
+<div class="row lg-content-head">
+	<div class="border-container">
+		<div class="android" data-stellar-background-ratio="0.5">
+			<div class="large-4 large-offset-7 small-centered small-8 columns text-center first-block padding-Yvw-15 auto-height-25">			
+				<h2 class="paddingT-10">Ready. Set. Convert.</h2>
+				<p>Get your website enabled for <br>Apple Pay and Android Pay.</p>
+				<p>Apply below to be considered <br>for Priority Development.</p>
+<!-- 				<a href="http://blog.sooryen.com/sooryen-announces-ready-set-convert-apple-pay-and-android-pay-for-mobile-and-desktop/" class="button text-center">Press Release</a>	 -->		
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row case-problem white-background-full border-D-top">
+	<div class="large-10 large-centered columns padding-Yvw-3">
+		<div class="large-8 medium-7 small-12 columns marginB-30" id="left-text">
+			<p>Mobile web usage has been on the rise and many shoppers are filling up their shopping carts while browsing on their phones. Converting those full shopping carts into actual sales has been a big challenge for e-retailers, as filling out credit card information on the small phone screen has been an impediment to shoppers.</p>
+
+			<div id="apple-logo-wrap" class="text-center">
+				<img src="{{site.cdn.url}}/img/ApplePayLogo.png" width="80">
+				<img src="{{site.cdn.url}}/img/AndroidPayLogo.png" width="40">
+			</div>
+
+			<p>With the announcement of Apple Pay and Android Pay for the Web, one-touch conversion will change this paradigm. And Apple will take this one step further and offer this same experience on the desktop for Mac users on its Safari Browser.</p>
+
+			<p>Get your website ready for this pivotal change coming to eCommerce. Söoryen Technologies is the first to offer 'finger-print enabled web integration,' enabling the fastest time to market for eCommerce merchants. To get your website ready for Apple Pay and Android Pay, complete the form on the right.</p>
+		</div>
+
+		<div class="large-4 medium-5 small-12 columns marginT-30" id="right-text">
+			<div id="submit-message" class="hidden">Thank you for applying!</div>
+
+			<form data-abide action="insightly-php-master/postcontact.php" method="post" id="apply-form">
+				<div class="row">
+					<label for="name">Name *</label>
+				  	<input type="text" name="name" id="name" required>
+				  	<small class="error">Name is required</small>
+				</div>
+
+		        <div class="row">
+		          	<label for="email">Email *</label>
+		          	<input type="email" name="email" id="email" required>
+		          	<small class="error">Email is required and must be valid format</small>
+		      	</div>
+
+		      	<div class="row">
+	        		<label for="phone">Phone Number</label>
+			        <input type="number" name="phone" id="phone">
+			        <small class="error">Phone number is required and must be numbers</small>
+			    </div>
+
+			    <div class="row">
+		          	<label for="company">Company</label>
+		          	<input type="text" name="company" id="company">
+		        </div>
+
+			    <p>Where did you hear about "Ready. Set. Convert?"</p>
+			  
+		    	<div class="row">
+		      		<label for="media">Select Media Type</label>
+          			<select id="media" name="media">
+          				<option value="Press Release">Press Release</option>
+          				<option value="Facebook">Facebook</option>
+          				<option value="Twitter">Twitter</option>
+          				<option value="LinkedIn">LinkedIn</option>
+          				<option value="Sooryen Email">Söoryen Email</option>
+          				<option value="Phone">Phone</option>
+						<option value="Other">Other</option>
+	          		</select>
+		      	</div>
+
+		      	<div class="text-center marginT-40">
+		      		<button type="submit" class="filled-button">Apply</button>
+		      	</div>
+
+			</form>
+
+			
+		</div>
+	</div>
+</div>
+
+<script src="js/framework/foundation/foundation.abide.js"></script>
+<script>
+	$(document).foundation();
+
+	$(document).ready(function(){
+		$('#apply-form').submit(function(e){
+	    e.preventDefault();
+	    $.ajax({
+	        url:'insightly-php-master/postcontact.php',
+	        type:'post',
+	        data:$('#apply-form').serialize(),
+	        success:function($result){
+	            $('#apply-form').fadeOut(500);
+	            $("#submit-message").fadeIn(500);
+	        }
+	    });
+	})
+
+});
+</script>

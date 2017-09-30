@@ -5,7 +5,7 @@
 	    background-repeat: no-repeat;
 	    background-size: cover;
 	    position: relative;
-	    background-image: url(https://d283pee6upvkfl.cloudfront.net/img/about-us/hero_about-us.jpg);
+	    background-image: url(/assets/img/about-us/hero_about-us.jpg);
 	}
 
 	.homeB2 {
@@ -13,17 +13,26 @@
 	}
 
 	.about-us-background-text{
-	    padding: 220px 15vw 160px 15vw;
+        padding: 220px 15vw 160px 15vw;
 	    text-align: center;
+	    @media screen and (max-width: 600px) {
+			padding: 130px 15vw 50px 15vw; 
+        }
 	}
 
 	.about-us-background-text h1 {
-	    color: white;
-        font-size: 48px;
+			color: white;
+			font-family: $font_hairline;
+			font-size: $font_largest;
+			text-transform: uppercase;
+			@media screen and (max-width: 700px) {
+				padding-top: 12vmin;
+    			color: rgba(255, 255, 255, 0.9);
+	        }
 	}
 
 	.about-us-body{
-	    padding: 80px 10%;
+        padding: 50px 10% 80px 10%;
 	    height: 56vw;
 	    z-index: 1;
 	    background: white;
@@ -48,8 +57,11 @@
 	}
 
 	.about-us-image{
-	    width: 41%;
+	    width: 36%;
 	    float: right;
+	    -webkit-box-shadow: 10px 15px 35px -5px #b3a8b3;
+		-moz-box-shadow: 10px 15px 35px -5px #b3a8b3;
+		box-shadow: 10px 15px 35px -5px #b3a8b3;
 	}
 
 	.about-us-left{
@@ -61,7 +73,7 @@
 	}
 
 	.about-us-founder-subtext, .about-us-founder-name, .about-us-founder-main-text{
-		font-weight: 600;
+		font-weight: 200;
 	}
 
 	.about-us-founder-name{
@@ -150,7 +162,7 @@
         }
 	
 		.about-us-body {
-	       height: calc(-5vw + 884px);
+	       height: calc(-5vw + 1142px);
 		}
 
 	}
@@ -158,7 +170,7 @@
 	@media only screen and (max-width: 420px) {
 
 		.about-us-body {
-		    height: calc(-80vw + 1324px);
+		    height: calc(-80vw + 1354px);
 		}
 
 	}

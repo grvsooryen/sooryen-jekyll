@@ -1,39 +1,11 @@
 @charset "UTF-8";
 @import url(framework/foundation.min.css);
 @import url(framework/normalize.css);
-@import url(//fonts.googleapis.com/css?family=Cuprum);
-@font-face {
-  font-family: 'latoheavy';
-  src: url("https://d283pee6upvkfl.cloudfront.net/fonts/Lato_font/Lato-Heavy-webfont.eot");
-  src: url("https://d283pee6upvkfl.cloudfront.net/fonts/Lato_font/Lato-Heavy-webfont.eot?#iefix") format("embedded-opentype"), url("https://d283pee6upvkfl.cloudfront.net/fonts/Lato_font/Lato-Heavy-webfont.woff2") format("woff2"), url("https://d283pee6upvkfl.cloudfront.net/fonts/Lato_font/Lato-Heavy-webfont.woff") format("woff"), url("https://d283pee6upvkfl.cloudfront.net/fonts/Lato_font/Lato-Heavy-webfont.ttf") format("truetype"), url("https://d283pee6upvkfl.cloudfront.net/fonts/Lato_font/Lato-Heavy-webfont.svg#latoheavy") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'latoregular';
-  src: url("https://d283pee6upvkfl.cloudfront.net/fonts/Lato_font/Lato-Regular-webfont.eot");
-  src: url("https://d283pee6upvkfl.cloudfront.net/fonts/Lato_font/Lato-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("https://d283pee6upvkfl.cloudfront.net/fonts/Lato_font/Lato-Regular-webfont.woff2") format("woff2"), url("https://d283pee6upvkfl.cloudfront.net/fonts/Lato_font/Lato-Regular-webfont.woff") format("woff"), url("https://d283pee6upvkfl.cloudfront.net/fonts/Lato_font/Lato-Regular-webfont.ttf") format("truetype"), url("https://d283pee6upvkfl.cloudfront.net/fonts/Lato_font/Lato-Regular-webfont.svg#latoregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'latohairline';
-  src: url("https://d283pee6upvkfl.cloudfront.net/fonts/Lato_font/Lato-Hairline-webfont.eot");
-  src: url("https://d283pee6upvkfl.cloudfront.net/fonts/Lato_font/Lato-Hairline-webfont.eot?#iefix") format("embedded-opentype"), url("https://d283pee6upvkfl.cloudfront.net/fonts/Lato_font/Lato-Hairline-webfont.woff2") format("woff2"), url("https://d283pee6upvkfl.cloudfront.net/fonts/Lato_font/Lato-Hairline-webfont.woff") format("woff"), url("Lato_font/Lato-Hairline-webfont.ttf") format("truetype"), url("https://d283pee6upvkfl.cloudfront.net/fonts/Lato_font/Lato-Hairline-webfont.svg#latohairline") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'latolight';
-  src: url("https://d283pee6upvkfl.cloudfront.net/fonts/Lato_font/Lato-Light-webfont.eot");
-  src: url("https://d283pee6upvkfl.cloudfront.net/fonts/Lato_font/Lato-Light-webfont.eot?#iefix") format("embedded-opentype"), url("https://d283pee6upvkfl.cloudfront.net/fonts/Lato_font/Lato-Light-webfont.woff2") format("woff2"), url("https://d283pee6upvkfl.cloudfront.net/fonts/Lato_font/Lato-Light-webfont.woff") format("woff"), url("https://d283pee6upvkfl.cloudfront.net/fonts/Lato_font/Lato-Light-webfont.ttf") format("truetype"), url("https://d283pee6upvkfl.cloudfront.net/fonts/Lato_font/Lato-Light-webfont.svg#latolight") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
 @font-face {
   font-family: "Flaticon";
-  src: url("https://d283pee6upvkfl.cloudfront.net/fonts/flaticon.eot");
-  src: url("https://d283pee6upvkfl.cloudfront.net/fonts/flaticon.eot#iefix") format("embedded-opentype"), url("https://d283pee6upvkfl.cloudfront.net/fonts/flaticon.woff") format("woff"), url("https://d283pee6upvkfl.cloudfront.net/fonts/flaticon.ttf") format("truetype"), url("https://d283pee6upvkfl.cloudfront.net/fonts/flaticon.svg") format("svg");
+  src: url("/assets/fonts/flaticon.eot");
+  src: url("/assets/fonts/flaticon.eot#iefix") format("embedded-opentype"), url("/assets/fonts/flaticon.woff") format("woff"), url("/assets/fonts/flaticon.ttf") format("truetype"), url("/assets/fonts/flaticon.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -124,19 +96,21 @@ html.menu-visible, body.menu-visible {
 }
 
 body {
-  font-family: "latolight";
+  font-family: "Lato";
   font-size: 1.1rem;
   color: #B4B4B4;
 }
 
 p, li {
-  font-family: "latolight";
+  font-family: "Lato";
+  font-weight: 300;
   font-size: 1.1rem;
   margin: 0;
 }
 
 h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
-  font-family: "latolight";
+  font-family: "Lato";
+  font-weight: 300;
   margin: 0;
 }
 
@@ -212,7 +186,7 @@ button, .button, .secondary-button, .filled-button {
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
-  font-family: "latolight";
+  font-family: "Lato";
   font-size: 1.25em;
   line-height: 1.25em;
   text-align: center;
@@ -280,7 +254,7 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
     -moz-transition: 0.4s ease-in-out;
     -o-transition: 0.4s ease-in-out;
     transition: 0.4s ease-in-out;
-    background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/Landingpage/orange-p-b.png) !important;
+    background-image: url(/assets/img/jpgs/Landingpage/orange-p-b.png) !important;
   }
 }
 
@@ -298,7 +272,7 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
     -moz-transition: 0.4s ease-in-out;
     -o-transition: 0.4s ease-in-out;
     transition: 0.4s ease-in-out;
-    background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/Landingpage/gray-p-b.fw.png) !important;
+    background-image: url(/assets/img/jpgs/Landingpage/gray-p-b.fw.png) !important;
   }
 }
 
@@ -316,7 +290,7 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
     -moz-transition: 0.4s ease-in-out;
     -o-transition: 0.4s ease-in-out;
     transition: 0.4s ease-in-out;
-    background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/Landingpage/blue-p-b.fw.png) !important;
+    background-image: url(/assets/img/jpgs/Landingpage/blue-p-b.fw.png) !important;
   }
 }
 
@@ -334,7 +308,7 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
     -moz-transition: 0.4s ease-in-out;
     -o-transition: 0.4s ease-in-out;
     transition: 0.4s ease-in-out;
-    background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/Landingpage/white-p-b.fw.png) !important;
+    background-image: url(/assets/img/jpgs/Landingpage/white-p-b.fw.png) !important;
   }
 }
 
@@ -344,7 +318,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/Landingpage/mainpagelanding.jpg);
+  background-image: url(/assets/img/jpgs/Landingpage/mainpagelanding.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .homeB1 {
+    background-attachment: scroll;
+  }
 }
 
 .homeB2 {
@@ -353,7 +332,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/Landingpage/2wo-01.jpg);
+  background-image: url(/assets/img/polygon-bkg-02.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .homeB2 {
+    background-attachment: scroll;
+  }
 }
 
 .aboutusB1 {
@@ -362,7 +346,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/AboutUs/1wo.jpg);
+  background-image: url(/assets/img/jpgs/AboutUs/1wo.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .aboutusB1 {
+    background-attachment: scroll;
+  }
 }
 
 .aboutusB2 {
@@ -371,7 +360,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/AboutUs/2wo.jpeg);
+  background-image: url(/assets/img/jpgs/AboutUs/2wo.jpeg);
+}
+@media only screen and (max-device-width: 500px) {
+  .aboutusB2 {
+    background-attachment: scroll;
+  }
 }
 
 .servicesB1 {
@@ -380,7 +374,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/OTC_services_page_background.jpg);
+  background-image: url(/assets/img/OTC_services_page_background.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .servicesB1 {
+    background-attachment: scroll;
+  }
 }
 
 .servicesB2 {
@@ -389,7 +388,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy1/casestudyAbackground1.jpg);
+  background-image: url(/assets/img/jpgs/CaseStudy1/casestudyAbackground1.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .servicesB2 {
+    background-attachment: scroll;
+  }
 }
 
 .servicesB3 {
@@ -398,7 +402,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/services/stars_overlay.jpg);
+  background-image: url(/assets/img/jpgs/services/stars_overlay.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .servicesB3 {
+    background-attachment: scroll;
+  }
 }
 
 .servicesB4 {
@@ -407,7 +416,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/services/busy_street_whiteoverlay.jpg);
+  background-image: url(/assets/img/jpgs/services/busy_street_whiteoverlay.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .servicesB4 {
+    background-attachment: scroll;
+  }
 }
 
 .servicesB5 {
@@ -416,7 +430,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/services/Services_bg.jpg);
+  background-image: url(/assets/img/jpgs/services/Services_bg.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .servicesB5 {
+    background-attachment: scroll;
+  }
 }
 
 .servicesB5-new {
@@ -425,7 +444,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/services/services-hero-image.jpg);
+  background-image: url(/assets/img/jpgs/services/services-hero-image.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .servicesB5-new {
+    background-attachment: scroll;
+  }
 }
 
 .fintechBanner {
@@ -434,7 +458,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/fintech/hero-image.jpg);
+  background-image: url(/assets/img/jpgs/fintech/hero-image.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .fintechBanner {
+    background-attachment: scroll;
+  }
 }
 
 .one1800FB1 {
@@ -443,7 +472,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy1/casestudyAbackground1.jpg);
+  background-image: url(/assets/img/jpgs/CaseStudy1/casestudyAbackground1.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .one1800FB1 {
+    background-attachment: scroll;
+  }
 }
 
 .aeBanner {
@@ -454,6 +488,11 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   position: relative;
   background-image: url("../../assets/img/AEB.jpg");
 }
+@media only screen and (max-device-width: 500px) {
+  .aeBanner {
+    background-attachment: scroll;
+  }
+}
 
 .one1800FB2 {
   background-attachment: fixed;
@@ -461,7 +500,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy1/1800f_22.fw.jpg);
+  background-image: url(/assets/img/jpgs/CaseStudy1/1800f_22.fw.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .one1800FB2 {
+    background-attachment: scroll;
+  }
 }
 
 .one1800FB3 {
@@ -470,7 +514,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy1/casestudyAbackground2.jpg);
+  background-image: url(/assets/img/jpgs/CaseStudy1/casestudyAbackground2.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .one1800FB3 {
+    background-attachment: scroll;
+  }
 }
 
 .one1800FB4 {
@@ -479,7 +528,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy1/1800f_31.jpg);
+  background-image: url(/assets/img/jpgs/CaseStudy1/1800f_31.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .one1800FB4 {
+    background-attachment: scroll;
+  }
 }
 
 .oTB1 {
@@ -488,7 +542,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy7/otc_dellboomi_1.jpg);
+  background-image: url(/assets/img/jpgs/CaseStudy7/otc_dellboomi_1.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .oTB1 {
+    background-attachment: scroll;
+  }
 }
 
 .oTB2 {
@@ -497,7 +556,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy2/casestudyBbackground2.jpg);
+  background-image: url(/assets/img/jpgs/CaseStudy2/casestudyBbackground2.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .oTB2 {
+    background-attachment: scroll;
+  }
 }
 
 .oTB3 {
@@ -506,7 +570,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy7/otc-dellboomi_desktop_3.jpg);
+  background-image: url(/assets/img/jpgs/CaseStudy7/otc-dellboomi_desktop_3.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .oTB3 {
+    background-attachment: scroll;
+  }
 }
 
 .pop1 {
@@ -515,7 +584,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy3/popcorn_1.jpg);
+  background-image: url(/assets/img/jpgs/CaseStudy3/popcorn_1.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .pop1 {
+    background-attachment: scroll;
+  }
 }
 
 .pop2 {
@@ -524,7 +598,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy3/popconfactoryB.jpg);
+  background-image: url(/assets/img/jpgs/CaseStudy3/popconfactoryB.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .pop2 {
+    background-attachment: scroll;
+  }
 }
 
 .pop3 {
@@ -533,7 +612,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy3/popcorn_6.jpg);
+  background-image: url(/assets/img/jpgs/CaseStudy3/popcorn_6.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .pop3 {
+    background-attachment: scroll;
+  }
 }
 
 .min1 {
@@ -542,7 +626,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy4/mw_1.jpg);
+  background-image: url(/assets/img/jpgs/CaseStudy4/mw_1.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .min1 {
+    background-attachment: scroll;
+  }
 }
 
 .min2 {
@@ -551,7 +640,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy4/mindwareB.jpg);
+  background-image: url(/assets/img/jpgs/CaseStudy4/mindwareB.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .min2 {
+    background-attachment: scroll;
+  }
 }
 
 .min3 {
@@ -560,7 +654,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy4/mw_6.jpg);
+  background-image: url(/assets/img/jpgs/CaseStudy4/mw_6.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .min3 {
+    background-attachment: scroll;
+  }
 }
 
 .zte1 {
@@ -569,7 +668,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy5/zte_1.jpg);
+  background-image: url(/assets/img/jpgs/CaseStudy5/zte_1.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .zte1 {
+    background-attachment: scroll;
+  }
 }
 
 .zte2 {
@@ -578,7 +682,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy5/zte_6.jpg);
+  background-image: url(/assets/img/jpgs/CaseStudy5/zte_6.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .zte2 {
+    background-attachment: scroll;
+  }
 }
 
 .save-day1 {
@@ -587,7 +696,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy13/SD_1.jpg);
+  background-image: url(/assets/img/jpgs/CaseStudy13/SD_1.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .save-day1 {
+    background-attachment: scroll;
+  }
 }
 
 .save-day2 {
@@ -596,7 +710,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy13/SD_6.jpg);
+  background-image: url(/assets/img/jpgs/CaseStudy13/SD_6.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .save-day2 {
+    background-attachment: scroll;
+  }
 }
 
 .cetera1 {
@@ -605,7 +724,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy14/DOL-1.jpg);
+  background-image: url(/assets/img/jpgs/CaseStudy14/DOL-1.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .cetera1 {
+    background-attachment: scroll;
+  }
 }
 
 .cetera2 {
@@ -614,7 +738,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy14/DOL-6.jpg);
+  background-image: url(/assets/img/jpgs/CaseStudy14/DOL-6.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .cetera2 {
+    background-attachment: scroll;
+  }
 }
 
 .a500bc1 {
@@ -623,7 +752,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy6/500bc_1.jpg);
+  background-image: url(/assets/img/jpgs/CaseStudy6/500bc_1.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .a500bc1 {
+    background-attachment: scroll;
+  }
 }
 
 .a500bc6 {
@@ -632,7 +766,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy6/500bc_6.jpg);
+  background-image: url(/assets/img/jpgs/CaseStudy6/500bc_6.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .a500bc6 {
+    background-attachment: scroll;
+  }
 }
 
 .smilemakers1 {
@@ -641,7 +780,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy11/SM_1.jpg);
+  background-image: url(/assets/img/jpgs/CaseStudy11/SM_1.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .smilemakers1 {
+    background-attachment: scroll;
+  }
 }
 
 .smilemakers6 {
@@ -650,7 +794,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy11/SM_6.jpg);
+  background-image: url(/assets/img/jpgs/CaseStudy11/SM_6.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .smilemakers6 {
+    background-attachment: scroll;
+  }
 }
 
 .tates1 {
@@ -659,7 +808,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy8/tates_01.jpg);
+  background-image: url(/assets/img/jpgs/CaseStudy8/tates_01.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .tates1 {
+    background-attachment: scroll;
+  }
 }
 
 .tates6 {
@@ -668,7 +822,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy8/tates_06.jpg);
+  background-image: url(/assets/img/jpgs/CaseStudy8/tates_06.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .tates6 {
+    background-attachment: scroll;
+  }
 }
 
 .khanlucas1 {
@@ -677,7 +836,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy9/KL_1.jpg);
+  background-image: url(/assets/img/jpgs/CaseStudy9/KL_1.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .khanlucas1 {
+    background-attachment: scroll;
+  }
 }
 
 .khanlucas6 {
@@ -686,7 +850,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy9/KL_6.jpg);
+  background-image: url(/assets/img/jpgs/CaseStudy9/KL_6.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .khanlucas6 {
+    background-attachment: scroll;
+  }
 }
 
 .a1-800Analytics1 {
@@ -695,7 +864,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy12/analytics_01.jpg);
+  background-image: url(/assets/img/jpgs/CaseStudy12/analytics_01.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .a1-800Analytics1 {
+    background-attachment: scroll;
+  }
 }
 
 .a1-800Analytics2 {
@@ -704,7 +878,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy12/analytics_02.jpg);
+  background-image: url(/assets/img/jpgs/CaseStudy12/analytics_02.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .a1-800Analytics2 {
+    background-attachment: scroll;
+  }
 }
 
 .bloomreach1 {
@@ -713,7 +892,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy10/bloomreach_1.jpg);
+  background-image: url(/assets/img/jpgs/CaseStudy10/bloomreach_1.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .bloomreach1 {
+    background-attachment: scroll;
+  }
 }
 
 .bloomreach2 {
@@ -722,7 +906,54 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy10/bloomreach_2.jpg);
+  background-image: url(/assets/img/jpgs/CaseStudy10/bloomreach_2.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .bloomreach2 {
+    background-attachment: scroll;
+  }
+}
+
+.machine-learning-hero {
+  background-attachment: fixed;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: url(https://s3-us-west-2.amazonaws.com/sooryen-website-assets/img/jpgs/MachineLearning/page-hero.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .machine-learning-hero {
+    background-attachment: scroll;
+  }
+}
+
+.blockchain-hero {
+  background-attachment: fixed;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: url(https://s3-us-west-2.amazonaws.com/sooryen-website-assets/img/jpgs/Blockchain/hero-bg.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .blockchain-hero {
+    background-attachment: scroll;
+  }
+}
+
+.convopt-hero {
+  background-attachment: fixed;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: url(https://s3-us-west-2.amazonaws.com/sooryen-website-assets/img/jpgs/ConversionOpt/hero_bg.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .convopt-hero {
+    background-attachment: scroll;
+  }
 }
 
 .Screenshot1 {
@@ -731,7 +962,12 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/bg1.jpg);
+  background-image: url(/assets/img/bg1.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .Screenshot1 {
+    background-attachment: scroll;
+  }
 }
 
 .apple-pay {
@@ -740,11 +976,31 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/home-hero-img.jpg);
+  background-image: url(/assets/img/home-hero-img.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .apple-pay {
+    background-attachment: scroll;
+  }
 }
 @media screen and (max-width: 1265px) {
   .apple-pay {
-    background-image: url(https://d283pee6upvkfl.cloudfront.net/img/mobile-home-hero.jpg);
+    background-image: url(/assets/img/mobile-home-hero.jpg);
+  }
+}
+
+.homepage-hero {
+  background-attachment: fixed;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: scroll;
+  background-image: url(/assets/img/compressed-imgs/Homepage-hero.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .homepage-hero {
+    background-attachment: scroll;
   }
 }
 
@@ -754,11 +1010,16 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/hero-image.jpg);
+  background-image: url(/assets/img/hero-image.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .digital-transformation {
+    background-attachment: scroll;
+  }
 }
 @media screen and (max-width: 1265px) {
   .digital-transformation {
-    background-image: url(https://d283pee6upvkfl.cloudfront.net/img/mobile-hero.jpg);
+    background-image: url(/assets/img/mobile-hero.jpg);
   }
 }
 
@@ -768,11 +1029,16 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/android-banner.jpg);
+  background-image: url(/assets/img/android-banner.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  .android {
+    background-attachment: scroll;
+  }
 }
 @media screen and (max-width: 1024px) {
   .android {
-    background-image: url(https://d283pee6upvkfl.cloudfront.net/img/mobile-landing-hero.jpg);
+    background-image: url(/assets/img/mobile-landing-hero.jpg);
   }
 }
 
@@ -1124,6 +1390,10 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   padding-bottom: 5px;
 }
 
+.paddingB-2-p {
+  padding-bottom: 2%;
+}
+
 .paddingB-5-p {
   padding-bottom: 5%;
 }
@@ -1136,11 +1406,23 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   padding-bottom: 10%;
 }
 
+.paddingB-15-p {
+  padding-bottom: 15%;
+}
+
+.paddingB-20-p {
+  padding-bottom: 20%;
+}
+
 .paddingB-10 {
   padding-bottom: 10px;
 }
 
 .paddingB-20 {
+  padding-bottom: 20px;
+}
+
+.paddingB-40 {
   padding-bottom: 20px;
 }
 
@@ -1348,648 +1630,8 @@ button:hover, button:focus, .button:hover, .secondary-button:hover, .filled-butt
   }
 }
 
-header.header {
-  z-index: 10001;
-  width: 100%;
-  -webkit-font-smoothing: antialiased;
-  position: fixed;
-  top: 0;
-}
-header.header .hide-innactive {
-  display: none !important;
-}
-header.header .hide-logo, header.header .white-logo {
-  display: none;
-}
-header.header .hide-active {
-  display: block !important;
-  margin-top: 10px;
-}
-header.header .menu_click_opened {
-  color: #000000 !important;
-}
-header.header .span-dark {
-  background: #000000 !important;
-}
-header.header .top-bar {
-  height: auto;
-}
-header.header nav {
-  position: relative;
-  z-index: 10001;
-  margin: 0 auto;
-  padding: 6px 0 6px 0;
-  background-color: transparent !important;
-  -webkit-transition: 0.4s ease-in-out;
-  -moz-transition: 0.4s ease-in-out;
-  -o-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
-}
-header.header nav .small-10 {
-  padding: 0;
-}
-header.header nav .small-10 img {
-  max-height: 40px;
-}
-@media screen and (max-width: 700px) {
-  header.header nav .small-10 img {
-    max-height: 35px;
-  }
-}
-@media screen and (max-width: 500px) {
-  header.header nav .small-10 img {
-    max-height: 32px;
-  }
-}
-header.header nav .small-2 {
-  float: right;
-  padding: 0;
-  cursor: pointer;
-}
-header.header nav .small-2 button {
-  display: inline-block;
-  float: right;
-  width: 20px;
-  border: none;
-}
-header.header nav .small-2 button span {
-  display: block;
-}
-header.header nav .small-2 p {
-  font-size: 1.1em;
-  float: right;
-  margin-top: 10px;
-  margin-right: 10px;
-  color: #fff;
-}
-@media screen and (max-width: 700px) {
-  header.header nav .small-2 p {
-    display: none;
-  }
-}
-header.header nav .small-2 #nav-icon {
-  position: relative;
-  float: right;
-  width: 20px;
-  height: 30px;
-  margin: 7px auto;
-  cursor: pointer;
-}
-header.header nav .small-2 #nav-icon span {
-  position: absolute;
-  display: block;
-  float: right;
-  width: 100%;
-  height: 2px;
-  -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  opacity: 1;
-  border-radius: 9px;
-  background: #fff;
-}
-header.header nav .small-2 #nav-icon span:nth-child(1) {
-  top: 10px;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center;
-}
-header.header nav .small-2 #nav-icon span:nth-child(2) {
-  top: 16.5px;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center;
-}
-header.header nav .small-2 #nav-icon span:nth-child(3) {
-  top: 24px;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center;
-}
-header.header nav .small-2 .white-span {
-  background-color: #fff !important;
-}
-header.header nav .small-2 .black-span {
-  background-color: #000000 !important;
-}
-header.header nav .small-2 .menu-click-opened {
-  background-color: #000000 !important;
-}
-header.header nav .small-2 .menu-click-opened span {
-  background-color: #000000 !important;
-}
-header.header nav .small-2 .menu-click-opened p {
-  color: #000000 !important;
-}
-header.header nav .small-2 .open span:nth-child(1) {
-  top: -8px;
-  left: 3px;
-  -webkit-transform: rotate(45deg) !important;
-  -moz-transform: rotate(45deg) !important;
-  -o-transform: rotate(45deg) !important;
-  transform: rotate(45deg) !important;
-}
-header.header nav .small-2 .open span:nth-child(2) {
-  width: 0 !important;
-  opacity: 0 !important;
-}
-header.header nav .small-2 .open span:nth-child(3) {
-  top: 39px;
-  left: 3px;
-  -webkit-transform: rotate(-45deg) !important;
-  -moz-transform: rotate(-45deg) !important;
-  -o-transform: rotate(-45deg) !important;
-  transform: rotate(-45deg) !important;
-}
-header.header #primary-nav {
-  background: rgba(219, 64, 6, 0.9);
-  height: 100%;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10000;
-}
-@media screen and (max-width: 500px) {
-  header.header #primary-nav {
-    overflow: scroll;
-  }
-}
-header.header #primary-nav .menu-container {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  padding: 10px 0px;
-}
-@media screen and (max-width: 500px) {
-  header.header #primary-nav .menu-container {
-    margin-top: 0;
-  }
-}
-header.header #primary-nav .menu-container ul {
-  text-align: center;
-  -webkit-flex-direction: column;
-  align-items: flex-start;
-  display: -webkit-flex;
-  /* Safari */
-  flex-direction: column;
-  height: 83vh;
-  margin: 0px auto;
-  min-height: 320px;
-  max-height: 540px;
-  position: relative;
-  -webkit-justify-content: space-around;
-  /* Safari 6.1+ */
-  display: flex;
-  justify-content: space-around;
-}
-@media screen and (max-width: 500px) {
-  header.header #primary-nav .menu-container ul {
-    min-height: 320px;
-    max-height: 440px;
-  }
-}
-header.header #primary-nav .menu-container ul img {
-  height: 30px;
-  -webkit-transition: -webkit-transform .8s ease-in-out;
-  -ms-transition: -ms-transform .8s ease-in-out;
-  -moz-transition: -ms-transform .8s ease-in-out;
-  -o-transition: -ms-transform .8s ease-in-out;
-  transition: transform .8s ease-in-out;
-}
-@media screen and (max-width: 700px) {
-  header.header #primary-nav .menu-container ul img {
-    height: 25px;
-  }
-}
-header.header #primary-nav .menu-container ul img:hover {
-  transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-}
-header.header #primary-nav .menu-container ul li {
-  width: 100%;
-  text-align: center;
-  list-style: none;
-  font-size: 2.25em;
-}
-@media screen and (max-width: 700px) {
-  header.header #primary-nav .menu-container ul li {
-    font-size: 1.25em;
-  }
-}
-header.header #primary-nav .menu-container ul li span {
-  display: inline-block;
-}
-@media screen and (max-width: 600px) {
-  header.header #primary-nav .menu-container ul li {
-    font-size: 1.5em;
-  }
-}
-header.header #primary-nav .menu-container ul li:hover a.active {
-  background-color: RGBA(196, 57, 27, 1);
-  color: #fff;
-}
-header.header #primary-nav .menu-container ul li a {
-  font-family: "latolight";
-  display: block;
-  color: #fff;
-}
-header.header #primary-nav .menu-container ul li .social_icons {
-  width: 100%;
-}
-header.header #primary-nav .menu-container ul li .social_icons a {
-  display: inline-block;
-}
-header.header #primary-nav .menu-container ul li .social_icons a:hover {
-  background-color: none;
-}
-header.header #primary-nav .menu-container ul li .social_icons img {
-  width: auto;
-  height: 25px;
-  transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  -webkit-transform: rotate(0deg);
-}
-@media screen and (max-width: 700px) {
-  header.header #primary-nav .menu-container ul li .social_icons img {
-    height: 20px;
-  }
-}
-header.header #primary-nav .menu-container .social_icons {
-  display: inline-block;
-  width: 100%;
-}
-header.header #primary-nav .menu-container .social_icons img {
-  height: 25px;
-  opacity: .6;
-}
-header.header #primary-nav .menu-container .social_icons img:hover {
-  opacity: 1;
-}
-header.header #primary-nav .menu-container .border_bottom {
-  width: 30%;
-  height: 1px;
-  margin: 5px auto;
-  background-color: #fff;
-}
-header.header #primary-nav .menu-container p {
-  font-family: "latolight";
-  color: #fff;
-  font-size: 1rem;
-}
-header.header #primary-nav img {
-  height: 30px;
-}
-
-header.fintech-header {
-  z-index: 10001;
-  width: 100%;
-  -webkit-font-smoothing: antialiased;
-  position: fixed;
-  top: 0;
-}
-header.fintech-header .hide-innactive {
-  display: none !important;
-}
-header.fintech-header .hide-logo, header.fintech-header .white-logo {
-  display: none;
-}
-header.fintech-header .hide-active {
-  display: block !important;
-  margin-top: 10px;
-}
-header.fintech-header .menu_click_opened {
-  color: #000000 !important;
-}
-header.fintech-header .span-dark {
-  background: #000000 !important;
-}
-header.fintech-header .top-bar {
-  height: auto;
-}
-header.fintech-header nav {
-  position: relative;
-  z-index: 10001;
-  margin: 0 auto;
-  padding: 6px 0 6px 0;
-  background-color: transparent !important;
-  -webkit-transition: 0.4s ease-in-out;
-  -moz-transition: 0.4s ease-in-out;
-  -o-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
-}
-header.fintech-header nav .small-10 {
-  padding: 0;
-}
-header.fintech-header nav .small-10 img {
-  max-height: 40px;
-}
-@media screen and (max-width: 700px) {
-  header.fintech-header nav .small-10 img {
-    max-height: 35px;
-  }
-}
-@media screen and (max-width: 500px) {
-  header.fintech-header nav .small-10 img {
-    max-height: 32px;
-  }
-}
-header.fintech-header nav .small-2 button {
-  display: inline-block;
-  float: right;
-  width: 20px;
-  border: none;
-}
-header.fintech-header nav .small-2 button span {
-  display: block;
-}
-header.fintech-header nav .small-2 p {
-  font-size: 1.1em;
-  float: right;
-  margin-top: 10px;
-  margin-right: 10px;
-  color: #fff;
-}
-@media screen and (max-width: 720px) {
-  header.fintech-header nav .small-2 p {
-    display: none;
-  }
-}
-header.fintech-header nav .small-2.menu-click {
-  padding-right: 0;
-}
-header.fintech-header nav .small-2 #nav-icon {
-  position: relative;
-  float: right;
-  width: 20px;
-  height: 30px;
-  margin: 7px auto;
-  cursor: pointer;
-}
-header.fintech-header nav .small-2 #nav-icon span {
-  position: absolute;
-  display: block;
-  float: right;
-  width: 100%;
-  height: 2px;
-  -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  opacity: 1;
-  border-radius: 9px;
-  background: #fff;
-}
-header.fintech-header nav .small-2 #nav-icon span:nth-child(1) {
-  top: 10px;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center;
-}
-header.fintech-header nav .small-2 #nav-icon span:nth-child(2) {
-  top: 16.5px;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center;
-}
-header.fintech-header nav .small-2 #nav-icon span:nth-child(3) {
-  top: 24px;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center;
-}
-header.fintech-header nav .small-2 .white-span {
-  background-color: #fff !important;
-}
-header.fintech-header nav .small-2 .black-span {
-  background-color: #000000 !important;
-}
-header.fintech-header nav .small-2 .menu-click-opened {
-  background-color: #000000 !important;
-}
-header.fintech-header nav .small-2 .menu-click-opened span {
-  background-color: #000000 !important;
-}
-header.fintech-header nav .small-2 .menu-click-opened p {
-  color: #000000 !important;
-}
-header.fintech-header nav .small-2 .open span:nth-child(1) {
-  top: -8px;
-  left: 3px;
-  -webkit-transform: rotate(45deg) !important;
-  -moz-transform: rotate(45deg) !important;
-  -o-transform: rotate(45deg) !important;
-  transform: rotate(45deg) !important;
-}
-header.fintech-header nav .small-2 .open span:nth-child(2) {
-  width: 0 !important;
-  opacity: 0 !important;
-}
-header.fintech-header nav .small-2 .open span:nth-child(3) {
-  top: 39px;
-  left: 3px;
-  -webkit-transform: rotate(-45deg) !important;
-  -moz-transform: rotate(-45deg) !important;
-  -o-transform: rotate(-45deg) !important;
-  transform: rotate(-45deg) !important;
-}
-header.fintech-header nav .top-bar-section ul li {
-  background: none;
-  padding: 5px 0px;
-}
-header.fintech-header nav .top-bar-section ul li a {
-  font-size: 14px;
-  background: none !important;
-}
-@media screen and (max-width: 1068px) {
-  header.fintech-header nav .top-bar-section ul li a {
-    font-size: 12px;
-  }
-}
-header.fintech-header nav .top-bar-section ul li a:hover {
-  background: none;
-}
-header.fintech-header nav .top-bar-section ul.scrollColor a {
-  color: black;
-}
-header.fintech-header nav .top-bar-section ul.scrollColor a:hover {
-  color: black;
-}
-header.fintech-header #primary-nav {
-  background: #1890FF;
-  height: 100%;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10000;
-  opacity: .89;
-}
-@media screen and (max-width: 500px) {
-  header.fintech-header #primary-nav {
-    overflow: scroll;
-  }
-}
-header.fintech-header #primary-nav .menu-container {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  padding: 10px 0px;
-}
-@media screen and (max-width: 500px) {
-  header.fintech-header #primary-nav .menu-container {
-    margin-top: 0;
-  }
-}
-header.fintech-header #primary-nav .menu-container ul {
-  text-align: center;
-  -webkit-flex-direction: column;
-  align-items: flex-start;
-  display: -webkit-flex;
-  /* Safari */
-  flex-direction: column;
-  height: 83vh;
-  margin: 0px auto;
-  min-height: 320px;
-  max-height: 540px;
-  position: relative;
-  -webkit-justify-content: space-around;
-  /* Safari 6.1+ */
-  display: flex;
-  justify-content: space-around;
-}
-@media screen and (max-width: 500px) {
-  header.fintech-header #primary-nav .menu-container ul {
-    min-height: 320px;
-    max-height: 440px;
-  }
-}
-header.fintech-header #primary-nav .menu-container ul img {
-  height: 30px;
-  -webkit-transition: -webkit-transform .8s ease-in-out;
-  -ms-transition: -ms-transform .8s ease-in-out;
-  -moz-transition: -ms-transform .8s ease-in-out;
-  -o-transition: -ms-transform .8s ease-in-out;
-  transition: transform .8s ease-in-out;
-}
-@media screen and (max-width: 700px) {
-  header.fintech-header #primary-nav .menu-container ul img {
-    height: 25px;
-  }
-}
-header.fintech-header #primary-nav .menu-container ul img:hover {
-  transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-}
-header.fintech-header #primary-nav .menu-container ul li {
-  width: 100%;
-  text-align: center;
-  list-style: none;
-  font-size: 2.25em;
-}
-@media screen and (max-width: 700px) {
-  header.fintech-header #primary-nav .menu-container ul li {
-    font-size: 1.25em;
-  }
-}
-header.fintech-header #primary-nav .menu-container ul li span {
-  display: inline-block;
-}
-@media screen and (max-width: 600px) {
-  header.fintech-header #primary-nav .menu-container ul li {
-    font-size: 1.5em;
-  }
-}
-header.fintech-header #primary-nav .menu-container ul li:hover a.active {
-  background-color: #0269CA !important;
-  color: #fff;
-}
-header.fintech-header #primary-nav .menu-container ul li a {
-  font-weight: bolder;
-  font-family: "latolight";
-  display: block;
-  color: #fff;
-}
-header.fintech-header #primary-nav .menu-container ul li .social_icons {
-  width: 100%;
-}
-header.fintech-header #primary-nav .menu-container ul li .social_icons a {
-  display: inline-block;
-}
-header.fintech-header #primary-nav .menu-container ul li .social_icons a:hover {
-  background-color: none;
-}
-header.fintech-header #primary-nav .menu-container ul li .social_icons img {
-  width: auto;
-  height: 25px;
-  transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  -webkit-transform: rotate(0deg);
-}
-@media screen and (max-width: 700px) {
-  header.fintech-header #primary-nav .menu-container ul li .social_icons img {
-    height: 20px;
-  }
-}
-header.fintech-header #primary-nav .menu-container .social_icons {
-  display: inline-block;
-  width: 100%;
-}
-header.fintech-header #primary-nav .menu-container .social_icons img {
-  height: 25px;
-  opacity: .6;
-}
-header.fintech-header #primary-nav .menu-container .social_icons img:hover {
-  opacity: 1;
-}
-header.fintech-header #primary-nav .menu-container .border_bottom {
-  width: 30%;
-  height: 1px;
-  margin: 5px auto;
-  background-color: #fff;
-}
-header.fintech-header #primary-nav .menu-container p {
-  font-family: "latolight";
-  color: #fff;
-  font-size: 1rem;
-}
-header.fintech-header #primary-nav img {
-  height: 30px;
-}
-
+/*@import "globals/header";*/
+/*@import "globals/fintech-header";*/
 header.apple-header {
   z-index: 10001;
   width: 100%;
@@ -2026,6 +1668,63 @@ header.apple-header nav {
   -moz-transition: 0.4s ease-in-out;
   -o-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
+}
+header.apple-header nav li ul {
+  position: absolute;
+  top: 50px;
+  z-index: 1;
+  list-style: none;
+  display: block;
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+}
+header.apple-header nav li ul li {
+  overflow: hidden;
+  height: 0;
+  padding: 0 !important;
+  width: 200px;
+  *zoom: 1;
+  background: #EF592A !important;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+header.apple-header nav li ul li a {
+  -webkit-transition: color 200ms ease-in;
+  -moz-transition: color 200ms ease-in;
+  -o-transition: color 200ms ease-in;
+  transition: color 200ms ease-in;
+}
+header.apple-header nav li ul li a:hover {
+  color: #f1f1f1 !important;
+}
+header.apple-header nav ul:after {
+  clear: both;
+}
+header.apple-header nav .sol-dropdown {
+  -webkit-transition: 200ms ease;
+  -moz-transition: 200ms ease;
+  -o-transition: 200ms ease;
+  transition: 200ms ease;
+}
+header.apple-header nav ul > li.sol-dropdown:hover {
+  background: #EF592A !important;
+}
+header.apple-header nav ul > li.sol-dropdown:hover a {
+  color: white !important;
+}
+header.apple-header nav ul > li.sol-dropdown:hover ul li {
+  height: 36px;
+  padding-bottom: 50px !important;
+}
+header.apple-header nav ul > li.sol-dropdown .sol-sub-menu li:hover a {
+  color: #ffd6aa !important;
+}
+header.apple-header nav .sol-sub-menu li a:hover {
+  color: orange !important;
 }
 header.apple-header nav .small-10 {
   padding: 0;
@@ -2155,6 +1854,7 @@ header.apple-header nav .top-bar-section ul li {
 }
 header.apple-header nav .top-bar-section ul li a {
   font-size: 14px;
+  color: white;
   background: none !important;
 }
 @media screen and (max-width: 1068px) {
@@ -2172,7 +1872,7 @@ header.apple-header nav .top-bar-section ul.scrollColor a:hover {
   color: black;
 }
 header.apple-header #primary-nav {
-  background: #DB4006;
+  background: #EF592A;
   height: 100%;
   left: 0;
   position: fixed;
@@ -2211,7 +1911,7 @@ header.apple-header #primary-nav .menu-container ul {
   height: 83vh;
   margin: 0px auto;
   min-height: 320px;
-  max-height: 540px;
+  max-height: 380px;
   position: relative;
   -webkit-justify-content: space-around;
   /* Safari 6.1+ */
@@ -2246,7 +1946,8 @@ header.apple-header #primary-nav .menu-container ul img:hover {
 }
 header.apple-header #primary-nav .menu-container ul li {
   width: 100%;
-  text-align: center;
+  text-align: left;
+  padding-left: 30px;
   list-style: none;
   font-size: 2.25em;
 }
@@ -2269,7 +1970,8 @@ header.apple-header #primary-nav .menu-container ul li:hover a.active {
 }
 header.apple-header #primary-nav .menu-container ul li a {
   font-weight: bolder;
-  font-family: "latolight";
+  font-family: "Lato";
+  font-weight: 200;
   display: block;
   color: #fff;
 }
@@ -2296,6 +1998,37 @@ header.apple-header #primary-nav .menu-container ul li .social_icons img {
     height: 20px;
   }
 }
+header.apple-header #primary-nav .menu-container ul .solutions i {
+  position: absolute;
+  right: 22px;
+  top: 80px;
+  color: white;
+  -webkit-transition: 300ms ease;
+  -moz-transition: 300ms ease;
+  -o-transition: 300ms ease;
+  transition: 300ms ease;
+}
+@media screen and (min-width: 500px) {
+  header.apple-header #primary-nav .menu-container ul .solutions i {
+    top: 68px;
+  }
+}
+@media screen and (min-width: 700px) {
+  header.apple-header #primary-nav .menu-container ul .solutions i {
+    top: 68px;
+  }
+}
+header.apple-header #primary-nav .menu-container ul .solutions .sol-sub-menu {
+  display: inline;
+}
+header.apple-header #primary-nav .menu-container ul .solutions .sol-sub-menu li {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 200ms ease-in;
+  -moz-transition: height 200ms ease-in;
+  -o-transition: height 200ms ease-in;
+  transition: height 200ms ease-in;
+}
 header.apple-header #primary-nav .menu-container .social_icons {
   display: inline-block;
   width: 100%;
@@ -2314,7 +2047,8 @@ header.apple-header #primary-nav .menu-container .border_bottom {
   background-color: #fff;
 }
 header.apple-header #primary-nav .menu-container p {
-  font-family: "latolight";
+  font-family: "Lato";
+  font-weight: 200;
   color: #fff;
   font-size: 1rem;
 }
@@ -2322,10 +2056,14 @@ header.apple-header #primary-nav img {
   height: 30px;
 }
 
+.blk-logo .apple-header nav .top-bar-section ul li a {
+  color: black;
+}
+
 .site-footer {
   padding: 4vw 1vw;
   background: #4A4A4A;
-  font-family: "latolight";
+  font-family: "Lato";
   font-size: 1em;
   color: #B4B4B4;
 }
@@ -2338,6 +2076,22 @@ header.apple-header #primary-nav img {
 }
 .site-footer .large-8, .site-footer .large-10 .office .columns {
   padding: 0;
+}
+.site-footer .no-padding-left {
+  padding-left: 0;
+}
+@media screen and (min-width: 640px) {
+  .site-footer .partner-office .france {
+    width: 32%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .site-footer a {
+    padding-top: 11px;
+  }
+  .site-footer .small-12 {
+    padding-top: 4%;
+  }
 }
 .site-footer h3, .site-footer .h3 {
   font-size: 1.25em !important;
@@ -2358,6 +2112,7 @@ header.apple-header #primary-nav img {
 }
 .site-footer h2 {
   color: #DB4006;
+  padding-left: 15px;
 }
 .site-footer .fist-p {
   padding: 2vw 0 0 0;
@@ -2368,13 +2123,13 @@ header.apple-header #primary-nav img {
 .site-footer .addresses h3 {
   padding-bottom: 0vw;
   color: #fff;
-  font-family: "latolight";
+  font-family: "Lato";
 }
 .site-footer .addresses a:hover, .site-footer .addresses a:active, .site-footer .addresses a:focus {
   outline: none !important;
 }
 .site-footer .bottom-u {
-  padding: 3vmin 0;
+  padding: 3vmin 15px;
   position: relative;
 }
 .site-footer .bottom-u ul {
@@ -2435,11 +2190,11 @@ header.apple-header #primary-nav img {
 
 /*
  * jQuery FlexSlider v2.5.0
- * //www.woothemes.com/flexslider/
+ * http://www.woothemes.com/flexslider/
  *
  * Copyright 2012 WooThemes
  * Free to use under the GPLv2 and later license.
- * //www.gnu.org/licenses/gpl-2.0.html
+ * http://www.gnu.org/licenses/gpl-2.0.html
  *
  * Contributing author: Tyler Smith (@mbmufffin)
  * 
@@ -2751,9 +2506,9 @@ html[xmlns] .flexslider .slides {
 }
 /**
  * Featherlight – ultra slim jQuery lightbox
- * Version 1.3.1 - //noelboss.github.io/featherlight/
+ * Version 1.3.1 - http://noelboss.github.io/featherlight/
  *
- * Copyright 2015, Noël Raoul Bossart (//www.noelboss.com)
+ * Copyright 2015, Noël Raoul Bossart (http://www.noelboss.com)
  * MIT Licensed.
 **/
 @media all {
@@ -2775,7 +2530,7 @@ html[xmlns] .flexslider .slides {
     cursor: pointer;
     background: #333;
     /* IE8 "hack" for nested featherlights */
-    background: transparent;
+    background: rgba(0, 0, 0, 0);
   }
 
   /* support for nested featherlights. Does not work in IE8 (use JS to fix) */
@@ -2876,28 +2631,54 @@ html[xmlns] .flexslider .slides {
 ._home p {
   font-size: 1.1rem;
 }
-._home .apple-pay h2 {
-  font-family: "latoregular";
-  color: #fff;
-  font-size: 2.25em;
+@media screen and (max-width: 450px) {
+  ._home .homepage-hero {
+    margin-top: 45px;
+  }
 }
-._home .apple-pay p {
+._home .homepage-hero h2 {
+  font-family: "Lato";
+  color: #000000;
+  font-size: 3em;
+  font-weight: 700;
+  padding-top: 9vw;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  text-shadow: 5px 5px 10px #cecece;
+}
+@media screen and (max-width: 450px) {
+  ._home .homepage-hero h2 {
+    padding-top: 15vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  ._home .homepage-hero .first-block {
+    padding: 11vw 0;
+  }
+}
+._home .homepage-hero p {
   color: #fff;
-  font-family: "latoregular";
+  font-family: "Lato";
   max-width: 400px;
   margin: 30px auto 50px;
 }
-._home .apple-pay .button, ._home .apple-pay .secondary-button, ._home .apple-pay .filled-button {
-  font-family: "latoregular";
+._home .homepage-hero .button, ._home .homepage-hero .secondary-button, ._home .homepage-hero .filled-button {
+  font-family: "Lato";
   font-size: 1.1rem;
   margin: 0 2%;
 }
 @media screen and (max-width: 450px) {
-  ._home .apple-pay .button, ._home .apple-pay .secondary-button, ._home .apple-pay .filled-button {
+  ._home .homepage-hero .button, ._home .homepage-hero .secondary-button, ._home .homepage-hero .filled-button {
     width: 100%;
     display: block;
     margin: 5px 2%;
   }
+}
+._home .second-text h2 {
+  text-align: center;
+  font-size: 1.6em;
+  color: #db4006;
+  padding-bottom: 10px;
 }
 @media screen and (max-width: 850px) {
   ._home .second-text span {
@@ -2957,7 +2738,7 @@ html[xmlns] .flexslider .slides {
 }
 ._home .quote {
   font-size: 1.2em;
-  font-family: "latolight";
+  font-family: "Lato";
   max-width: 100%;
   display: block;
   margin: 0 auto;
@@ -2966,7 +2747,6 @@ html[xmlns] .flexslider .slides {
   color: #DB4006;
 }
 ._home .feature-background {
-  margin: 0;
   color: #4A4A4A;
 }
 ._home .feature-background .padding-x-p {
@@ -2983,8 +2763,8 @@ html[xmlns] .flexslider .slides {
   background-size: 100% 100%;
   position: absolute;
   height: 42px;
-  left: 20px;
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/backenddatacloud-01.png");
+  left: 13px;
+  background-image: url("/assets/img/backenddatacloud-01.png");
   width: 42px;
 }
 ._home .feature-background .ecommerce:before {
@@ -2992,8 +2772,8 @@ html[xmlns] .flexslider .slides {
   background-size: 100% 100%;
   position: absolute;
   height: 42px;
-  left: 20px;
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/ecommerce-01.png");
+  left: 13px;
+  background-image: url("/assets/img/ecommerce-01.png");
   width: 40px;
 }
 ._home .feature-background .ui-icon:before {
@@ -3001,13 +2781,35 @@ html[xmlns] .flexslider .slides {
   background-size: 100% 100%;
   position: absolute;
   height: 42px;
-  left: 20px;
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/uiux-01.png");
+  left: 13px;
+  background-image: url("/assets/img/uiux-01.png");
   width: 40px;
+}
+._home .feature-background .fintech:before {
+  content: '';
+  background-size: 100% 100%;
+  position: absolute;
+  height: 42px;
+  left: 13px;
+  background-image: url("/assets/img/fintech-icon-orange.png");
+  width: 35px;
+  height: 35px;
+}
+._home .feature-background .mobile-dev:before {
+  content: '';
+  background-size: 100% 100%;
+  position: absolute;
+  height: 42px;
+  left: 13px;
+  background-image: url("/assets/img/apps-dev.png");
+  width: 21px;
+  height: 35px;
+  left: 19px;
+  margin-top: 2px;
 }
 ._home .feature-background h3 {
   font-size: 1.1rem;
-  font-family: "latoheavy";
+  font-family: "Lato";
   margin-left: 50px;
   margin-top: 10px;
   line-height: 40px;
@@ -3016,9 +2818,12 @@ html[xmlns] .flexslider .slides {
 ._home .feature-background p {
   padding: 15px 0;
 }
+._home .fintech-section {
+  margin-bottom: 20px !important;
+}
 ._home .fintech-section .heading {
   font-size: 1.25em;
-  font-family: "latolight";
+  font-family: "Lato";
 }
 ._home .fintech-section .text {
   font-size: 18px;
@@ -3040,7 +2845,26 @@ html[xmlns] .flexslider .slides {
   filter: grayscale(0%);
 }
 ._home .clients-row .orient-logo img {
-  width: 165px;
+  width: 195px;
+}
+._home .clients-row .save-day-logo img {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+  /* IE 6-9 */
+}
+._home .clients-row .save-day-logo:hover img {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+._home .clients-row .save-day-logo img {
+  width: 160px;
 }
 ._home .clients-row .flower-logo img {
   -webkit-filter: grayscale(100%);
@@ -3119,19 +2943,37 @@ html[xmlns] .flexslider .slides {
     opacity: 1;
   }
 }
-._home .menu-visible .show-logo {
+._home .top-bar .show-logo {
   display: none !important;
+}
+@media screen and (max-width: 1265px) {
+  ._home .top-bar .show-logo {
+    display: inline-block !important;
+  }
+}
+._home .top-bar .hide-logo {
+  display: inline-block !important;
+}
+@media screen and (max-width: 1265px) {
+  ._home .top-bar .hide-logo {
+    display: none !important;
+  }
 }
 
 p.maureen {
   color: #DB4006;
 }
 
+.menu-visible .top-bar .show-logo {
+  display: none !important;
+}
+
 .contact-pic {
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/000025.jpg");
+  background-image: url("/assets/img/000025.jpg");
   background-size: cover;
-  height: 40vw;
+  height: 27vw;
   width: 100%;
+  min-height: 180px;
 }
 
 ._contact {
@@ -3139,9 +2981,9 @@ p.maureen {
 }
 ._contact .sm-content-head h1 {
   color: white;
-  font-family: "latohairline";
+  font-family: "Lato";
   font-size: 2.25em;
-  padding: 17vw 0px 12vmin 0px;
+  padding: 8vw 0px 12vmin 0px;
   text-transform: uppercase;
 }
 @media screen and (max-width: 700px) {
@@ -3150,8 +2992,13 @@ p.maureen {
     color: rgba(219, 64, 6, 0.9);
   }
 }
-._contact .large-6 {
+._contact .main-container .large-6 {
   padding: 0;
+}
+@media screen and (min-width: 1024px) {
+  ._contact .main-container .large-6 {
+    margin-bottom: 150px;
+  }
 }
 ._contact .form8 .warning, ._contact .form8.error {
   display: none !important;
@@ -3242,6 +3089,7 @@ p.maureen {
 ._contact .map {
   position: relative;
   overflow: hidden;
+  padding-top: 70px;
 }
 ._contact .map iframe {
   z-index: -9999;
@@ -3299,7 +3147,7 @@ p.maureen {
 ._contact form button {
   color: #DB4006;
   float: right;
-  font-family: "latoregular";
+  font-family: "Lato";
 }
 ._contact .maps-top-n {
   margin-top: -6vmax;
@@ -3378,7 +3226,7 @@ p.maureen {
   text-align: center;
   padding: 5vmin 0 2vw 0;
   color: #4A4A4A;
-  font-family: "latoregular";
+  font-family: "Lato";
   text-transform: uppercase;
 }
 ._contact .locations .large-3 p {
@@ -3435,7 +3283,7 @@ p.maureen {
 ._careers h1 {
   color: #fff;
   font-size: 2.25em;
-  font-family: "latolight";
+  font-family: "Lato";
   padding: 14% 0 10% 0;
   text-transform: uppercase;
 }
@@ -3562,8 +3410,8 @@ p.maureen {
 ._careers .testi-section .testi-bg .border-5px {
   border: 5px solid #fff;
 }
-._careers .testi-section .testi-bg .maitry {
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/Testimonials/Maitry_bg.jpg);
+._careers .testi-section .testi-bg .anthony {
+  background-image: url(/assets/img/jpgs/Testimonials/ant__bg.jpg);
   -webkit-transition: 0.4s ease-in-out;
   -moz-transition: 0.4s ease-in-out;
   -o-transition: 0.4s ease-in-out;
@@ -3571,23 +3419,26 @@ p.maureen {
   background-size: 102%;
   background-repeat: no-repeat;
 }
-._careers .testi-section .testi-bg .maitry:hover {
+._careers .testi-section .testi-bg .anthony:hover {
   background-size: 108%;
 }
+._careers .testi-section .testi-bg .anthony p {
+  font-size: 15px;
+  padding-bottom: 20px !important;
+}
 @media screen and (max-width: 1024px) {
-  ._careers .testi-section .testi-bg .maitry {
+  ._careers .testi-section .testi-bg .anthony {
     background-size: 110%;
   }
-  ._careers .testi-section .testi-bg .maitry:hover {
-    background-size: 118%;
+  ._careers .testi-section .testi-bg .anthony p {
+    font-size: 0.7em;
+  }
+  ._careers .testi-section .testi-bg .anthony:hover {
+    background-size: 129%;
   }
 }
-._careers .testi-section .testi-bg .maitry p {
-  padding: 1em 2em 0em;
-  font-size: 16px;
-}
 ._careers .testi-section .testi-bg .rob {
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/Testimonials/rob_bg.jpg);
+  background-image: url(/assets/img/jpgs/Testimonials/rob_bg.jpg);
   -webkit-transition: 0.4s ease-in-out;
   -moz-transition: 0.4s ease-in-out;
   -o-transition: 0.4s ease-in-out;
@@ -3602,12 +3453,15 @@ p.maureen {
   ._careers .testi-section .testi-bg .rob {
     background-size: 110%;
   }
+  ._careers .testi-section .testi-bg .rob p {
+    font-size: 0.8rem;
+  }
   ._careers .testi-section .testi-bg .rob:hover {
     background-size: 118%;
   }
 }
 ._careers .testi-section .testi-bg .chris {
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/Testimonials/chris_bg.jpg);
+  background-image: url(/assets/img/jpgs/Testimonials/chris_bg.jpg);
   -webkit-transition: 0.4s ease-in-out;
   -moz-transition: 0.4s ease-in-out;
   -o-transition: 0.4s ease-in-out;
@@ -3622,12 +3476,23 @@ p.maureen {
   ._careers .testi-section .testi-bg .chris {
     background-size: 110%;
   }
+  ._careers .testi-section .testi-bg .chris p {
+    font-size: 0.8rem;
+  }
   ._careers .testi-section .testi-bg .chris:hover {
     background-size: 118%;
   }
 }
-._careers .testi-section .testi-bg .akshay {
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/Testimonials/Akshay_bg.jpg);
+@media screen and (max-width: 1024px) {
+  ._careers .testi-section .testi-bg .chris {
+    background-size: 123%;
+  }
+  ._careers .testi-section .testi-bg .chris:hover {
+    background-size: 134%;
+  }
+}
+._careers .testi-section .testi-bg .meha {
+  background-image: url(/assets/img/jpgs/Testimonials/meha_bg.jpg);
   -webkit-transition: 0.4s ease-in-out;
   -moz-transition: 0.4s ease-in-out;
   -o-transition: 0.4s ease-in-out;
@@ -3635,14 +3500,17 @@ p.maureen {
   background-size: 102%;
   background-repeat: no-repeat;
 }
-._careers .testi-section .testi-bg .akshay:hover {
+._careers .testi-section .testi-bg .meha:hover {
   background-size: 108%;
 }
 @media screen and (max-width: 1024px) {
-  ._careers .testi-section .testi-bg .akshay {
+  ._careers .testi-section .testi-bg .meha {
     background-size: 110%;
   }
-  ._careers .testi-section .testi-bg .akshay:hover {
+  ._careers .testi-section .testi-bg .meha p {
+    font-size: 0.8rem;
+  }
+  ._careers .testi-section .testi-bg .meha:hover {
     background-size: 118%;
   }
 }
@@ -3857,8 +3725,8 @@ p.maureen {
 ._services h1 {
   color: #fff;
   font-size: 2.25em;
-  font-family: "latolight";
-  padding: 5% 0 2% 0;
+  font-family: "Lato";
+  padding: 3% 0 2% 0;
   text-transform: uppercase;
 }
 @media screen and (max-width: 850px) and (min-width: 500px) {
@@ -3893,7 +3761,7 @@ p.maureen {
   }
 }
 ._services .first-block .large-3 p {
-  font-family: "latohairline";
+  font-family: "Lato";
   font-size: 1.25em;
   font-style: italic;
   padding: 3% 0;
@@ -3978,7 +3846,7 @@ p.maureen {
 }
 ._services .quote-block p {
   font-size: 1.25em;
-  font-family: "latoregular";
+  font-family: "Lato";
 }
 ._services .quote-block img {
   max-width: 180px;
@@ -3994,7 +3862,7 @@ p.maureen {
   font-size: 2.25em;
   padding: 4% 0 2% 0;
   color: #000000;
-  font-family: "latohairline";
+  font-family: "Lato";
 }
 ._services .partners-bg h3 {
   font-size: 1.25em;
@@ -4047,13 +3915,13 @@ p.maureen {
 ._services .numbers-section .dial1 .radial-svg .percentage, ._services .numbers-section .dial2 .radial-svg .percentage {
   text-anchor: middle;
   fill: #4A4A4A;
-  font-family: "latolight";
+  font-family: "Lato";
 }
 
 ._services-new h1 {
   color: #fff;
   font-size: 2.25em;
-  font-family: "latolight";
+  font-family: "Lato";
   padding: 5% 0 2% 0;
   text-transform: uppercase;
 }
@@ -4082,27 +3950,27 @@ p.maureen {
 ._services-new .first-block {
   padding: 8% 0 2% 0;
 }
-._services-new .first-block .large-3 {
+._services-new .first-block .large-2 {
   color: #fff;
   position: relative;
   padding: 3% 2%;
 }
-._services-new .first-block .large-3 h2 {
+._services-new .first-block .large-2 h2 {
   color: #fff;
   text-align: center;
   padding: 7% 0;
   font-size: 1.2em;
 }
-._services-new .first-block .large-3 p {
-  font-family: "latohairline";
+._services-new .first-block .large-2 p {
+  font-family: "Lato";
   font-size: 1.25em;
   font-style: italic;
   padding: 3% 0;
 }
-._services-new .first-block .large-3 p.heading {
+._services-new .first-block .large-2 p.heading {
   min-height: 160px;
 }
-._services-new .first-block .large-3 img {
+._services-new .first-block .large-2 img {
   width: 60px;
   display: block;
   left: 0;
@@ -4110,7 +3978,7 @@ p.maureen {
   bottom: 0;
   margin: auto;
 }
-._services-new .first-block .large-3 ul {
+._services-new .first-block .large-2 ul {
   padding: 10% 0 1% 0;
 }
 ._services-new .sm-content-head p {
@@ -4218,7 +4086,7 @@ p.maureen {
 }
 ._services-new .quote-block p {
   font-size: 1.25em;
-  font-family: "latoregular";
+  font-family: "Lato";
 }
 ._services-new .quote-block img {
   max-width: 180px;
@@ -4235,7 +4103,7 @@ p.maureen {
   font-size: 48px;
   color: #DB4006;
   line-height: 72px;
-  font-family: 'latolight';
+  font-weight: 200;
 }
 ._services-new .partners-bg h3 {
   font-size: 1.25em;
@@ -4299,6 +4167,17 @@ p.maureen {
   font-size: 32px;
   line-height: 1.7;
 }
+._services-new div#learn-more .service .service-info .btn {
+  margin: 0px;
+  border: 2px solid #DB4006;
+  padding: 5px;
+  display: block;
+  width: 170px;
+  color: #fff;
+  font-size: .9em;
+  border-radius: 5px;
+  background-color: #DB4006;
+}
 @media screen and (max-width: 650px) {
   ._services-new div#learn-more .service {
     padding: 40px;
@@ -4321,6 +4200,9 @@ p.maureen {
     text-align: center;
     display: block;
   }
+  ._services-new div#learn-more .service .service-info .btn {
+    margin: 0 auto;
+  }
 }
 
 ._about .map-dot-image, ._about .dot1, ._about .dot2, ._about .dot3, ._about .dot4 {
@@ -4328,14 +4210,14 @@ p.maureen {
 }
 ._about .aboutusB1 h1 {
   color: #fff;
-  font-family: "latohairline";
+  font-family: "Lato";
   font-size: 2.25em;
   padding: 10.5rem 0 4rem 0;
   text-transform: uppercase;
 }
 @media screen and (max-width: 700px) {
   ._about .aboutusB1 h1 {
-    font-family: "latolight";
+    font-family: "Lato";
     padding: 10.5rem 0 1rem 0;
   }
 }
@@ -4365,12 +4247,12 @@ p.maureen {
   }
 }
 ._about .second-block h1 {
-  font-family: "latohairline";
+  font-family: "Lato";
   text-align: center;
 }
 @media screen and (max-width: 700px) {
   ._about .second-block h1 {
-    font-family: "latolight";
+    font-family: "Lato";
   }
 }
 ._about .second-block p {
@@ -4430,7 +4312,7 @@ p.maureen {
 }
 ._works .sm-content-head h1 {
   color: #DB4006;
-  font-family: "latolight";
+  font-family: "Lato";
   font-size: font_largest;
   padding: 28vmin 0px 12vmin 0px;
   text-transform: uppercase;
@@ -4445,11 +4327,11 @@ p.maureen {
 }
 ._works .works-row .case-study h2 {
   color: #fff;
-  font-family: 'latoheavy';
+  font-weight: 700;
   text-transform: uppercase;
 }
 ._works .works-row .case-study.flowers {
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/workspagecasestudy1800_hover.jpg");
+  background-image: url("/assets/img/jpgs/Works/workspagecasestudy1800_hover.jpg");
   background-size: cover;
   z-index: -0;
   padding: 8vw 0 8vw 0;
@@ -4467,13 +4349,13 @@ p.maureen {
   opacity: 1;
 }
 ._works .works-row .case-study.flowers .flowers-logo {
-  background: url("https://d283pee6upvkfl.cloudfront.net/img/1800flowers white-01.png") no-repeat center;
+  background: url("/assets/img/1800flowers white-01.png") no-repeat center;
   background-size: cover;
   width: 33vmin;
   height: 18vmin;
 }
 ._works .works-row .case-study.otc {
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/workspagecasestudyotc_hover.jpg");
+  background-image: url("/assets/img/jpgs/Works/workspagecasestudyotc_hover.jpg");
   background-size: cover;
   padding: 8vw 0 8vw 0;
   opacity: 0.9;
@@ -4490,13 +4372,13 @@ p.maureen {
   opacity: 1;
 }
 ._works .works-row .case-study.otc .oriental-logo {
-  background: url("https://d283pee6upvkfl.cloudfront.net/img/oriental trading white.png") no-repeat center;
+  background: url("/assets/img/oriental trading white.png") no-repeat center;
   background-size: cover;
   width: 33vmin;
   height: 18vmin;
 }
 ._works .works-row .case-study.mindware {
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/mindwareworks_hover.jpg");
+  background-image: url("/assets/img/jpgs/Works/mindwareworks_hover.jpg");
   background-size: cover;
   padding: 8vw 0 8vw 0;
   opacity: 0.9;
@@ -4509,13 +4391,13 @@ p.maureen {
   opacity: 1;
 }
 ._works .works-row .case-study.mindware .mindware-logo {
-  background: url("https://d283pee6upvkfl.cloudfront.net/img/mindware-white.png") no-repeat center;
+  background: url("/assets/img/mindware-white.png") no-repeat center;
   background-size: cover;
   width: 33vmin;
   height: 18vmin;
 }
 ._works .works-row .case-study.popcorn {
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/popcornfactoryworks_hover.jpg");
+  background-image: url("/assets/img/jpgs/Works/popcornfactoryworks_hover.jpg");
   background-size: cover;
   padding: 8vw 0 8vw 0;
   opacity: 0.9;
@@ -4528,13 +4410,13 @@ p.maureen {
   opacity: 1;
 }
 ._works .works-row .case-study.popcorn .popcorn-logo {
-  background: url("https://d283pee6upvkfl.cloudfront.net/img/popcornfactorywhite.png") no-repeat center;
+  background: url("/assets/img/popcornfactorywhite.png") no-repeat center;
   background-size: cover;
   width: 33vmin;
   height: 18vmin;
 }
 ._works .works-row .case-study.otc-boomi {
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/otc_dellboomi_1.jpg");
+  background-image: url("/assets/img/jpgs/Works/otc_dellboomi_1.jpg");
   background-size: cover;
   padding: 9vw 0 9vw 0;
   opacity: 0.9;
@@ -4548,7 +4430,7 @@ p.maureen {
   opacity: 1;
 }
 ._works .works-row .case-study.otc-boomi .otc-boomi-logo {
-  background: url("https://d283pee6upvkfl.cloudfront.net/img/otcdellboomilogo.png") no-repeat center;
+  background: url("/assets/img/otcdellboomilogo.png") no-repeat center;
   background-size: cover;
   width: 40vmin;
   height: 19vmin;
@@ -4556,7 +4438,7 @@ p.maureen {
   margin-bottom: 3vh;
 }
 ._works .works-row .case-study.a500bc {
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/500bc_1.jpg");
+  background-image: url("/assets/img/jpgs/Works/500bc_1.jpg");
   background-size: cover;
   padding: 8vw 0 8vw 0;
   opacity: 0.9;
@@ -4570,13 +4452,13 @@ p.maureen {
   opacity: 1;
 }
 ._works .works-row .case-study.a500bc .a500bc-logo {
-  background: url("https://d283pee6upvkfl.cloudfront.net/img/500bc-white1.png") no-repeat center;
+  background: url("/assets/img/500bc-white1.png") no-repeat center;
   background-size: cover;
   width: 19vmin;
   height: 19vmin;
 }
 ._works .works-row .case-study.zte {
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/zte.jpg");
+  background-image: url("/assets/img/jpgs/Works/zte.jpg");
   background-size: cover;
   padding: 16vw 0 8vw 0;
   opacity: 0.9;
@@ -4589,13 +4471,13 @@ p.maureen {
   opacity: 1;
 }
 ._works .works-row .case-study.zte .zte-logo {
-  background: url("https://d283pee6upvkfl.cloudfront.net/img/zte.png") no-repeat center;
+  background: url("/assets/img/zte.png") no-repeat center;
   background-size: cover;
   width: 22vmin;
   height: 8vmin;
 }
 ._works .works-row .case-study.bloomreach {
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/bloomreach_1.jpg");
+  background-image: url("/assets/img/jpgs/Works/bloomreach_1.jpg");
   background-size: cover;
   padding: 10vw 0 8vw 0;
   opacity: 0.9;
@@ -4609,14 +4491,14 @@ p.maureen {
   opacity: 1;
 }
 ._works .works-row .case-study.bloomreach .bloomreach-logo {
-  background: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/bloomreach_logo-wht.png") no-repeat center bottom;
+  background: url("/assets/img/jpgs/Works/bloomreach_logo-wht.png") no-repeat center bottom;
   background-size: cover;
   width: 64vmin;
   height: 12vmin;
   margin: auto;
 }
 ._works .works-row .case-study.bloomreach .flowers-logo {
-  background: url("https://d283pee6upvkfl.cloudfront.net/img/1800flowers white-01.png") no-repeat center;
+  background: url("/assets/img/1800flowers white-01.png") no-repeat center;
   background-size: cover;
   width: 33vmin;
   height: 18vmin;
@@ -4624,7 +4506,7 @@ p.maureen {
   margin-top: -7%;
 }
 ._works .works-row .case-study.tates {
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/tates_01.jpg");
+  background-image: url("/assets/img/jpgs/Works/tates_01.jpg");
   background-size: cover;
   padding: 8vw 0 8vw 0;
   opacity: 0.9;
@@ -4637,13 +4519,13 @@ p.maureen {
   opacity: 1;
 }
 ._works .works-row .case-study.tates .tates-logo {
-  background: url("https://d283pee6upvkfl.cloudfront.net/img/logo_tates.png") no-repeat center;
+  background: url("/assets/img/logo_tates.png") no-repeat center;
   background-size: cover;
   width: 36vmin;
   height: 19vmin;
 }
 ._works .works-row .case-study.smileMakers {
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/SM_1.jpg");
+  background-image: url("/assets/img/jpgs/Works/SM_1.jpg");
   background-size: cover;
   padding: 9.5vw 0 10vw 0;
   opacity: 0.9;
@@ -4656,14 +4538,14 @@ p.maureen {
   opacity: 1;
 }
 ._works .works-row .case-study.smileMakers .smileMakers-logo {
-  background: url("https://d283pee6upvkfl.cloudfront.net/img/2016-02-16.png") no-repeat center;
+  background: url("/assets/img/2016-02-16.png") no-repeat center;
   background-size: cover;
   width: 62vmin;
   height: 13vmin;
   margin-bottom: 2vw;
 }
 ._works .works-row .case-study.a1-800Analytics {
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/analytics_01.jpg");
+  background-image: url("/assets/img/jpgs/Works/analytics_01.jpg");
   background-size: cover;
   padding: 6vw 0 8vw 0;
   opacity: 0.9;
@@ -4676,14 +4558,14 @@ p.maureen {
   opacity: 1;
 }
 ._works .works-row .case-study.a1-800Analytics .a1-800Analytics-logo {
-  background: url("https://d283pee6upvkfl.cloudfront.net/img/flowerslogo.png") no-repeat center;
+  background: url("/assets/img/flowerslogo.png") no-repeat center;
   background-size: cover;
   width: 42vmin;
   height: 19vmin;
   margin-bottom: 2vw;
 }
 ._works .works-row .case-study.khanlucas {
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/KL_1.jpg");
+  background-image: url("/assets/img/jpgs/Works/KL_1.jpg");
   background-size: cover;
   padding: 8vw 0 8vw 0;
   opacity: 0.9;
@@ -4696,14 +4578,14 @@ p.maureen {
   opacity: 1;
 }
 ._works .works-row .case-study.khanlucas .khanlucas-logo {
-  background: url("https://d283pee6upvkfl.cloudfront.net/img/KL_logo.png") no-repeat center;
+  background: url("/assets/img/KL_logo.png") no-repeat center;
   background-size: cover;
   width: 49vmin;
   height: 19vmin;
   margin-bottom: 3vh;
 }
 ._works .works-row .case-study.save-day {
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/newCaseStudies/SD_1.jpg");
+  background-image: url("/assets/img/jpgs/newCaseStudies/SD_1.jpg");
   background-size: cover;
   z-index: -0;
   padding: 8vw 0 8vw 0;
@@ -4721,13 +4603,13 @@ p.maureen {
   opacity: 1;
 }
 ._works .works-row .case-study.save-day .saveDay-logo {
-  background: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/newCaseStudies/saveday-wht-logo.png") no-repeat center;
+  background: url("/assets/img/jpgs/newCaseStudies/saveday-wht-logo.png") no-repeat center;
   background-size: contain;
   width: 34vmin;
   height: 18vmin;
 }
 ._works .works-row .case-study.cetera {
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy14/DOL-1.jpg");
+  background-image: url("/assets/img/jpgs/CaseStudy14/DOL-1.jpg");
   background-size: cover;
   padding: 8vw 0 8vw 0;
   opacity: 0.9;
@@ -4744,7 +4626,7 @@ p.maureen {
   opacity: 1;
 }
 ._works .works-row .case-study.cetera .cetera-logo {
-  background: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/newCaseStudies/cetera-logo-wht.png") no-repeat center;
+  background: url("/assets/img/jpgs/newCaseStudies/cetera-logo-wht.png") no-repeat center;
   background-size: contain;
   width: 28vmin;
   height: 18vmin;
@@ -4752,7 +4634,7 @@ p.maureen {
 ._works .clients-list h2 {
   text-transform: uppercase;
   color: #DB4006;
-  font-family: "latolight";
+  font-family: "Lato";
 }
 ._works .clients-list .client {
   padding: 2% 1.4%;
@@ -4767,7 +4649,7 @@ p.maureen {
 ._works .clients-list .client.partners span {
   display: block;
   font-size: 0.5em;
-  font-family: "latoregular";
+  font-family: "Lato";
   color: #B4B4B4;
 }
 ._works .clients-list .client a {
@@ -4995,7 +4877,12 @@ p.maureen {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy2/otc_1_wo.jpg);
+  background-image: url(/assets/img/jpgs/CaseStudy2/otc_1_wo.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  ._case-study .oriental-trading-hero {
+    background-attachment: scroll;
+  }
 }
 ._case-study .oriental-trading-middle {
   background-attachment: fixed;
@@ -5003,11 +4890,16 @@ p.maureen {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy2/otc_6.jpg);
+  background-image: url(/assets/img/jpgs/CaseStudy2/otc_6.jpg);
+}
+@media only screen and (max-device-width: 500px) {
+  ._case-study .oriental-trading-middle {
+    background-attachment: scroll;
+  }
 }
 ._case-study .lg-content-head .case-intro {
   color: #fff;
-  font-family: "latohairline";
+  font-family: "Lato";
 }
 ._case-study .lg-content-head .case-intro h1 {
   -webkit-transition: 0.4s ease-in-out;
@@ -5015,7 +4907,7 @@ p.maureen {
   -o-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   color: #fff;
-  font-family: "latolight";
+  font-family: "Lato";
   text-transform: uppercase;
   font-size: 2.25em;
   padding: 18vw 0px 10px 0px;
@@ -5062,7 +4954,7 @@ p.maureen {
 ._case-study .case-problem h2, ._case-study .case-solution h2 {
   text-transform: uppercase;
   color: #DB4006;
-  font-family: "latolight";
+  font-family: "Lato";
   font-size: 2.25em;
   padding: 5vw 0px 1vw 0px;
 }
@@ -5132,7 +5024,7 @@ p.maureen {
 ._case-study .case-benefits .min-case-dial1 .radial-svg .percentage, ._case-study .case-benefits .min-case-dial2 .radial-svg .percentage, ._case-study .case-benefits .min-case-dial3 .radial-svg .percentage, ._case-study .case-benefits .min-case-dial4 .radial-svg .percentage {
   text-anchor: middle;
   fill: #fff;
-  font-family: "latolight";
+  font-family: "Lato";
 }
 ._case-study .benefits-text {
   margin: 0 auto;
@@ -5160,84 +5052,84 @@ p.maureen {
   color: #DB4006;
 }
 ._case-study .related-case-studies .related-case_otc {
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/workspagecasestudyotcsmall.jpg");
+  background-image: url("/assets/img/jpgs/Works/workspagecasestudyotcsmall.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   text-transform: uppercase;
   background-color: rgba(200, 54, 54, 0.2);
 }
 ._case-study .related-case-studies .related-case_flowers {
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/workspagecasestudy1800small.jpg");
+  background-image: url("/assets/img/jpgs/Works/workspagecasestudy1800small.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   text-transform: uppercase;
   background-color: rgba(200, 54, 54, 0.2);
 }
 ._case-study .related-case-studies .related-case_popcorn {
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/popcornfactoryworkssmall.jpg");
+  background-image: url("/assets/img/jpgs/Works/popcornfactoryworkssmall.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   text-transform: uppercase;
   background-color: rgba(200, 54, 54, 0.2);
 }
 ._case-study .related-case-studies .related-case_minware {
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/mindwareworkssmall.jpg");
+  background-image: url("/assets/img/jpgs/Works/mindwareworkssmall.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   text-transform: uppercase;
   background-color: rgba(200, 54, 54, 0.2);
 }
 ._case-study .related-case-studies .related-case_zte {
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/zte.jpg");
+  background-image: url("/assets/img/jpgs/Works/zte.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   text-transform: uppercase;
   background-color: rgba(200, 54, 54, 0.2);
 }
 ._case-study .related-case-studies .related-case_500BC {
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/500bc_1.jpg");
+  background-image: url("/assets/img/jpgs/Works/500bc_1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   text-transform: uppercase;
   background-color: rgba(200, 54, 54, 0.2);
 }
 ._case-study .related-case-studies .related-case_tates {
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/tates_01.jpg");
+  background-image: url("/assets/img/jpgs/Works/tates_01.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   text-transform: uppercase;
   background-color: rgba(200, 54, 54, 0.2);
 }
 ._case-study .related-case-studies .related-case_otc-boomi {
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/otc_dellboomi_1.jpg");
+  background-image: url("/assets/img/jpgs/Works/otc_dellboomi_1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   text-transform: uppercase;
   background-color: rgba(200, 54, 54, 0.2);
 }
 ._case-study .related-case-studies .related-case_khanlucas {
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/KL_1.jpg");
+  background-image: url("/assets/img/jpgs/Works/KL_1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   text-transform: uppercase;
   background-color: rgba(200, 54, 54, 0.2);
 }
 ._case-study .related-case-studies .related-case_bloomreach {
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/bloomreach_1.jpg");
+  background-image: url("/assets/img/jpgs/Works/bloomreach_1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   text-transform: uppercase;
   background-color: rgba(200, 54, 54, 0.2);
 }
 ._case-study .related-case-studies .related-case_1-800Analytics {
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/analytics_01.jpg");
+  background-image: url("/assets/img/jpgs/Works/analytics_01.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   text-transform: uppercase;
   background-color: rgba(200, 54, 54, 0.2);
 }
 ._case-study .related-case-studies .related-case_smilemakers {
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/Works/SM_1.jpg");
+  background-image: url("/assets/img/jpgs/Works/SM_1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   text-transform: uppercase;
@@ -5252,7 +5144,7 @@ p.maureen {
 }
 ._case-study .related-case-studies .related-case h4 {
   color: #fff;
-  font-family: "latoregular";
+  font-family: "Lato";
   padding: 2vw 5px 0vw 15px;
 }
 ._case-study .related-case-studies .related-case p {
@@ -5407,7 +5299,7 @@ p.maureen {
   color: #4A4A4A;
 }
 ._work-example .frame {
-  background-image: url(//d283pee6upvkfl.cloudfront.net/img/iPhone6_frame.png);
+  background-image: url(http://d283pee6upvkfl.cloudfront.net/img/iPhone6_frame.png);
   background-repeat: no-repeat;
   background-size: 100%;
   z-index: 999;
@@ -5459,7 +5351,7 @@ p.maureen {
 ._work-example .clients-list h2 {
   text-transform: uppercase;
   color: #DB4006;
-  font-family: "latolight";
+  font-family: "Lato";
 }
 ._work-example .clients-list .client {
   padding: 2% 1.4%;
@@ -5474,7 +5366,7 @@ p.maureen {
 ._work-example .clients-list .client.partners span {
   display: block;
   font-size: 0.5em;
-  font-family: "latoregular";
+  font-family: "Lato";
   color: #B4B4B4;
 }
 ._work-example .clients-list .client a {
@@ -5493,7 +5385,7 @@ body button:hover {
   border-color: #fff !important;
 }
 body .heading {
-  font-family: 'latolight';
+  font-weight: 200;
   font-size: 2.1em;
 }
 body .lg-content-head .fintechBanner {
@@ -5816,7 +5708,12 @@ body .eight-section button {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/fintech/mobile-hero-img.jpg);
+    background-image: url(/assets/img/jpgs/fintech/mobile-hero-img.jpg);
+  }
+}
+@media only screen and (max-width: 420px) and (max-device-width: 500px) {
+  body .fintechBanner {
+    background-attachment: scroll;
   }
 }
 
@@ -5828,7 +5725,7 @@ body .eight-section button {
 }
 ._fintech-case-study .sm-content-head h1 {
   color: #DB4006;
-  font-family: "latolight";
+  font-family: "Lato";
   font-size: font_largest;
   padding: 25vmin 0px 12vmin 0px;
   text-transform: uppercase;
@@ -5847,7 +5744,7 @@ body .eight-section button {
   text-transform: uppercase;
 }
 ._fintech-case-study .works-row .case-study.save-day {
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/newCaseStudies/SD_1.jpg");
+  background-image: url("/assets/img/jpgs/newCaseStudies/SD_1.jpg");
   background-size: cover;
   z-index: -0;
   padding: 8vw 0 8vw 0;
@@ -5865,13 +5762,13 @@ body .eight-section button {
   opacity: 1;
 }
 ._fintech-case-study .works-row .case-study.save-day .saveDay-logo {
-  background: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/newCaseStudies/saveday-wht-logo.png") no-repeat center;
+  background: url("/assets/img/jpgs/newCaseStudies/saveday-wht-logo.png") no-repeat center;
   background-size: contain;
   width: 25vmin;
   height: 18vmin;
 }
 ._fintech-case-study .works-row .case-study.cetera {
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/CaseStudy14/DOL-1.jpg");
+  background-image: url("/assets/img/jpgs/CaseStudy14/DOL-1.jpg");
   background-size: cover;
   padding: 8vw 0 8vw 0;
   opacity: 0.9;
@@ -5888,7 +5785,7 @@ body .eight-section button {
   opacity: 1;
 }
 ._fintech-case-study .works-row .case-study.cetera .cetera-logo {
-  background: url("https://d283pee6upvkfl.cloudfront.net/img/jpgs/newCaseStudies/cetera-logo-wht.png") no-repeat center;
+  background: url("/assets/img/jpgs/newCaseStudies/cetera-logo-wht.png") no-repeat center;
   background-size: contain;
   width: 20vmin;
   height: 18vmin;
@@ -5896,7 +5793,7 @@ body .eight-section button {
 ._fintech-case-study .clients-list h2 {
   text-transform: uppercase;
   color: #DB4006;
-  font-family: "latolight";
+  font-family: "Lato";
 }
 ._fintech-case-study .clients-list .client {
   padding: 2% 1.4%;
@@ -5911,7 +5808,7 @@ body .eight-section button {
 ._fintech-case-study .clients-list .client.partners span {
   display: block;
   font-size: 0.5em;
-  font-family: "latoregular";
+  font-family: "Lato";
   color: #B4B4B4;
 }
 ._fintech-case-study .clients-list .client a {
@@ -6095,7 +5992,7 @@ body .eight-section button {
   -webkit-font-smoothing: antialiased;
 }
 ._apple-pay .android h2 {
-  font-family: "latoregular";
+  font-family: "Lato";
   color: #fff;
   font-size: 2.25em;
 }
@@ -6106,11 +6003,11 @@ body .eight-section button {
 }
 ._apple-pay .android p {
   color: #fff;
-  font-family: "latoregular";
+  font-family: "Lato";
   margin: 30px auto;
 }
 ._apple-pay .android .button, ._apple-pay .android .secondary-button, ._apple-pay .android .filled-button {
-  font-family: "latoregular";
+  font-family: "Lato";
   font-size: 1.1rem;
 }
 ._apple-pay #left-text {
@@ -6125,7 +6022,7 @@ body .eight-section button {
   margin: 10px 6%;
 }
 ._apple-pay #left-text p {
-  font-family: "latoregular";
+  font-family: "Lato";
   color: #000000;
   font-size: 0.875em;
   margin: 1.8em 0;
@@ -6142,13 +6039,13 @@ body .eight-section button {
   }
 }
 ._apple-pay #right-text #submit-message {
-  font-family: "latoregular";
+  font-family: "Lato";
   color: #DB4006;
 }
 ._apple-pay #right-text label {
   color: #DB4006;
   font-size: 0.75em;
-  font-family: "latoregular";
+  font-family: "Lato";
 }
 ._apple-pay #right-text input, ._apple-pay #right-text select {
   box-shadow: none !important;
@@ -6156,7 +6053,7 @@ body .eight-section button {
   border-bottom: 1px solid #4A4A4A !important;
   padding: 0 !important;
   height: 1.5em;
-  font-family: "latoregular";
+  font-family: "Lato";
   font-size: 1.1rem;
   color: #4A4A4A;
 }
@@ -6177,7 +6074,7 @@ body .eight-section button {
   margin: 1em 0;
   color: #4A4A4A;
   font-size: 1.1rem;
-  font-family: "latoregular";
+  font-family: "Lato";
 }
 
 .perfopt .hero-banner, .perfopt .homeB1, .perfopt .homeB2, .perfopt .homeB3, .perfopt .path-to-success {
@@ -6188,11 +6085,11 @@ body .eight-section button {
   position: relative;
 }
 .perfopt .hero-banner {
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/perfopt/hero-photo.jpg);
+  background-image: url(/assets/img/jpgs/perfopt/hero-photo.jpg);
 }
 @media screen and (max-width: 980px) {
   .perfopt .hero-banner {
-    background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/perfopt/hero-photo-mobile.jpg) !important;
+    background-image: url(/assets/img/jpgs/perfopt/hero-photo-mobile.jpg) !important;
     background-position: 0px -175px !important;
   }
 }
@@ -6219,13 +6116,13 @@ body .eight-section button {
   }
 }
 .perfopt .homeB1 {
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/perfopt/banner-photo-1.jpg);
+  background-image: url(/assets/img/jpgs/perfopt/banner-photo-1.jpg);
 }
 .perfopt .homeB2 {
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/perfopt/banner-photo-2.jpg);
+  background-image: url(/assets/img/jpgs/perfopt/banner-photo-2.jpg);
 }
 .perfopt .homeB3 {
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/perfopt/banner-photo-3.jpg);
+  background-image: url(/assets/img/jpgs/perfopt/banner-photo-3.jpg);
 }
 .perfopt p {
   font-size: 1.3rem;
@@ -6342,7 +6239,7 @@ body .eight-section button {
   margin-top: 16px;
 }
 .perfopt .path-to-success {
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/jpgs/perfopt/banner-photo-4.jpg);
+  background-image: url(/assets/img/jpgs/perfopt/banner-photo-4.jpg);
   background-position: 0 0;
 }
 @media only screen and (max-width: 64.0625em) {
@@ -6457,7 +6354,7 @@ body .eight-section button {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/europe-meet/hero-img.jpg);
+  background-image: url(/assets/img/europe-meet/hero-img.jpg);
   font-size: 50px;
   /* top: 100px; */
   padding: 21% 0 10% 0;
@@ -6658,7 +6555,7 @@ body .eight-section button {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://d283pee6upvkfl.cloudfront.net/img/about-us/hero_about-us.jpg);
+  background-image: url(/assets/img/about-us/hero_about-us.jpg);
 }
 ._about-us-new .homeB2 {
   margin-top: 0%;
@@ -6667,12 +6564,25 @@ body .eight-section button {
   padding: 220px 15vw 160px 15vw;
   text-align: center;
 }
+@media screen and (max-width: 600px) {
+  ._about-us-new .about-us-background-text {
+    padding: 130px 15vw 50px 15vw;
+  }
+}
 ._about-us-new .about-us-background-text h1 {
   color: white;
-  font-size: 48px;
+  font-family: "Lato";
+  font-size: 2.25em;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 700px) {
+  ._about-us-new .about-us-background-text h1 {
+    padding-top: 12vmin;
+    color: rgba(255, 255, 255, 0.9);
+  }
 }
 ._about-us-new .about-us-body {
-  padding: 80px 10%;
+  padding: 50px 10% 80px 10%;
   height: 56vw;
   z-index: 1;
   background: white;
@@ -6693,8 +6603,11 @@ body .eight-section button {
   text-align: left;
 }
 ._about-us-new .about-us-image {
-  width: 41%;
+  width: 36%;
   float: right;
+  -webkit-box-shadow: 10px 15px 35px -5px #b3a8b3;
+  -moz-box-shadow: 10px 15px 35px -5px #b3a8b3;
+  box-shadow: 10px 15px 35px -5px #b3a8b3;
 }
 ._about-us-new .about-us-left {
   float: left !important;
@@ -6703,7 +6616,7 @@ body .eight-section button {
   font-size: 1.6em;
 }
 ._about-us-new .about-us-founder-subtext, ._about-us-new .about-us-founder-name, ._about-us-new .about-us-founder-main-text {
-  font-weight: 600;
+  font-weight: 200;
 }
 ._about-us-new .about-us-founder-name {
   width: 100%;
@@ -6772,12 +6685,12 @@ body .eight-section button {
     font-size: 1.7rem;
   }
   ._about-us-new .about-us-body {
-    height: calc(-5vw + 884px);
+    height: calc(-5vw + 1142px);
   }
 }
 @media only screen and (max-width: 420px) {
   ._about-us-new .about-us-body {
-    height: calc(-80vw + 1324px);
+    height: calc(-80vw + 1354px);
   }
 }
 @media only screen and (min-width: 900px) {
@@ -6907,7 +6820,7 @@ body .eight-section button {
   background-position: 0 0;
   background-repeat: no-repeat;
   position: relative;
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/mobile-dev/hero-image.jpg");
+  background-image: url("/assets/img/mobile-dev/hero-image.jpg");
   background-size: cover;
 }
 ._mobile-apps .app-title {
@@ -6918,7 +6831,6 @@ body .eight-section button {
 ._mobile-apps .app-text {
   /*font-weight: bold;*/
   color: #000;
-  font-family: "latoregular";
   font-size: 0.875em;
 }
 ._mobile-apps .app-about-text-layout {
@@ -6971,7 +6883,6 @@ body .eight-section button {
   color: #DB4006;
   font-weight: bold;
   font-size: 0.75em;
-  font-family: "latoregular";
 }
 ._mobile-apps input {
   box-shadow: none !important;
@@ -6979,7 +6890,6 @@ body .eight-section button {
   border-bottom: 1px solid #4A4A4A !important;
   padding: 0 !important;
   height: 1.5em;
-  font-family: "latoregular";
   font-size: 1.1rem;
   color: #4A4A4A;
   background: #f7f7f7;
@@ -7037,7 +6947,7 @@ body .eight-section button {
   width: 100vw;
 }
 ._mobile-apps .case-studies-list .a500BC {
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/mobile-dev/case1-bw.png");
+  background-image: url("/assets/img/mobile-dev/case1-bw.png");
   background-size: cover;
   -webkit-transition: 0.4s ease-in-out;
   -moz-transition: 0.4s ease-in-out;
@@ -7046,20 +6956,20 @@ body .eight-section button {
 }
 @media screen and (min-width: 768px) {
   ._mobile-apps .case-studies-list .a500BC:hover {
-    background-image: url("https://d283pee6upvkfl.cloudfront.net/img/mobile-dev/case1.png");
+    background-image: url("/assets/img/mobile-dev/case1.png");
   }
   ._mobile-apps .case-studies-list .flowers:hover {
-    background-image: url("https://d283pee6upvkfl.cloudfront.net/img/mobile-dev/case2.png");
+    background-image: url("/assets/img/mobile-dev/case2.png");
   }
   ._mobile-apps .case-studies-list .mindware:hover {
-    background-image: url("https://d283pee6upvkfl.cloudfront.net/img/mobile-dev/case3.png");
+    background-image: url("/assets/img/mobile-dev/case3.png");
   }
   ._mobile-apps .case-studies-list .orientaltrading:hover {
-    background-image: url("https://d283pee6upvkfl.cloudfront.net/img/mobile-dev/case4.png");
+    background-image: url("/assets/img/mobile-dev/case4.png");
   }
 }
 ._mobile-apps .case-studies-list .flowers {
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/mobile-dev/case2-bw.png");
+  background-image: url("/assets/img/mobile-dev/case2-bw.png");
   background-size: cover;
   -webkit-transition: 0.4s ease-in-out;
   -moz-transition: 0.4s ease-in-out;
@@ -7067,7 +6977,7 @@ body .eight-section button {
   transition: 0.4s ease-in-out;
 }
 ._mobile-apps .case-studies-list .mindware {
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/mobile-dev/case3-bw.png");
+  background-image: url("/assets/img/mobile-dev/case3-bw.png");
   background-size: cover;
   -webkit-transition: 0.4s ease-in-out;
   -moz-transition: 0.4s ease-in-out;
@@ -7075,7 +6985,7 @@ body .eight-section button {
   transition: 0.4s ease-in-out;
 }
 ._mobile-apps .case-studies-list .orientaltrading {
-  background-image: url("https://d283pee6upvkfl.cloudfront.net/img/mobile-dev/case4-bw.png");
+  background-image: url("/assets/img/mobile-dev/case4-bw.png");
   background-size: cover;
   -webkit-transition: 0.4s ease-in-out;
   -moz-transition: 0.4s ease-in-out;
@@ -7544,58 +7454,224 @@ li.L9 {
   background: #eee;
 }
 
-._kyc {
-  -webkit-font-smoothing: antialiased;
-}
-._kyc .hero .kyc-banner {
-  background-attachment: fixed;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  background-image: url("../../assets/img/kyc-banner.png");
-}
-._kyc .hero .kyc-banner h2 {
-  font-family: "latoregular";
-  color: #fff;
-  font-size: 2em;
-}
-._kyc .hero .kyc-banner p {
-  color: #fff;
-  font-family: "latoregular";
-  font-size: 1rem;
-  padding: 20px 0;
-}
-._kyc .hero .kyc-banner .button, ._kyc .hero .kyc-banner .secondary-button, ._kyc .hero .kyc-banner .filled-button {
-  padding: 0.3rem 2.5rem;
-  font-family: "latoregular";
-}
-._kyc .hero .kyc-banner .columns {
-  padding-left: 20px;
-}
-._kyc .kyc-why {
-  background-image: url("../../assets/img/kyc-why.png");
-}
-._kyc .kyc-why h3 {
-  text-align: center;
-  font-family: lato;
-  color: #FFF;
-}
-._kyc .kyc-why p {
-  color: #FFF;
+/*@import "pages/kyc";*/
+._solution strong {
   font-family: lato;
 }
-._kyc .kyc-what .padding-Yvw-10 {
-  background: #DDD;
+._solution .first-block h2 {
+  padding-top: 150px;
+  color: white;
+  font-weight: 900;
+  font-size: 45px;
 }
-._kyc .kyc-what .padding-Yvw-10 h3 {
-  text-align: center;
+._solution .first-block p {
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px 0px 10vw 0px;
+}
+@media screen and (max-width: 700px) {
+  ._solution .first-block p {
+    font-size: 1.1rem;
+  }
+}
+._solution .image-sprite {
+  width: 30px;
+  padding-bottom: 10px;
+}
+._solution .border-right {
+  border-right: 1px solid #d6d6d6;
+}
+@media screen and (max-width: 1024px) {
+  ._solution .border-right {
+    border: none;
+  }
+}
+._solution .border-left {
+  border-left: 1px solid #d6d6d6;
+}
+@media screen and (max-width: 1024px) {
+  ._solution .border-left {
+    border: none;
+  }
+}
+._solution form {
+  max-width: 750px;
+  margin: 0px auto;
+  padding: 0 4% 10% 4%;
+}
+._solution form p {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+  margin-left: 8px;
+  text-align: left;
+}
+._solution form input {
+  border: none;
+  border-bottom: 1px solid #4A4A4A;
+  box-shadow: none;
+  color: #4A4A4A;
+}
+._solution form input#form-company, ._solution form input#form-email {
+  width: 48%;
+  float: left;
+}
+._solution form input#form-company {
+  margin-right: 4%;
+}
+._solution form textarea {
+  border-bottom: 1px solid #4A4A4A;
+}
+._solution form button {
   color: #DB4006;
-  font-family: "latoregular";
+  float: right;
+  font-family: "Lato";
 }
-._kyc .kyc-what .padding-Yvw-10 p {
-  color: #666;
-  font-family: "latoregular";
+._solution .sent {
+  background-color: #DB4006;
+  color: #fff;
+  display: none;
+  float: left;
+  margin-top: 5%;
+  padding: 2% 4%;
+}
+
+._machine-learning h3 {
+  font-family: lato;
+}
+._machine-learning .intelligent-services div img {
+  height: 70px;
+  margin: 25px;
+}
+._machine-learning .intelligent-services .columns {
+  margin: 30px 0;
+  padding: 0 30px;
+}
+._machine-learning .intelligent-services p {
+  text-align: left;
+  font-size: 16px;
+  line-height: 32px;
+  color: black;
+  margin-top: 10px;
+}
+._machine-learning .aws-partner {
+  background: #f5f5f5;
+  padding: 90px 0;
+}
+._machine-learning .aws-partner img {
+  height: 200px;
+}
+@media screen and (max-width: 1024px) {
+  ._machine-learning .aws-partner img {
+    height: auto;
+    width: auto;
+  }
+}
+._machine-learning .aws-partner h3 {
+  font-size: 16.5px;
+  width: 60%;
+  margin: auto;
+}
+._machine-learning .machine-learning-industries h2 {
+  padding-bottom: 10px;
+}
+._machine-learning .machine-learning-industries h3 {
+  text-align: left;
+}
+._machine-learning .machine-learning-industries .row {
+  margin-bottom: 30px;
+}
+._machine-learning .machine-learning-industries .row .columns {
+  padding: 30px;
+}
+._machine-learning .machine-learning-industries p {
+  font-size: 16px;
+  color: black;
+  text-align: left;
+  padding-top: 5px;
+}
+
+._blockchain .chain-img {
+  width: 90%;
+  padding: 30px 0px;
+}
+._blockchain .blockchain-intro p {
+  text-align: left;
+  color: black;
+}
+._blockchain .blockchain-intro h3 {
+  text-align: left;
+  padding-bottom: 10px;
+}
+._blockchain .white-border-right {
+  border-right: 2px solid white;
+  margin-bottom: 80px;
+}
+._blockchain .kyc-banner {
+  background-position: 0 -130px;
+  background-size: cover;
+  background-image: url(https://s3-us-west-2.amazonaws.com/sooryen-website-assets/img/jpgs/Blockchain/kyc-bg.jpg);
+  padding-top: 40px;
+}
+@media screen and (max-width: 1024px) {
+  ._blockchain .kyc-banner {
+    background-position: center;
+  }
+  ._blockchain .kyc-banner .large-6.white-border-right {
+    margin-bottom: 0;
+    border-bottom: 2px solid white;
+    padding-bottom: 20px;
+    border-right: none;
+    margin-top: 2%;
+  }
+  ._blockchain .kyc-banner .large-6.paddingB-5-p {
+    margin-top: 26px;
+    margin-bottom: 7%;
+    font-size: 14px;
+  }
+}
+._blockchain .tech-partners img {
+  display: inline-block;
+  width: 25%;
+}
+@media screen and (max-width: 760px) {
+  ._blockchain .tech-partners img {
+    display: block;
+    width: 220px;
+    margin: auto;
+  }
+}
+
+._conversion-opt .convopt-intro .columns img {
+  height: 100px;
+  margin: 30px 0;
+}
+._conversion-opt .convopt-intro .columns p {
+  color: black;
+  font-size: 17px;
+}
+._conversion-opt .case-study .case-study-img {
+  width: 80%;
+  max-width: 800px;
+  margin: 30px auto;
+}
+._conversion-opt .tech-partners {
+  background: #f5f5f5;
+  padding: 90px 0 50px 0;
+}
+._conversion-opt .tech-partners img {
+  display: inline-block;
+  width: 23%;
+}
+@media screen and (max-width: 760px) {
+  ._conversion-opt .tech-partners img {
+    display: block;
+    width: 220px;
+    margin: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

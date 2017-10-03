@@ -4,16 +4,46 @@
 <head>
 	<base href="/" />
 	<meta charset="utf-8" />
-
-	<link rel="shortcut icon" type="image/png" href="//d283pee6upvkfl.cloudfront.net/img/36x36.png" />
-
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="google-site-verification" content="laOQMoN0boND5kwVxssaP91D8b0m-Ik_sHkWa65ZKeQ" />
-	<meta name="format-detection" content="telephone=no">
-	<title>{% if page.title != "Home" %} {{page.title}} - {% endif %}Söoryen Technologies</title>
+
+	<link rel="shortcut icon" type="image/png" href="{{site.cdn.url}}/img/36x36.png" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-	<link rel="stylesheet" href="{{site.github.url}}/css/style.css" /> {% seo %}
-	<meta content="{{site.cdn.url}}">
+	<link rel="stylesheet" href="{{site.github.url}}/css/style.css" />
+
+	<title>{{page.title}}</title>
+    <meta name="robots" content="noodp"/>
+	{% if page.classification %} <meta name="classification" content="{{page.classification}}" /> {% endif %}
+	{% if page.extra_meta %}
+	<meta name="description" content="page.description" />
+    <meta name="allow-search" content="Yes" />
+    <meta name="revisit-after" content="3 days" />
+    <meta name="dc.language" content="en-us" />
+    <meta name="dc.source" content="{{page.url}}">
+    <meta name="distribution" content="global" />
+    <meta name="coverage" content="worldwide" />
+    <meta name="Content-Language" content="EN-US" />
+    <meta name="geo.region" content="US" />
+    <meta name="geo.placename" content="US" />     
+    <meta name="country" content="US">
+	<meta property="og:locale" content="en_US" />
+	{% else %}
+	{% seo title=false %}
+	{% endif %}
+	{% if page.og.title %}
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{page.og.title}}" />
+    <meta property="og:description" content="{{page.og.description}}" />
+    <meta property="og:url" content="{{page.url}}" />
+	<meta property="og:site_name" content="Sooryen" />
+	{% endif %}
+	{% if page.twitter.title %}
+	<meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="{{page.twitter.title}}" />
+	<meta name="twitter:description" content="{{page.twitter.title}}" />
+	{% endif %}
+	<meta name="format-detection" content="telephone=no">
+	
+	
 </head>
 
 <body class="{{page.slug}}">
@@ -25,9 +55,9 @@
 					<div class="large-12 medium-centered columns padding-3-y clearfix">
 						<div class="large-4 small-10 columns">
 							<a href="/" id="Home">
-									<img class="show-logo" src="http://d283pee6upvkfl.cloudfront.net/img/logowhite.png" alt="logo" id="h1logo">
-									<img class="hide-logo" src="http://d283pee6upvkfl.cloudfront.net/img/logoblack.png" alt="logo" id="h1logo">
-									<img class="white-logo" src="http://d283pee6upvkfl.cloudfront.net/img/sooryen-allwhite.png" alt="logo">
+									<img class="show-logo" src="{{site.cdn.url}}/img/logowhite.png" alt="logo" id="h1logo">
+									<img class="hide-logo" src="{{site.cdn.url}}/img/logoblack.png" alt="logo" id="h1logo">
+									<img class="white-logo" src="{{site.cdn.url}}/img/sooryen-allwhite.png" alt="logo">
 								</a>
 						</div>
 
@@ -41,7 +71,7 @@
 										<ul class="sol-sub-menu">
 											<li><a href="machine-learning">Machine Learning</a></li>
 											<li><a href="blockchain">Blockchain</a></li>
-											<li><a href="conversion-opt">Conversion Optimization</a></li>
+											<li><a href="conversion-optimization">Conversion Optimization</a></li>
 											<li><a href="fintech">FinTech</a></li>
 											<li><a href="apple-pay">Digital Wallet</a></li>
 										</ul>
